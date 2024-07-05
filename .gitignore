@@ -1,0 +1,37 @@
+# Cache, temp and personal files
+.htaccess
+*.log
+npm-debug.log.*
+.sass-cache/
+/cache/*. download/*. /img/*. /log/*. /upload/*. /vendor/* !/vendor/.htaccess
+docs/phpdoc-sf/
+composer.lock
+tests/Selenium/errorShots/. tests/Selenium/errorDumps/.
+/app/bootstrap.php.cache  # Symfony specific (if applicable)
+/app/cache/* !/app/cache/.gitkeep  # Symfony specific (if applicable)
+/app/logs/* !/app/logs/.gitkeep  # Symfony specific (if applicable)
+/web/bundles/. /web/css/. /web/js/. /var/.  # Symfony specific (if applicable)
+
+# Themes, modules and overrides (specific files to ignore within these directories)
+!themes/*/cache/*
+!modules/*. modules/config_*.xml  # Ignore module config files
+!modules/ps_imageslider/images/* !/modules/ps_imageslider/images/index.php  # Ignore specific images folder but not index.php
+!modules/ps_banner/img/* !/modules/ps_banner/img/index.php  # Ignore specific images folder but not index.php
+!override/*. override/settings_*.json  # Ignore override settings files
+
+# Translations and emails templates (specific files to ignore within these directories)
+translations/*. translations/*/*.txt  # Ignore individual translation files
+mails/* !mails/themes/ !mails/_partials/  # Ignore all mail files except themes and _partials folders
+!themes/default-bootstrap/lang/*. themes/default-bootstrap/modules/*/translations/*.php  # Ignore specific translations folders but not translation files
+!themes/default-bootstrap/mails/* !themes/default-bootstrap/mails/en/ themes/default-bootstrap/modules/*/mails/*  # Ignore all mail files except en folder and modules mail folders
+
+#  MISC
+*sitemap.xml
+/robots.txt
+
+# Specific theme scaffold files (adjust based on your theme's structure)
+!themes/*/assets/*
+!themes/*/scss/*
+!themes/*/templates/*
+!themes/*/layouts/*
+!themes/*/modules/*
