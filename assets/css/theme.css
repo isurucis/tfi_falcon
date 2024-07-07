@@ -5347,7 +5347,7 @@ button.bg-danger:hover {
   background-color: #bd2130 !important;
 }
 .bg-light {
-  background-color: #d1e3d8 !important;
+  background-color: #496891 !important;
 }
 a.bg-light:focus,
 a.bg-light:hover,
@@ -5380,7 +5380,7 @@ button.bg-dark:hover {
   border-right: 1px solid #dee2e6 !important;
 }
 .border-bottom {
-  border-bottom: 1px solid #dee2e6 !important;
+  border-bottom: 1px solid #436899 !important;
 }
 .border-left {
   border-left: 1px solid #dee2e6 !important;
@@ -13422,8 +13422,8 @@ label {
   margin: 0 0 20px;
 }
 .header-top {
-  background: #fff;
-  border-bottom: 1px solid #dee2e6;
+  background: #f7f6f2;
+  border-bottom: 1px solid #e3e3e3;
 }
 .header-top__row {
   align-items: center;
@@ -13436,7 +13436,7 @@ label {
 }
 .header-top__link {
   border-radius: 0.4rem;
-  color: #495057;
+  color: #3e6091;
   display: block;
   padding: 5px;
   text-decoration: none;
@@ -13448,7 +13448,7 @@ label {
 }
 .header-top__link:focus,
 .header-top__link:hover {
-  background: #f8f9fa;
+  background: #223e66;
   color: #000;
   text-decoration: none;
 }
@@ -14338,7 +14338,7 @@ label {
   }
 }
 .search-form__input {
-  border-radius: 99em;
+  border-radius: 0.4rem; /*99em;*/
   border-width: 1px;
   color: #212529;
   height: 2.875rem;
