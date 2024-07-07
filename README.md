@@ -1001,3 +1001,21 @@ If you like this project, buy me a cup of coffee. [Become a sponsor](https://git
 
 Any kind of contribution is welcome.
 Make pull request on develop branch but make sure to create an issue before submitting.
+
+
+## PLACES TO EDIT & LOOK FOR CHANGES
+## Added By : Isuru / Ajanthan
+falcon\templates\catalog\_partials\miniatures\_partials\product-title.tpl
+Contain product name, size,  scientific name
+ 
+falcon\templates\catalog\_partials\miniatures\_partials\product-thumb.tpl
+Contain product thumbnail
+ 
+falcon\templates\catalog\_partials\miniatures\_partials\product-prices.tpl
+Contain product PRICE
+ 
+falcon\templates\catalog\_partials\miniatures\_partials\product-form.tpl
+CONTAIN add to cart button
+ 
+falcon\templates\catalog\_partials\product-flags.tpl
+Contain discount and other hilight of product like new also country flag

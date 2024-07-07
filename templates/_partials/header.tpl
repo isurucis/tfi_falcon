@@ -48,7 +48,7 @@
                 <div class="container">
 
                     <div class="row header-top__row">
-
+                        CIS-B2B
                         <div class="col flex-grow-0 header-top__block header-top__block--menu-toggle d-block d-md-none">
                             <a
                                     class="header-top__link"
