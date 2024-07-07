@@ -1006,7 +1006,7 @@ Make pull request on develop branch but make sure to create an issue before subm
 ## PLACES TO EDIT & LOOK FOR CHANGES
 ## Added By : Isuru / Ajanthan
 falcon\templates\catalog\_partials\miniatures\_partials\product-title.tpl
-Contain product name, size,  scientific name
+Contains : Thumbnails product name, size,  scientific name
  
 falcon\templates\catalog\_partials\miniatures\_partials\product-thumb.tpl
 Contain product thumbnail
