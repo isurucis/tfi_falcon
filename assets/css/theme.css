@@ -14151,8 +14151,8 @@ label {
 }
 .main-menu__item-link--top {
   color: #212529;
-  font-size: 1.125rem;
-  font-weight: 700;
+  font-size: .8rem;
+  font-weight: 500;
 }
 @media (max-width: 992px) {
   .main-menu__item-link--top {
@@ -14165,7 +14165,7 @@ label {
 }
 @media (min-width: 768px) {
   .main-menu__item-link--top {
-    padding: 20px 30px;
+    padding: 15px 25px;
   }
 }
 .main-menu__item-link--sub {
@@ -14177,7 +14177,8 @@ label {
   }
 }
 .main-menu__item-link--1 {
-  font-weight: 700;
+  font-weight: 500;
+  font-size: .8rem;
 }
 .main-menu__item-link--2 {
   padding-left: 1.625rem;
@@ -14223,6 +14224,11 @@ label {
     max-width: 25%;
     padding-left: 0.625rem;
     padding-right: 0.625rem;
+  }
+
+  .main-menu__item--1:hover {
+    background-color:#004085;
+    border-radius: 3px;
   }
 }
 .main-menu__sub {
