@@ -27,13 +27,5 @@
         {foreach from=$product.flags item=flag}
             <li class="product-flags__flag rounded product-flags__flag--{$flag.type}">{$flag.label}</li>
         {/foreach}
-        {foreach from=$product.features item=feature name=features}
-        {if $feature.id_feature == 5}
-        <li>
-        <img src="https://flagcdn.com/{$feature.value|escape:'htmlall':'UTF-8'}.svg" width="30">
-        </li>
-        {/if}
-      {foreachelse}
-      {/foreach}
     </ul>
 {/block}
