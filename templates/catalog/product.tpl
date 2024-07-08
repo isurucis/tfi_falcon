@@ -81,6 +81,11 @@
             {if $feature.id_feature == 5}
             <img src="https://flagcdn.com/{$feature.value|escape:'htmlall':'UTF-8'}.svg" width="30">
             {/if}
+            {if $feature.id_feature == 6}
+            <h4 class="h4  product-title">
+            {$feature.value|escape:'htmlall':'UTF-8'}
+            </h4>
+            {/if}
           {foreachelse}
           {/foreach}
 
