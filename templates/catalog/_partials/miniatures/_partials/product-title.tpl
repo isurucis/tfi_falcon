@@ -10,6 +10,15 @@
   <p class="product-miniature__outofstock mb-2">Out of stock</p>
       {/if}
   {/if}
+  {foreach from=$product.features item=feature name=features}
+    {if $feature.id_feature == 5}
+    <li>
+    <img src="https://flagcdn.com/{$feature.value|escape:'htmlall':'UTF-8'}.svg" width="30">
+    </li>
+    {/if}
+  {foreachelse}
+  {/foreach}
+
   <{$headingTag} class="h5 product-miniature__title mb-2">
     <a class="text-reset" href="{$product.url}">{$product.name}</a>
     <br>
