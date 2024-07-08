@@ -13,7 +13,7 @@
   <{$headingTag} class="h5 product-miniature__title mb-2">
     <a class="text-reset" href="{$product.url}">{$product.name}</a>
     <br>
-    <p>SKU:{$product.reference|escape:'htmlall':'UTF-8'}</p>
+    <p class="product-miniature__sku-label mb-2">SKU:<span class="product-miniature__sku-number mb-2">{$product.reference|escape:'htmlall':'UTF-8'}</span></p>
       {foreach from=$product.features item=feature name=features}
         {if $feature.id_feature == 3}
         <h5 class="product-miniature__scientificname mb-2" >
