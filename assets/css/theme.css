@@ -14522,5 +14522,29 @@ img.lazyload:not(.loaded) {
   padding-top: 30px !important;
 }
 
+.product-miniature__scientificname {
+  font-style: italic;
+}
 
 
+.product-miniature__variant {
+  color: #333333;
+}
+
+.product-miniature__instock {
+  padding: 3px;
+  background-color: #002752;
+  color: #CCCCCC;
+}
+
+.product-miniature__instock-count {
+  padding: 3px;
+  background-color: #002752;
+  color: #ffffff;
+}
+
+.product-miniature__outofstock {
+  padding: 3px;
+  background-color:#3d4144;
+  color: #ffffff;
+}

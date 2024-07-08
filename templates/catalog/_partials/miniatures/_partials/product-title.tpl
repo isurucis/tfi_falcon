@@ -8,21 +8,21 @@
       <br>
       {foreach from=$product.features item=feature name=features}
         {if $feature.id_feature == 3}
-        <h5>
+        <h5 class="product-miniature__scientificname mb-2" >
         {$feature.value|escape:'htmlall':'UTF-8'}
         </h5>
         {/if}
         {if $feature.id_feature == 4}
-        <p>
+        <p class="product-miniature__variant mb-2">
         {$feature.value|escape:'htmlall':'UTF-8'}
         </p>
         {/if}
       {foreachelse}
       {/foreach}
       {if $product.quantity > 0}
-	<p>Available stock: {$product.quantity}</p>
+	<p class="product-miniature__instock mb-2">Available stock: <span class="product-miniature__instock-count mb-2">{$product.quantity}</span></p>
       {else}
-	<p>Out of stock</p>
+	<p class="product-miniature__outofstock mb-2">Out of stock</p>
       {/if}
   </{$headingTag}>
 {/block}
