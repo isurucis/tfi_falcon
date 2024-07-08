@@ -4,6 +4,7 @@
     {$headingTag = 'h3'}
   {/if}
   <{$headingTag} class="h5 product-miniature__title mb-2">
+	<p>SKU:{$product.reference|escape:'htmlall':'UTF-8'}</p>
       <a class="text-reset" href="{$product.url}">{$product.name}</a>
       <br>
       {foreach from=$product.features item=feature name=features}
