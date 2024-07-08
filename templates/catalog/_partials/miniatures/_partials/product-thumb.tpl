@@ -15,7 +15,7 @@
             width="{$urls.no_picture_image.bySize.home_default.width}"
             height="{$urls.no_picture_image.bySize.home_default.height}"
           {/if}
-          class="img-fluid rounded lazyload"
+          class="img-fluid rounded lazyload thumbimage3rounded"
           />
       {/images_block}
 

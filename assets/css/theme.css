@@ -14557,12 +14557,13 @@ img.lazyload:not(.loaded) {
 
 .product-miniature__outofstock {
   padding: 5px 5px 5px 10px;
-  background-color: #3d4144;
-  color: #FFFFFF;
+  background-color: #b5b5b5;
+  color: #4e4e4e;
   width: 175px;
   border-radius: 0px 0px 50px 0px;
   font-style: italic;
   font-size: .8rem;
+  font-weight: 500;
 }
 
 .product-miniature__thumb {
@@ -14573,12 +14574,16 @@ img.lazyload:not(.loaded) {
   font-size: .8rem;
   font-weight:normal;
   color: #999999;
-  padding: 10px 0px;
+  padding: 5px 0px;
 }
 
 .product-miniature__sku-number {
   font-size: .8rem;
-  font-weight: 600;
+  font-weight: 500;
   color: #333333;
   padding-left: 10px;
+}
+
+.thumbimage3rounded {
+  border-radius: 0.4rem 0.4rem 0.4rem 0 !important;
 }
