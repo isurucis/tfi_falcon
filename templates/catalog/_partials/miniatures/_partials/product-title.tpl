@@ -28,7 +28,7 @@
       {foreachelse}
       {/foreach}
       <div>
-      {$product.name}
+      {$product->available_now}
       </div>
   </{$headingTag}>
 {/block}
