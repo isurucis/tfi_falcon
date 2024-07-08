@@ -13515,7 +13515,7 @@ label {
   line-height: inherit;
 }
 .product-miniature__pricing {
-  margin: 0 0 30px;
+  margin: 0 0 10px;
 }
 .product-miniature__title {
   height: 2.6em;
@@ -14524,6 +14524,9 @@ img.lazyload:not(.loaded) {
 
 .product-miniature__scientificname {
   font-style: italic;
+  font-size: .8rem;
+  font-weight: 500;
+  color: #666;
 }
 
 
@@ -14532,15 +14535,22 @@ img.lazyload:not(.loaded) {
 }
 
 .product-miniature__instock {
-  padding: 3px;
+  padding: 3px 3px 3px 10px;
   background-color: #002752;
   color: #CCCCCC;
+  width: 175px;
+  border-radius: 0px 0px 50px 0px;
+  font-style: italic;
+  font-size: .8rem;
 }
 
 .product-miniature__instock-count {
   padding: 3px;
   background-color: #002752;
   color: #ffffff;
+  font-style: normal;
+  font-weight: 600;
+
 }
 
 .product-miniature__outofstock {
