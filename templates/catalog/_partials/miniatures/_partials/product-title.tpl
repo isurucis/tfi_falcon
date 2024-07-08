@@ -20,10 +20,12 @@
         {/if}
       {foreachelse}
       {/foreach}
-      {if $product.quantity > 0}
-	<p>Available stock: {$product.quantity}</p>
-      {else}
-	<p>Out of stock</p>
-      {/if}
+	{if $customer.is_logged}
+	      {if $product.quantity > 0}
+		<p>Available stock: {$product.quantity}</p>
+	      {else}
+		<p>Out of stock</p>
+	      {/if}
+	{/if}
   </{$headingTag}>
 {/block}
