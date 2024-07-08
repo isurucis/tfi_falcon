@@ -88,6 +88,9 @@
             {/if}
           {foreachelse}
           {/foreach}
+          <div>
+          {$product->available_now}
+          </div>
 
           {if $customer.is_logged}
             {block name='product_prices'}
