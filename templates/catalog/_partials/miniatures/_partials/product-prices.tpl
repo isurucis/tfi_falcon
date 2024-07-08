@@ -17,4 +17,7 @@
       </div>
     {/if}
   {/if}
+<p>
+{$product->available_now}
+</p>
 {/block}
