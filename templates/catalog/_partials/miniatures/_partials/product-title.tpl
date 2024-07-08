@@ -27,11 +27,8 @@
         {/if}
       {foreachelse}
       {/foreach}
-       {if $product->quantity > 0}
-          <div class="delivery-time">
-              {l s='Delivery time: ' d='Shop.Theme.Catalog'}
-              {$product->available_now}
-          </div>
-      {/if}
+      <div>
+      {$product.name}
+      </div>
   </{$headingTag}>
 {/block}
