@@ -27,5 +27,8 @@
         {/if}
       {foreachelse}
       {/foreach}
+      <p>
+      {$product->available_now}
+      </p>
   </{$headingTag}>
 {/block}
