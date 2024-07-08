@@ -27,6 +27,7 @@
         {/if}
       {foreachelse}
       {/foreach}
+test
       <div>
       {$product->available_now}
       </div>
