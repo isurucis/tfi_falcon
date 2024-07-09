@@ -9,7 +9,7 @@
             value="{if isset($product.product_attribute_minimal_quantity) && $product.product_attribute_minimal_quantity != ''}{$product.product_attribute_minimal_quantity}{else}{$product.minimal_quantity}{/if}"
             class="form-control input-qty"
           >-->
-        {block name='product_quantity'}
+        
       <div class="product-quantity row mb-1 mx-n1 mt-n2 align-items-center">
         <div class="qty col-12 col-sm-auto mx-auto mt-2 px-1">
           <input
@@ -52,7 +52,7 @@
         </div>
       </div>
 
-    {/block}
+    
           <button
             class="btn btn-primary btn-block add-to-cart"
             data-button-action="add-to-cart"
