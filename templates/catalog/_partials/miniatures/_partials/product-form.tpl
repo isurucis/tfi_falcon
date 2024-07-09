@@ -30,19 +30,6 @@
           >
         </div>
 
-        <div class="add col mt-2 px-1">
-          <button
-            class="btn btn-primary add-to-cart btn-block"
-            data-button-action="add-to-cart"
-            type="submit"
-            {if !$product.add_to_cart_url}
-              disabled
-            {/if}
-          >
-            {l s='Add to cart' d='Shop.Theme.Actions'}
-          </button>
-        </div>
-
         <div class="col-auto mt-2 px-1">
           <div class="js-product-actions-buttons">
             <div class="row mx-n1 mt-n2 align-items-center">
