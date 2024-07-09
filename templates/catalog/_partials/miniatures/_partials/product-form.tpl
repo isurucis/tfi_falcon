@@ -30,13 +30,13 @@
           >
         </div>
 
-        <div class="col-auto mt-2 px-1">
+        <!-- div class="col-auto mt-2 px-1">
           <div class="js-product-actions-buttons">
             <div class="row mx-n1 mt-n2 align-items-center">
               {hook h='displayProductActions' product=$product}
             </div>
           </div>
-        </div>
+        </div -->
       </div>
 
     
