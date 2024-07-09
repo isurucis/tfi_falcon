@@ -13449,7 +13449,7 @@ label {
 }
 .header-top__link:focus,
 .header-top__link:hover {
-  background: #223e66;
+  background: #dfddd6;
   color: #000;
   text-decoration: none;
 }
@@ -13803,10 +13803,11 @@ label {
   display: block;
   flex: 0 0;
   font-size: 1rem;
-  font-weight: 700;
+  font-weight: 500;
   max-width: inherit;
   padding: 10px;
   white-space: nowrap;
+  width: 100% !important;
 }
 @media (max-width: 992px) {
   .customer-links a {
