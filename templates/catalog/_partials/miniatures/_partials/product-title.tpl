@@ -36,8 +36,8 @@
         {/if}
       {foreachelse}
       {/foreach}
-      <p>
-      {$product->available_now}
-      </p>
+      {if $product->available_now}
+        <span class="available-now">{$product->available_now}</span>
+      {/if}
   </{$headingTag}>
 {/block}
