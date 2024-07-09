@@ -13449,8 +13449,8 @@ label {
 }
 .header-top__link:focus,
 .header-top__link:hover {
-  background: #dfddd6;
-  color: #000;
+  background: #e1e0dc;
+  color: #3061a8;
   text-decoration: none;
 }
 .header-top__icon-container {
@@ -13802,7 +13802,7 @@ label {
   color: #343a40;
   display: block;
   flex: 0 0;
-  font-size: 1rem;
+  font-size: .9rem;
   font-weight: 500;
   max-width: inherit;
   padding: 10px;
@@ -13842,6 +13842,7 @@ label {
 .customer-links a.active {
   background: #154a93;
   color: #fff;
+  font-size: 1rem;
 }
 .customer-links a.active:after {
   display: block;
