@@ -13516,7 +13516,15 @@ label {
 }
 .product-miniature__pricing {
   margin: 0 0 10px;
+  float: right;
 }
+
+.product-miniature__quantity {
+  float: left;
+}
+
+
+
 .product-miniature__title {
   height: 2.6em;
   line-height: 1.3;
