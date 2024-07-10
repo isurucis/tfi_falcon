@@ -64,10 +64,10 @@
             <a href="{$urls.pages.register}" class="btn btn-primary btn-block d-block d-md-none">
               {l s='I want to create an account' d='Shop.Istheme'}
             </a>-->
-            <a href="http://34.128.78.80/b2b-customer-create" class="btn btn-primary d-none d-md-inline-block">
+            <a href="/b2b-customer-create" class="btn btn-primary d-none d-md-inline-block">
               {l s='I want to create an account' d='Shop.Istheme'}
             </a>
-            <a href="http://34.128.78.80/b2b-customer-create" class="btn btn-primary btn-block d-block d-md-none">
+            <a href="/b2b-customer-create" class="btn btn-primary btn-block d-block d-md-none">
               {l s='I want to create an account' d='Shop.Istheme'}
             </a>
             
