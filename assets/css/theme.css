@@ -13545,16 +13545,19 @@ label {
   z-index: 2;
 }
 .product-flags__flag {
-  background: #154a93;
-  color: #fff;
-  font-size: 0.875rem;
-  font-weight: 700;
+  background: #92c86e;
+  color: #040404;
+  font-size: 0.8rem;
+  font-weight: 500;
   line-height: 1.35;
   margin-bottom: 10px;
   padding: 5px 10px;
   pointer-events: auto;
   width: -moz-fit-content;
   width: fit-content;
+  margin-left: -3px;
+  margin-top: -3px;
+  border-radius: .1rem;
 }
 .product-flags__flag--online-only {
   margin-top: 0;
