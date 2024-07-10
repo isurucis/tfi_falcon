@@ -18,7 +18,7 @@
               <input
                 type="number"
                 name="qty"
-                id="quantity_wanted"
+                
                 inputmode="numeric"
                 pattern="[0-9]*"
                 {if $product.quantity_wanted}
