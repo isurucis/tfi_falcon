@@ -32,7 +32,7 @@
   <section id="main">
 
     {block name='product_list_header'}
-      <h1 id="js-product-list-header" class="h2">{$listing.label}</h1>
+      <h1 id="js-product-list-header" class="h2 product-list-header-title">{$listing.label}</h1>
     {/block}
 
     {block name='subcategory_list'}

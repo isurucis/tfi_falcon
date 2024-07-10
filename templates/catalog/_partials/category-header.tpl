@@ -24,7 +24,7 @@
  *}
 <div id="js-product-list-header">
     <div class="block-category">
-        <h1 class="h1">
+        <h1 class="h1 product-list-header-title">
             {$category.name}
             {if $listing.pagination.items_shown_from !== 1}
                 {l s='- page' d='Shop.Theme.Catalog'} {$listing.pagination.current_page}
