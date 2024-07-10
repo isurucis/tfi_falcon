@@ -3,15 +3,19 @@
     {if $product.add_to_cart_url && ($product.quantity > 0 || $product.allow_oosp) && !$configuration.is_catalog}
         <form class="product-miniature__form" action="{$product.add_to_cart_url}" method="post">
           <input type="hidden" name="id_product" value="{$product.id}">
-          <!-- Quantity Input Box -->
-          <input
-            type="number"
-            name="qty"
-            value="{if isset($product.product_attribute_minimal_quantity) && $product.product_attribute_minimal_quantity != ''}{$product.product_attribute_minimal_quantity}{else}{$product.minimal_quantity}{/if}"
-            min="{if isset($product.product_attribute_minimal_quantity) && $product.product_attribute_minimal_quantity != ''}{$product.product_attribute_minimal_quantity}{else}{$product.minimal_quantity}{/if}"
-            class="form-control input-qty"
-            style="width: 60px; display: inline-block; margin-right: 10px;"
-          >
+          <!-- Quantity Input Group -->
+          <div class="input-group quantity-input-group" style="width: auto; display: inline-flex; align-items: center;">
+              <button type="button" class="btn btn-outline-secondary quantity-button quantity-decrement" style="margin-right: 5px;">-</button>
+              <input
+                type="number"
+                name="qty"
+                value="{if isset($product.product_attribute_minimal_quantity) && $product.product_attribute_minimal_quantity != ''}{$product.product_attribute_minimal_quantity}{else}{$product.minimal_quantity}{/if}"
+                min="{if isset($product.product_attribute_minimal_quantity) && $product.product_attribute_minimal_quantity != ''}{$product.product_attribute_minimal_quantity}{else}{$product.minimal_quantity}{/if}"
+                class="form-control input-qty"
+                style="width: 60px; text-align: center;"
+              >
+              <button type="button" class="btn btn-outline-secondary quantity-button quantity-increment" style="margin-left: 5px;">+</button>
+          </div>
           <!-- Add to Cart Button -->
           <button
             class="btn btn-primary btn-block add-to-cart"
@@ -20,7 +24,7 @@
             {if !$product.add_to_cart_url}
                 disabled
             {/if}
-            style="display: inline-block;"
+            style="display: inline-block; margin-left: 10px;"
           >
             {l s='Add to cart' d='Shop.Theme.Actions'}
           </button>
