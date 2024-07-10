@@ -14614,3 +14614,14 @@ img.lazyload:not(.loaded) {
 .thumbimage3rounded {
   border-radius: 0.4rem 0.4rem 0.4rem 0 !important;
 }
+
+
+.js-product-list-header {
+  font-size: 1.4rem;
+  background-color: #cdd4df;
+  padding: 10px 10px 10px 30px;
+  border-radius: 5px;
+  font-weight: 500;
+  font-family: roboto;
+  color: #496891;
+}
