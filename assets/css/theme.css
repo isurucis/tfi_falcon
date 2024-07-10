@@ -14557,6 +14557,25 @@ img.lazyload:not(.loaded) {
 
 }
 
+.product-miniature__countryflag_wrapper {
+  padding: 4px 5px 3px 30px;
+  background-color: #fff;
+  color: #FFFFFF;
+  width: 83px;
+  border-radius: 0px 0px 50px 0px;
+  font-style: italic;
+  font-size: .8rem;
+  float: left;
+  margin-left: -30px;
+  border-right: solid 1px #2376c7;
+  border-bottom: solid 1px #2376c7;
+  border-left: solid 1px #2376c7;
+}
+
+.product-miniature__countryflag {
+  border: solid 1px #cacaca;
+}
+
 .product-miniature__outofstock {
   padding: 5px 5px 5px 10px;
   background-color: #b5b5b5;
