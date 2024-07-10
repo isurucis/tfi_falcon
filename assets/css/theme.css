@@ -14616,7 +14616,7 @@ img.lazyload:not(.loaded) {
 }
 
 
-.js-product-list-header {
+#js-product-list-header {
   font-size: 1.4rem;
   background-color: #cdd4df;
   padding: 10px 10px 10px 30px;
