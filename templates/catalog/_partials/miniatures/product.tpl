@@ -41,9 +41,27 @@
 
       <!-- {include file='catalog/_partials/miniatures/_partials/product-prices.tpl'} -->
 
+      <!--
       {block name='product_form'}
         {include file='catalog/_partials/miniatures/_partials/product-form.tpl'}
       {/block}
+      -->
+      <div class="product-miniature js-product-miniature" data-id-product="{{ product.id }}" data-id-product-attribute="{{ product.id_product_attribute }}">
+          <div class="thumbnail-container">
+              <!-- Existing product image and details code -->
+      
+              <!-- Add to Cart Section -->
+              <div class="add-to-cart">
+                  <input type="text" id="quantity_{{ product.id }}" name="quantity" value="1" class="form-control quantity-input" />
+                  <button type="button" class="btn btn-primary add-to-cart-button" onclick="addToCart('{{ product.id }}', document.getElementById('quantity_{{ product.id }}').value)">
+                      Add to Cart
+                  </button>
+              </div>
+      
+              <!-- Existing product details and price code -->
+          </div>
+      </div>
+
 
     </article>
   </div>
