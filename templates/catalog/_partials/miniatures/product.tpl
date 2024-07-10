@@ -39,7 +39,7 @@
 
       {include file='catalog/_partials/miniatures/_partials/product-title.tpl'}
 
-      {include file='catalog/_partials/miniatures/_partials/product-prices.tpl'}
+      <!-- {include file='catalog/_partials/miniatures/_partials/product-prices.tpl'} -->
 
       {block name='product_form'}
         {include file='catalog/_partials/miniatures/_partials/product-form.tpl'}
