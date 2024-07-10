@@ -38,3 +38,44 @@
     {/if}
 </div>
 {/if}
+
+<script>
+document.addEventListener('DOMContentLoaded', function () {
+    document.querySelectorAll('.quantity-button').forEach(function(button) {
+        button.addEventListener('click', function(event) {
+            var input = button.parentElement.querySelector('.input-qty');
+            var currentValue = parseInt(input.value);
+            var minValue = parseInt(input.getAttribute('min'));
+            
+            if (button.classList.contains('quantity-decrement')) {
+                if (currentValue > minValue) {
+                    input.value = currentValue - 1;
+                }
+            } else if (button.classList.contains('quantity-increment')) {
+                input.value = currentValue + 1;
+            }
+        });
+    });
+});
+</script>
+
+<style>
+.quantity-input-group {
+    display: inline-flex;
+    align-items: center;
+}
+
+.quantity-button {
+    padding: 5px 10px;
+    cursor: pointer;
+}
+
+.input-qty {
+    width: 60px;
+    text-align: center;
+}
+
+.add-to-cart {
+    margin-left: 10px;
+}
+</style>
