@@ -46,7 +46,7 @@
     {/foreach}
   </script>
 {/if}
-
+{if isset($vars) && $vars|@count}
 <script>
 //Qty Pluse
 document.addEventListener('DOMContentLoaded', function () {
@@ -68,3 +68,4 @@ document.addEventListener('DOMContentLoaded', function () {
     });
 });
 </script>
+{/if}
