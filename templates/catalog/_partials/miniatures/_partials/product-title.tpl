@@ -14,22 +14,22 @@
     {/if}
     
 
-    {foreach from=$product.features item=feature name=features}
+   
       
       <li class="product-miniature__countryflag_wrapper">
       <img class="product-miniature__countryflag" 
 
-      {if $feature.id_feature == 5}
-      src="https://flagcdn.com/{$feature.value|escape:'htmlall':'UTF-8'}.svg"
+      {if isset($product->features[5])}
+      src="https://flagcdn.com/{$product->features[5].value|escape:'htmlall':'UTF-8'}.svg"
       {/if}
-      {if $feature.id_feature == 9}
-      title="{$feature.value|escape:'htmlall':'UTF-8'}"
+      
+      {if isset($product->features[9])}
+      title="{$product->features[9].value|escape:'htmlall':'UTF-8'}"
       {/if}
       width="30">
       </li>
       
-    {foreachelse}
-    {/foreach}
+    
     <div style="clear: both;"></div>
   </div>
 
