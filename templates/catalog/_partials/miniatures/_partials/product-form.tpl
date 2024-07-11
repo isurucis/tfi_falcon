@@ -49,10 +49,10 @@ document.addEventListener('DOMContentLoaded', function () {
             
             if (button.classList.contains('quantity-decrement')) {
                 if (currentValue > minValue) {
-                    input.value = currentValue - 1;
+                    input.value = currentValue - minValue;
                 }
             } else if (button.classList.contains('quantity-increment')) {
-                input.value = currentValue + 1;
+                input.value = currentValue + minValue;
             }
         });
     });
