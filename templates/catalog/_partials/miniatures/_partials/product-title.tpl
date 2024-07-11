@@ -15,11 +15,19 @@
     
 
     {foreach from=$product.features item=feature name=features}
-      {if $feature.id_feature == 5}
+      
       <li class="product-miniature__countryflag_wrapper">
-      <img class="product-miniature__countryflag" src="https://flagcdn.com/{$feature.value|escape:'htmlall':'UTF-8'}.svg" width="30">
-      </li>
+      <img class="product-miniature__countryflag" 
+
+      {if $feature.id_feature == 5}
+      src="https://flagcdn.com/{$feature.value|escape:'htmlall':'UTF-8'}.svg"
       {/if}
+      {if $feature.id_feature == 9}
+      title="{$feature.value|escape:'htmlall':'UTF-8'}"
+      {/if}
+      width="30">
+      </li>
+      
     {foreachelse}
     {/foreach}
     <div style="clear: both;"></div>
