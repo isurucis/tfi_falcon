@@ -13,18 +13,30 @@
         {/if}
     {/if}
     
+      {foreach from=$product.features item=feature name=features}
+        {if $feature.id_feature == 5}
 
+        {$country_code = $feature.value}
+        
+        {/if}
+        {if $feature.id_feature == 9}
+
+        {$country_name = $feature.value}
+        
+        {/if}
+      {foreachelse}
+      {/foreach}
    
       
       <li class="product-miniature__countryflag_wrapper">
       <img class="product-miniature__countryflag" 
 
-      {if isset($product->features[4])}
-      src="https://flagcdn.com/{$product->features[4].value|escape:'htmlall':'UTF-8'}.svg"
+      {if isset($country_code)}
+      src="https://flagcdn.com/{$country_code|escape:'htmlall':'UTF-8'}.svg"
       {/if}
       
-      {if isset($product->features[8])}
-      title="{$product->features[8].value|escape:'htmlall':'UTF-8'}"
+      {if isset($country_name)}
+      title="{$country_name|escape:'htmlall':'UTF-8'}"
       {/if}
       width="30">
       </li>
