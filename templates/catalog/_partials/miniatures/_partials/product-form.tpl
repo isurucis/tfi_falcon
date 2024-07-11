@@ -43,16 +43,17 @@
 document.addEventListener('DOMContentLoaded', function () {
     document.querySelectorAll('.quantity-button').forEach(function(button) {
         button.addEventListener('click', function(event) {
+            event.preventDefault();  // Prevent default action
             var input = button.parentElement.querySelector('.input-qty');
             var currentValue = parseInt(input.value);
             var minValue = parseInt(input.getAttribute('min'));
             
             if (button.classList.contains('quantity-decrement')) {
                 if (currentValue > minValue) {
-                    input.value = currentValue - minValue;
+                    input.value = currentValue - 1;
                 }
             } else if (button.classList.contains('quantity-increment')) {
-                input.value = currentValue + minValue;
+                input.value = currentValue + 1;
             }
         });
     });
