@@ -41,22 +41,26 @@
 
 <script>
 document.addEventListener('DOMContentLoaded', function () {
-    document.body.addEventListener('click', function(event) {
-        if (event.target.classList.contains('quantity-button')) {
-            var button = event.target;
-            var input = button.parentElement.querySelector('.input-qty');
-            var currentValue = parseInt(input.value);
-            var minValue = parseInt(input.getAttribute('min'));
-
-            if (button.classList.contains('quantity-decrement')) {
-                if (currentValue > minValue) {
-                    input.value = currentValue - 1;
-                }
-            } else if (button.classList.contains('quantity-increment')) {
-                input.value = currentValue + 1;
-            }
+  document.body.addEventListener('click', function(event) {
+    if (event.target.classList.contains('quantity-button')) {
+      // Use event delegation to find the closest product element
+      var productElement = event.target.closest('.product-miniature');
+      if (productElement) {
+        var button = event.target;
+        var input = productElement.querySelector('.input-qty');  // Search within the product element
+        var currentValue = parseInt(input.value);
+        var minValue = parseInt(input.getAttribute('min'));
+        
+        if (button.classList.contains('quantity-decrement')) {
+          if (currentValue > minValue) {
+            input.value = currentValue - 1;
+          }
+        } else if (button.classList.contains('quantity-increment')) {
+          input.value = currentValue + 1;
         }
-    });
+      }
+    }
+  });
 });
 </script>
 
