@@ -48,6 +48,7 @@
 {/if}
 
 <script>
+//Qty Pluse
 document.addEventListener('DOMContentLoaded', function () {
     document.body.addEventListener('click', function(event) {
         if (event.target.classList.contains('quantity-button')) {
