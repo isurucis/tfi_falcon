@@ -19,12 +19,12 @@
       <li class="product-miniature__countryflag_wrapper">
       <img class="product-miniature__countryflag" 
 
-      {if isset($product->features[5])}
-      src="https://flagcdn.com/{$product->features[5].value|escape:'htmlall':'UTF-8'}.svg"
+      {if isset($product->features[4])}
+      src="https://flagcdn.com/{$product->features[4].value|escape:'htmlall':'UTF-8'}.svg"
       {/if}
       
-      {if isset($product->features[9])}
-      title="{$product->features[9].value|escape:'htmlall':'UTF-8'}"
+      {if isset($product->features[8])}
+      title="{$product->features[8].value|escape:'htmlall':'UTF-8'}"
       {/if}
       width="30">
       </li>
