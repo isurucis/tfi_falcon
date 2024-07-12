@@ -32,6 +32,7 @@
       {foreachelse}
     {/foreach}
 
+    <div class="miniature__countryflag_wrapper">
     <img class="product-miniature__countryflag" 
       {if isset($country_code)}
       src="https://flagcdn.com/{$country_code|escape:'htmlall':'UTF-8'}.svg"
@@ -41,7 +42,7 @@
       title="{$country_name|escape:'htmlall':'UTF-8'}"
       {/if}
     width="30">
-
+    </div>
 
     <div style="clear: both;"></div>
   </div>
