@@ -13519,6 +13519,40 @@ label {
   float: right;
 }
 
+.product-miniature__pricing_price {
+  color: #154a93;
+  font-size: 1.125rem;
+  font-weight: 700;
+}
+
+.product-miniature__pricing_old_price {
+  color: #154a93;
+  font-size: 1rem;
+  font-weight: 500;
+}
+
+.product-miniature__pricing_before_price {
+  color: #154a93;
+  font-size: 1rem;
+  font-weight: 400;
+}
+
+.product-miniature__pricing_unit_price {
+  color: #154a93;
+  font-size: .9rem;
+  font-weight: 400;
+}
+
+.product-miniature__pricing_weight {
+  color: #154a93;
+  font-size: .8rem;
+  font-weight: 400;
+}
+
+
+
+
+
 .product-miniature__quantity {
   float: left;
 }
