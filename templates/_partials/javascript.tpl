@@ -56,13 +56,19 @@ document.addEventListener('DOMContentLoaded', function () {
             var input = button.parentElement.querySelector('.input-qty');
             var currentValue = parseInt(input.value);
             var minValue = parseInt(input.getAttribute('min'));
+            if(minValue<1){
+              i=1
+            }else{
+              i=minValue
+            }
 
             if (button.classList.contains('quantity-decrement')) {
                 if (currentValue > minValue) {
-                    input.value = currentValue - 1;
+                    
+                    input.value = currentValue - i;
                 }
             } else if (button.classList.contains('quantity-increment')) {
-                input.value = currentValue + 1;
+                input.value = currentValue + i;
             }
         }
     });
