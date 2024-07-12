@@ -28,18 +28,7 @@
       {/foreach}
    
       
-      <li class="product-miniature__countryflag_wrapper">
-      <img class="product-miniature__countryflag" 
-
-      {if isset($country_code)}
-      src="https://flagcdn.com/{$country_code|escape:'htmlall':'UTF-8'}.svg"
-      {/if}
       
-      {if isset($country_name)}
-      title="{$country_name|escape:'htmlall':'UTF-8'}"
-      {/if}
-      width="30">
-      </li>
       
     
     <div style="clear: both;"></div>
