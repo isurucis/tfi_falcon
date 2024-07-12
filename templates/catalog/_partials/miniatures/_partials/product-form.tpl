@@ -30,7 +30,7 @@
             {if !$product.add_to_cart_url}
                 disabled
             {/if}
-            style="display: inline-block; margin-left: 10px;"
+            style="display: inline-block; "
           >
             {l s='Add to cart' d='Shop.Theme.Actions'}
           </button>
