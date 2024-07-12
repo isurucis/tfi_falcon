@@ -21,7 +21,19 @@
 
       {include file='catalog/_partials/product-flags.tpl'}
     </a>
+    {foreach from=$product.features item=feature name=features}
+        {if $feature.id_feature == 5}
 
+        {$country_code = $feature.value}
+        
+        {/if}
+        {if $feature.id_feature == 9}
+
+        {$country_name = $feature.value}
+        
+        {/if}
+      {foreachelse}
+      {/foreach}
     <a class="quick-view product-miniature__functional-btn btn btn-light shadow rounded-circle" href="#" data-link-action="quickview">
       {$country_name|escape:'htmlall':'UTF-8'}"
       
