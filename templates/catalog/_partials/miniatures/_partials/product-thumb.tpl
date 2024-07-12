@@ -34,7 +34,7 @@
         {/if}
       {foreachelse}
       {/foreach}
-    <a class="quick-view product-miniature__functional-btn btn btn-light shadow rounded-circle" href="#" data-link-action="quickview">
+    <a class="product-miniature__functional-btn btn btn-light shadow rounded-circle" href="#" data-link-action="quickview">
        <img class="product-miniature__countryflag" 
 
       {if isset($country_code)}
