@@ -24,7 +24,7 @@
 
           <!-- Add to Cart Button -->
           <button
-            class="btn btn-primary btn-block add-to-cart"
+            class="btn btn-primary btn-block add-to-cart2"
             data-button-action="add-to-cart"
             type="submit"
             {if !$product.add_to_cart_url}
