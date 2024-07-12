@@ -12,25 +12,7 @@
     <p class="product-miniature__outofstock mb-2">Out of stock</p>
         {/if}
     {/if}
-    
-      {foreach from=$product.features item=feature name=features}
-        {if $feature.id_feature == 5}
 
-        {$country_code = $feature.value}
-        
-        {/if}
-        {if $feature.id_feature == 9}
-
-        {$country_name = $feature.value}
-        
-        {/if}
-      {foreachelse}
-      {/foreach}
-   
-      
-      
-      
-    
     <div style="clear: both;"></div>
   </div>
 
