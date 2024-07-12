@@ -7,9 +7,11 @@
   <div>
     
         {if $product.quantity > 0}
-          <p class="product-miniature__instock mb-2">Available stock: 
-          {if $customer.is_logged}<span class="product-miniature__instock-count mb-2">{$product.quantity}</span>{/if}
-          </p>
+          {if $customer.is_logged}
+            <p class="product-miniature__instock mb-2">Available stock: <span class="product-miniature__instock-count mb-2">{$product.quantity}</span></p>
+          {else}
+            <p class="product-miniature__instock mb-2">Stocks Available</p>
+          {/if}
         {else}
           <p class="product-miniature__outofstock mb-2">Out of stock</p>
         {/if}
@@ -29,19 +31,16 @@
         {/if}
       {foreachelse}
     {/foreach}
-    <a class="product-miniature__functional-btn btn btn-light shadow rounded-circle" href="#" data-link-action="quickview">
-       <img class="product-miniature__countryflag" 
 
+    <img class="product-miniature__countryflag" 
       {if isset($country_code)}
       src="https://flagcdn.com/{$country_code|escape:'htmlall':'UTF-8'}.svg"
       {/if}
-      
+    
       {if isset($country_name)}
       title="{$country_name|escape:'htmlall':'UTF-8'}"
       {/if}
-      width="30">
-      
-    </a>
+    width="30">
 
 
     <div style="clear: both;"></div>
