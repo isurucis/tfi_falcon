@@ -23,16 +23,8 @@
     </a>
 
     <a class="quick-view product-miniature__functional-btn btn btn-light shadow rounded-circle" href="#" data-link-action="quickview">
-      <img class="product-miniature__countryflag" 
-
-      {if isset($country_code)}
-      src="https://flagcdn.com/{$country_code|escape:'htmlall':'UTF-8'}.svg"
-      {/if}
+      {$country_name|escape:'htmlall':'UTF-8'}"
       
-      {if isset($country_name)}
-      title="{$country_name|escape:'htmlall':'UTF-8'}"
-      {/if}
-      width="30">
     </a>
 
 
