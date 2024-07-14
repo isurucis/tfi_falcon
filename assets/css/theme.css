@@ -14670,34 +14670,34 @@ img.lazyload:not(.loaded) {
 
 
 /* B2B Registration Page Styles : Start */
-.slide-wrapper {
-  width: 2912px;
+.registration_slide-wrapper {
+  width: 3330px;
   -webkit-animation: slide 18s ease infinite;
 }
 
-.slide {
+.registration_slide {
   float: left;
-  height: 510px;
-  width: 728px;
+  height: 600px;
+  width: 370px;
 }
 
-.slide:nth-child(1) {
+.registration_slide:nth-child(1) {
   background: #D93B65;
 }
 
-.slide:nth-child(2) {
+.registration_slide:nth-child(2) {
   background: #037E8C;
 }
 
-.slide:nth-child(3) {
+.registration_slide:nth-child(3) {
   background: #36BF66;
 }
 
-.slide:nth-child(4) {
+.registration_slide:nth-child(4) {
   background: #D9D055;
 }
 
-.slide-number {
+.registration_slide-number {
   color: #000;
   text-align: center;
   font-size: 10em;
@@ -14705,11 +14705,11 @@ img.lazyload:not(.loaded) {
 
 @-webkit-keyframes slide {
   20% {margin-left: 0px;}
-  30% {margin-left: -728px;}
-  50% {margin-left: -728px;}
-  60% {margin-left: -1456px;}
-  70% {margin-left: -1456px;}
-  80% {margin-left: -2184px;}
-  90% {margin-left: -2184px;}
+  30% {margin-left: -370px;}
+  50% {margin-left: -370px;}
+  60% {margin-left: -740px;}
+  70% {margin-left: -740px;}
+  80% {margin-left: -1110px;}
+  90% {margin-left: -1110px;}
 }
 /* B2B Registration Page Styles : End */
