@@ -14670,15 +14670,11 @@ img.lazyload:not(.loaded) {
 
 
 /* B2B Registration Page Styles : Start */
-
-body {
-  font-family: Helvetica, sans-serif;
-  padding: 5%;
-
-}
-#registration_slideshow {
+#registration_content {
   float: left;
 }
+
+
 
 #registration_slideshow {
   text-align: center;
