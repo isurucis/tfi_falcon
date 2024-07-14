@@ -35,11 +35,11 @@
             inputmode="numeric"
             pattern="[0-9]*"
             {if $product.quantity_wanted}
-              value="{$product.quantity_wanted}"
+              value="{$product.minimal_quantity}"
               min="{$product.minimal_quantity}"
             {else}
-              value="1"
-              min="1"
+              value="{$product.minimal_quantity}"
+              min="{$product.minimal_quantity}"
             {/if}
             class="input-group input-touchspin"
             aria-label="{l s='Quantity' d='Shop.Theme.Actions'}"
