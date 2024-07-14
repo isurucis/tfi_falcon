@@ -55,8 +55,7 @@ document.addEventListener('DOMContentLoaded', function () {
             var button = event.target;
             var input = button.parentElement.querySelector('.input-qty');
             var currentValue = parseInt(input.value);
-            var minValue = parseInt($input.attr('min'));
-            console.log(minValue);
+            var minValue = parseInt(input.getAttribute('min'));
             if(minValue<1){
               i=1
             }else{
