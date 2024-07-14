@@ -14670,12 +14670,6 @@ img.lazyload:not(.loaded) {
 
 
 /* B2B Registration Page Styles : Start */
-#registration_content {
-  float: left;
-}
-
-
-
 #registration_slideshow {
   text-align: center;
   overflow: hidden;
