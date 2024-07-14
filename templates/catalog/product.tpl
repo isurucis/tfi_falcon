@@ -121,7 +121,9 @@
               {/block}
             {/if}
 
-            
+            {block name='product_form'}
+              {include file='catalog/_partials/miniatures/_partials/product-form.tpl'}
+            {/block} 
             
             {if $customer.is_logged}
             <div class="product-actions js-product-actions">
