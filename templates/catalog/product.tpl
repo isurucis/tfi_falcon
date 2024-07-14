@@ -98,6 +98,17 @@
             {block name='product_prices'}
               {include file='catalog/_partials/product-prices.tpl'}
             {/block}
+            {if $product.quantity > 0}
+              <p>Available stock: {$product.quantity}</p>
+            {else}
+              <p>Out of stock</p>
+            {/if}
+          {else}
+             {if $product.quantity > 0}
+              <p>Stock Available</p>
+            {else}
+              <p>Out of stock</p>
+            {/if}
           {/if}
           <div class="product-information ">
             {block name='product_description_short'}
@@ -110,11 +121,7 @@
               {/block}
             {/if}
 
-            {if $product.quantity > 0}
-              <p>Available stock: {$product.quantity}</p>
-            {else}
-              <p>Out of stock</p>
-            {/if}
+            
             
             {if $customer.is_logged}
             <div class="product-actions js-product-actions">
