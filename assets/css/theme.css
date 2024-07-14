@@ -14670,15 +14670,6 @@ img.lazyload:not(.loaded) {
 
 
 /* B2B Registration Page Styles : Start */
-#registration_slideshow {
-  text-align: center;
-  overflow: hidden;
-  height: 600px;
-  width: 370px;
-  margin: 0 auto;
-  float: left;
-}
-
 .slide-wrapper {
   width: 2912px;
   -webkit-animation: slide 18s ease infinite;
@@ -14721,6 +14712,4 @@ img.lazyload:not(.loaded) {
   80% {margin-left: -2184px;}
   90% {margin-left: -2184px;}
 }
-
-
 /* B2B Registration Page Styles : End */
