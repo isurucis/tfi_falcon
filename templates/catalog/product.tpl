@@ -64,35 +64,25 @@
         <div class="col-md-7 mb-4">
           {block name='page_header_container'}
             {block name='page_header'}
-              <h1 class="h1">{block name='page_title'}{$product.name}{/block}</h1>
+              <h1 class="h1 pdp_productname">{block name='page_title'}{$product.name}{/block}</h1>
             {/block}
           {/block}
           {foreach from=$product.features item=feature name=features}
             {if $feature.id_feature == 3}
-            <h2 class="h2">
-            {$feature.value|escape:'htmlall':'UTF-8'}
-            </h2>
+              <h2 class="h2 pdp_scientificname">{$feature.value|escape:'htmlall':'UTF-8'}</h2>
             {/if}
             {if $feature.id_feature == 4}
-            <h4 class="h4  product-title">
-            {$feature.value|escape:'htmlall':'UTF-8'}
-            </h4>
+              <h4 class="h4 pdp_productsize product-title">{$feature.value|escape:'htmlall':'UTF-8'}</h4>
             {/if}
             {if $feature.id_feature == 5}
-            <div>
-            <img src="https://flagcdn.com/{$feature.value|escape:'htmlall':'UTF-8'}.svg" width="30">
-            </div>
+              <div><img src="https://flagcdn.com/{$feature.value|escape:'htmlall':'UTF-8'}.svg" class="product-miniature__countryflag" width="30"></div>
             {/if}
             {if $feature.id_feature == 9}
-            <div>
-            {$feature.value|escape:'htmlall':'UTF-8'}
-            </div>
+              <div>{$feature.value|escape:'htmlall':'UTF-8'}</div>
             {/if}
           {foreachelse}
           {/foreach}
-          <div>
-          {$product->available_now}
-          </div>
+          <div>{$product->available_now}</div>
 
           {if $customer.is_logged}
             {block name='product_prices'}

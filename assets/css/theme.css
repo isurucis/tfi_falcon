@@ -14713,3 +14713,39 @@ img.lazyload:not(.loaded) {
   90% {margin-left: -1110px;}
 }
 /* B2B Registration Page Styles : End */
+
+
+.pdp_productname {
+  font-family: roboto;
+  display: block;
+  font-size: 30px;
+  font-weight: 500;
+  color: #004f7d;
+}
+
+.pdp_scientificname {
+  font-family: roboto;
+  display: block;
+  font-size: 16px;
+  font-weight: 500;
+  color: #3c3c3c;
+  font-style: italic;
+}
+
+.pdp_productsize {
+  font-family: roboto;
+  display: block;
+  font-size: 16px;
+  font-weight: 500;
+  color: #3c3c3c;
+  font-style: normal;
+}
+
+
+
+
+
+
+
+
+
