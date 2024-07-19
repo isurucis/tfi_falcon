@@ -156,9 +156,11 @@
                     {include file='catalog/_partials/product-discounts.tpl'}
                   {/block}
 
-                  {block name='product_add_to_cart'}
-                    {include file='catalog/_partials/product-add-to-cart.tpl'}
-                  {/block}
+                  {**
+                  *{block name='product_add_to_cart'}
+                  *  {include file='catalog/_partials/product-add-to-cart.tpl'}
+                  *{/block}
+                  {**
 
                   {block name='product_additional_info'}
                     {include file='catalog/_partials/product-additional-info.tpl'}
