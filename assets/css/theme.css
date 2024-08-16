@@ -13422,9 +13422,17 @@ label {
 .l-header {
   margin: 0 0 20px;
 }
+.header-nav {
+  max-height: 50px;
+  border-bottom: #f6f6f6 2px solid;
+  background-color: #8bc4a2;
+}
+
 .header-top {
-  background: #f7f6f2;
-  border-bottom: 1px solid #e3e3e3;
+  background: #ecfbf5;
+  border-bottom: solid 1px #bddbce;
+  box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.11);
+  color: #232323;
 }
 .header-top__row {
   align-items: center;
