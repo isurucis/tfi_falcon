@@ -30,24 +30,29 @@
 
 {block name='page_content'}
   <div class="card user-form">
-    <div class="row user-form__row">
+    
+    
+    <div class="row user-form__row   wrap-login100">
 
       {block name='login_form_container'}
-        <section class="col-md-6 col-12 user-form__block">
+        <!-- section class="col-md-6 col-12 user-form__block">
           <div class="user-form__content card-body h-100 bg-light d-flex flex-column">
-            <h4 class="text-center h3 mb-3">
+            <h4 class="text-center h3 mb-3" -->
               {l s='Login' d='Shop.Istheme'}
-            </h4>
+            <!-- /h4 -->
             {render file='customer/_partials/login-form.tpl' ui=$login_form}
             {block name='display_after_login_form'}
               {hook h='displayCustomerLoginFormAfter'}
             {/block}
-          </div>
-        </section>
+          <!-- /div>
+        </section -->
 
       {/block}
 
-      <div class="user-form__block  col-md-6 col-12">
+      <div class="login100-more" style="background-image: url('assets/bg-01.jpg');"></div>
+
+      
+      <!-- div class="user-form__block  col-md-6 col-12">
         <div class="user-form__content card-body h-100 d-flex flex-column">
           <h4 class="text-center h3 mb-3">
             {l s='Registration' d='Shop.Istheme'}
@@ -70,12 +75,13 @@
             <a href="/b2b-customer-create" class="btn btn-primary btn-block d-block d-md-none">
               {l s='I want to create an account' d='Shop.Istheme'}
             </a>
-            
           </div>
-
         </div>
-      </div>
+      </div -->
+
     </div>
+
+
   </div>
 {/block}
 {block name='page_footer'}
