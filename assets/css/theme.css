@@ -1793,7 +1793,7 @@ pre code {
 .form-control {
   background-clip: padding-box;
   background-color: #fff;
-  border: 1px solid #ced4da;
+  border: solid 1px #bddbce;
   border-radius: 0.4rem;
   color: #495057;
   display: block;
@@ -1804,6 +1804,7 @@ pre code {
   padding: 0.5rem 1rem;
   transition: border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
   width: 100%;
+  font-family: 'Roboto';
 }
 @media (max-width: 992px) {
   .form-control {
@@ -1821,7 +1822,7 @@ pre code {
 }
 .form-control:focus {
   background-color: #fff;
-  border-color: #80bdff;
+  border-color: #8bc4a2;
   box-shadow: 0 0 0 0.2rem rgba(0, 123, 255, 0.25);
   color: #495057;
   outline: 0;
