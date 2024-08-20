@@ -26,7 +26,8 @@
 <div class="block_newsletter col-lg-8 col-md-12 col-sm-12" id="blockEmailSubscription_{$hookName}">
   <div class="row">
     <!-- p id="block-newsletter-label" class="col-md-5 col-12">{l s='Get our latest news and special sales' d='Shop.Theme.Global'}</p -->
-    <div class="col-md-12 col-12">
+    <div class="col-md-2 col-2">&nbsp;</div>
+    <div class="col-md-8 col-8">
       <p id="block-newsletter-label" class="emailsubscribe-title">{l s='Get our latest news and special sales' d='Shop.Theme.Global'}</p>
       <form action="{$urls.current_url}#blockEmailSubscription_{$hookName}" method="post">
         <div class="row">
@@ -71,5 +72,6 @@
         </div>
       </form>
     </div>
+    <div class="col-md-2 col-2">&nbsp;</div>
   </div>
 </div>
