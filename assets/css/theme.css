@@ -2460,15 +2460,15 @@ fieldset:disabled a.btn {
   box-shadow: 0 0 0 0.2rem rgba(72, 180, 97, 0.5);
 }
 .btn-info {
-  background-color: #17a2b8;
-  border-color: #17a2b8;
+  background-color: #144a92;
+  border-color: #144b95;
   color: #fff;
 }
 .btn-info.focus,
 .btn-info:focus,
 .btn-info:hover {
-  background-color: #138496;
-  border-color: #117a8b;
+  background-color: #1f6ace;
+  border-color: #2b61aa;
   color: #fff;
 }
 .btn-info.focus,
@@ -2477,8 +2477,8 @@ fieldset:disabled a.btn {
 }
 .btn-info.disabled,
 .btn-info:disabled {
-  background-color: #17a2b8;
-  border-color: #17a2b8;
+  background-color: #545b62;
+  border-color: #4e555b;
   color: #fff;
 }
 .btn-info:not(:disabled):not(.disabled).active,
@@ -13439,6 +13439,7 @@ label {
   margin-top: 40px;
   padding-bottom: 10px;
   padding-top: 40px;
+  border-top: solid 1px #d6dde3;
 }
 .l-header {
   margin: 0 0 20px;
@@ -13617,7 +13618,7 @@ label {
   z-index: 2;
 }
 .product-flags__flag {
-  background: #92c86e;
+  background: #51ee92;
   color: #040404;
   font-size: 0.8rem;
   font-weight: 500;
@@ -14615,7 +14616,7 @@ img.lazyload:not(.loaded) {
 
 .product-miniature__instock {
   padding: 5px 5px 5px 10px;
-  background-color: #2376c7;
+  background-color: #134a92;
   color: #FFFFFF;
   width: 175px;
   border-radius: 0px 0px 50px 0px;
@@ -14689,13 +14690,21 @@ img.lazyload:not(.loaded) {
 
 
 .product-list-header-title {
-  font-size: 1.4rem;
+  /*font-size: 1.4rem;
   background-color: #cdd4df;
   padding: 10px 10px 10px 30px;
   border-radius: 5px;
   font-weight: 500;
   font-family: roboto;
-  color: #496891;
+  color: #496891;*/
+
+  font-size: 1.4rem;
+  background-color: #eaeaea;
+  padding: 10px 10px 10px 30px;
+  border-radius: 5px;
+  font-weight: 500;
+  font-family: roboto;
+  color: #144a94;
 }
 
 
@@ -14771,10 +14780,20 @@ img.lazyload:not(.loaded) {
   font-style: normal;
 }
 
+.quick-product-order {
+  background-color: #e0f9ef;
+  padding: 10px;
+  border-radius: 8px;
+  background-image: url('/modules/ps_banner/img/5255abb452d4e36f62693cf6f0d617e6.jpg');
+  background-blend-mode: multiply;
+  min-height: 230px;
+}
 
-
-
-
+.quick-product-order-title {
+  background-color: #ffffff;
+  border-radius: 6px;
+  padding: 5px;
+}
 
 
 
