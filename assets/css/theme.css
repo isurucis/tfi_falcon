@@ -14627,7 +14627,7 @@ img.lazyload:not(.loaded) {
 
 .product-miniature__instock-count {
   padding: 3px;
-  background-color: #2376c7;
+  /* background-color: #2376c7; */
   color: #ffffff;
   font-style: normal;
   font-weight: 600;
@@ -14788,13 +14788,18 @@ img.lazyload:not(.loaded) {
   background-blend-mode: multiply;
   min-height: 230px;
 }
-
+.quick-product-order-description {
+  padding: 5px;
+  min-height: 100px;
+}
 .quick-product-order-title {
   background-color: #ffffff;
   border-radius: 6px;
   padding: 5px;
 }
 
-
+.add-to-cart2 {
+  margin-top: 10px;
+}
 
 
