@@ -14879,10 +14879,10 @@ img.lazyload:not(.loaded) {
 }
 
 .wrap-login100 {
-  background-color: #e0f9ef;
+  background-color: #ffffff;
   padding: 10px;
   border-radius: 8px;
   background-image: url('/modules/ps_imageslider/images/3950213948e4fa7ebf82d439fd00c432ab78b574_login_background.jpg');
   background-blend-mode: multiply;
-  min-height: 230px;
+  min-height: 500px;
 }
