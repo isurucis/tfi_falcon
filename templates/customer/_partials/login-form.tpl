@@ -28,7 +28,7 @@
     {include file='_partials/form-errors.tpl' errors=$errors['']}
   {/block}
 
-  <form id="login-form" action="{block name='login_form_actionurl'}{$action}{/block}" method="post">
+  <form id="login-form" action="{block name='login_form_actionurl'}{$action}{/block}" method="post" class="login100-form validate-form">
 
     <div>
       {block name='login_form_fields'}
