@@ -69,6 +69,7 @@
             <a href="{$urls.pages.register}" class="btn btn-primary btn-block d-block d-md-none">
               {l s='I want to create an account' d='Shop.Istheme'}
             </a>-->
+            <br /><br /><br />
             <a href="/b2b-customer-create" class="d-none d-md-inline-block">
               {l s='I want to create an account' d='Shop.Istheme'}
             </a>
