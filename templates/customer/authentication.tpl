@@ -49,7 +49,7 @@
 
       {/block}
 
-      <div class="login100-more" style="background-image: url('/modules/ps_imageslider/images/20c88b369089f216c8430ab7325d2a5b3414ca2a_registration_slide_01.jpg');"></div>
+      <div class="login100-more" style="background-image: url('/modules/ps_imageslider/images/3950213948e4fa7ebf82d439fd00c432ab78b574_login_background.jpg');"></div>
 
       
       <!-- div class="user-form__block  col-md-6 col-12">
