@@ -29,7 +29,7 @@
 {/block}
 
 {block name='page_content'}
-  <div class="card user-form">
+  <div class="user-form">
     
     
     <div class="row user-form__row   wrap-login100">
@@ -37,9 +37,9 @@
       {block name='login_form_container'}
         <!-- section class="col-md-6 col-12 user-form__block">
           <div class="user-form__content card-body h-100 bg-light d-flex flex-column">
-            <h4 class="text-center h3 mb-3" -->
+            <h4 class="text-center h3 mb-3">
               {l s='Login' d='Shop.Istheme'}
-            <!-- /h4 -->
+            </h4 -->
             {render file='customer/_partials/login-form.tpl' ui=$login_form}
             {block name='display_after_login_form'}
               {hook h='displayCustomerLoginFormAfter'}
