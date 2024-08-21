@@ -56,6 +56,10 @@
             {l s='Sign in' d='Shop.Theme.Actions'}
           </button>
         {/block}
+        <br /><br /><br />
+        <a href="/b2b-customer-create" class="">
+          {l s='I do want to create an account' d='Shop.Istheme'}
+        </a>
       </footer>
     {/block}
 
