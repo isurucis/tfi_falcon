@@ -342,6 +342,10 @@ h6 {
 .h1,
 h1 {
   font-size: 2rem;
+  font-family: roboto;
+  color: #317b5e;
+  font-weight: normal;
+  padding-bottom: 10px;
 }
 @media (max-width: 992px) {
   .h1,
@@ -4219,6 +4223,8 @@ input[type="submit"].btn-block {
   flex: 1 1 auto;
   min-height: 1px;
   padding: 1.25rem;
+  font-family: 'Roboto';
+  font-size: .9rem;
 }
 .card-title {
   margin-bottom: 0.75rem;
@@ -4241,6 +4247,7 @@ input[type="submit"].btn-block {
   border-bottom: 0.0625rem solid rgba(0, 0, 0, 0.125);
   margin-bottom: 0;
   padding: 0.75rem 1.25rem;
+  font-family: 'Roboto';
 }
 .card-header:first-child {
   border-radius: 0.3375rem 0.3375rem 0 0;
@@ -13150,7 +13157,10 @@ input[type="number"]::-webkit-outer-spin-button {
 }
 .label,
 label {
-  color: #212529;
+  /* color: #212529; */
+  color: #1d1d1e;
+  font-family: 'Roboto';
+  font-size: .9rem;
 }
 .swiper-button-custom {
   color: #154a93;
@@ -13898,11 +13908,15 @@ label {
 }
 .customer-links a:focus,
 .customer-links a:hover {
-  color: #154a93;
+  /*color: #154a93;
+  text-decoration: none;*/
+  color: #8bc4a2;
   text-decoration: none;
 }
 .customer-links a i {
-  color: #154a93;
+  /*color: #154a93;
+  font-size: 1.625rem;*/
+  color: #66c18c;
   font-size: 1.625rem;
   margin-right: 5px;
 }
@@ -13917,7 +13931,10 @@ label {
   }
 }
 .customer-links a.active {
-  background: #154a93;
+  /*background: #154a93;
+  color: #fff;
+  font-size: 1rem; */
+  background: #67c28c;
   color: #fff;
   font-size: 1rem;
 }
