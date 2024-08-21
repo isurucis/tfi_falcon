@@ -68,6 +68,8 @@
             {/block}
           {/block}
           <h4>{$product.reference|escape:'htmlall':'UTF-8'}</h4>
+          <h4>{$product.available_for_order|escape:'htmlall':'UTF-8'}</h4>
+
           {foreach from=$product.features item=feature name=features}
             {if $feature.id_feature == 3}
               <h2 class="h2 pdp_scientificname">{$feature.value|escape:'htmlall':'UTF-8'}</h2>
