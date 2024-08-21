@@ -67,6 +67,7 @@
               <h1 class="h1 pdp_productname">{block name='page_title'}{$product.name}{/block}</h1>
             {/block}
           {/block}
+          <h4>{$product.reference|escape:'htmlall':'UTF-8'}</h4>
           {foreach from=$product.features item=feature name=features}
             {if $feature.id_feature == 3}
               <h2 class="h2 pdp_scientificname">{$feature.value|escape:'htmlall':'UTF-8'}</h2>
