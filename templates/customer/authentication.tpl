@@ -71,7 +71,7 @@
             </a>-->
             <br /><br /><br />
             <a href="/b2b-customer-create" class="d-none d-md-inline-block">
-              {l s='I want to create an account' d='Shop.Istheme'}
+              {l s='I will want to create an account' d='Shop.Istheme'}
             </a>
             <a href="/b2b-customer-create" class="btn-block d-block d-md-none">
               {l s='I want to create an account' d='Shop.Istheme'}
