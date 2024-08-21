@@ -2464,15 +2464,21 @@ fieldset:disabled a.btn {
   box-shadow: 0 0 0 0.2rem rgba(72, 180, 97, 0.5);
 }
 .btn-info {
-  background-color: #144a92;
+  /*background-color: #144a92;
   border-color: #144b95;
+  color: #fff;*/
+  background-color: #67c28c;
+  border-color: #55b57d;
   color: #fff;
 }
 .btn-info.focus,
 .btn-info:focus,
 .btn-info:hover {
-  background-color: #1f6ace;
+  /*background-color: #1f6ace;
   border-color: #2b61aa;
+  color: #fff;*/
+  background-color: #4ea472;
+  border-color: #3fa268;
   color: #fff;
 }
 .btn-info.focus,
@@ -13628,7 +13634,7 @@ label {
   z-index: 2;
 }
 .product-flags__flag {
-  background: #51ee92;
+  background: #82dfa8;
   color: #040404;
   font-size: 0.8rem;
   font-weight: 500;
@@ -14634,7 +14640,7 @@ img.lazyload:not(.loaded) {
 
 .product-miniature__instock {
   padding: 5px 5px 5px 10px;
-  background-color: #134a92;
+  background-color: #54b57c;
   color: #FFFFFF;
   width: 175px;
   border-radius: 0px 0px 50px 0px;
