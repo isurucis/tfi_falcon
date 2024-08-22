@@ -4257,11 +4257,11 @@ input[type="submit"].btn-block {
   margin-left: 1.25rem;
 }
 .card-header {
-  background-color: rgba(0, 0, 0, 0.03);
+  /* background-color: rgba(0, 0, 0, 0.03);
   border-bottom: 0.0625rem solid rgba(0, 0, 0, 0.125);
   margin-bottom: 0;
   padding: 0.75rem 1.25rem;
-  font-family: 'Roboto';
+  font-family: 'Roboto'; */
 }
 .card-header:first-child {
   border-radius: 0.3375rem 0.3375rem 0 0;
@@ -14734,7 +14734,7 @@ img.lazyload:not(.loaded) {
   font-size: 1.8rem;
   /* background-color: #eaeaea; */
   padding: 10px 10px 10px 30px;
-  border-radius: 5px;
+  /* border-radius: 5px; */
   font-weight: 500;
   font-family: 'Open Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif;
   color: #154a93;
@@ -14903,7 +14903,7 @@ img.lazyload:not(.loaded) {
   min-height: 500px;
 }
 
-.cart-title {
+.card-title, .cart-title {
   padding-left: 22px;
   padding-top: 10px;
   padding-bottom: 10px;
