@@ -13178,7 +13178,7 @@ label {
   font-size: .9rem;
 }
 .swiper-button-custom {
-  color: #154a93;
+  color: #ffffff; /* #154a93; */
   height: auto;
   margin: 0;
   width: auto;
