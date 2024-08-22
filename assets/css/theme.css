@@ -4204,7 +4204,7 @@ input[type="submit"].btn-block {
   word-wrap: break-word;
   background-clip: border-box;
   background-color: #fff;
-  border: 0.0625rem solid rgba(0, 0, 0, 0.125);
+  /* border: 0.0625rem solid rgba(0, 0, 0, 0.125); */
   border-radius: 0.4rem;
   display: flex;
   flex-direction: column;
@@ -5336,7 +5336,7 @@ a.close.disabled {
   vertical-align: text-top !important;
 }
 .bg-primary {
-  background-color: #154a93 !important;
+  background-color: #55b57d !important;
 }
 a.bg-primary:focus,
 a.bg-primary:hover,
@@ -5472,7 +5472,8 @@ button.bg-dark:hover {
 }
 .rounded,
 .rounded-sm {
-  border-radius: 0.4rem !important;
+  /* border-radius: 0.4rem !important; */
+  border-radius: 0.4rem 0 0.8rem !important;
 }
 .rounded-top {
   border-top-left-radius: 0.4rem !important;
@@ -13652,8 +13653,8 @@ label {
   pointer-events: auto;
   width: -moz-fit-content;
   width: fit-content;
-  margin-left: -3px;
-  margin-top: -3px;
+  margin-left: -11px;  /* -3px; */
+  margin-top: -11px;   /* -3px; */
   border-radius: .1rem;
 }
 .product-flags__flag--online-only {
@@ -14730,13 +14731,14 @@ img.lazyload:not(.loaded) {
   font-family: roboto;
   color: #496891;*/
 
-  font-size: 1.4rem;
-  background-color: #eaeaea;
+  font-size: 1.8rem;
+  /* background-color: #eaeaea; */
   padding: 10px 10px 10px 30px;
   border-radius: 5px;
   font-weight: 500;
-  font-family: roboto;
-  color: #144a94;
+  font-family: 'Open Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  color: #154a93;
+  border-bottom: solid 2px #154a93;
 }
 
 
@@ -14899,4 +14901,19 @@ img.lazyload:not(.loaded) {
   background-image: url('/modules/ps_imageslider/images/3950213948e4fa7ebf82d439fd00c432ab78b574_login_background.jpg');
   background-blend-mode: multiply;
   min-height: 500px;
+}
+
+.cart-title {
+  padding-left: 22px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  font-weight: 300;
+  font-family: 'Open Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  font-size: 1.2rem;
+  line-height: 30px;
+  text-overflow: ellipsis;
+  box-shadow: 0px 3px 1px -2px rgba(0, 0, 0, 0.2), 0px 2px 2px 0px rgba(0, 0, 0, 0.14), 0px 1px 5px 0px rgba(0, 0, 0, 0.12);
+  border-bottom: solid 2px #154a93;
+  color: #154a93;
+  font-size: 1.8rem;
 }
