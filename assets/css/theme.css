@@ -14815,8 +14815,8 @@ img.lazyload:not(.loaded) {
 }
 
 .quick-product-order {
-  /*padding: 10px;
-  border-radius: 8px;*/
+  padding: 0px 1px;
+  /*border-radius: 8px;*/
   /* background-color: #e0f9ef;
   background-image: url('/modules/ps_banner/img/5255abb452d4e36f62693cf6f0d617e6.jpg');
   background-blend-mode: multiply;
