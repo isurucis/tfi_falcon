@@ -14819,7 +14819,13 @@ img.lazyload:not(.loaded) {
   border-radius: 8px;
   /* background-color: #e0f9ef;
   background-image: url('/modules/ps_banner/img/5255abb452d4e36f62693cf6f0d617e6.jpg');
-  background-blend-mode: multiply; */
+  background-blend-mode: multiply;
+  min-height: 230px; */
+}
+.quick-product-order-box {
+  background-color: #e0f9ef;
+  background-image: url('/modules/ps_banner/img/5255abb452d4e36f62693cf6f0d617e6.jpg');
+  background-blend-mode: multiply;
   min-height: 230px;
 }
 .quick-product-order-description {
