@@ -14931,3 +14931,8 @@ img.lazyload:not(.loaded) {
   font-family: 'Roboto';
   font-size: .9rem;
 }
+
+.footer-pay-buttons {
+  margin-top: 10px;
+  padding: 5px;
+}

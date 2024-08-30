@@ -65,7 +65,7 @@
     {/if}
   </div>
 
-  <div>
+  <div class="card footer-pay-buttons">
     <div id="ps_checkout-payment-method-logo-block-container">
       <div id="ps_checkout-payment-method-logo-block-title">
         <img id="ps_checkout-payment-method-logo-block-img" alt="100% secure payments" src="/modules/ps_checkout/views/img/lock_checkout.svg">100% secure payments
