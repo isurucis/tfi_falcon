@@ -67,27 +67,13 @@
               <h1 class="h1 pdp_productname">{block name='page_title'}{$product.name}{/block}</h1>
             {/block}
           {/block}
-          
+          <h4>{$product.reference|escape:'htmlall':'UTF-8'}</h4>
           <h4>{$product.delivery_in_stock|escape:'htmlall':'UTF-8'}</h4>
 
-
-          <div style="display: block">
-            <div style="float: left;" class="product-miniature__sku-label mb-2">
-              SKU : <span class="product-miniature__sku-number mb-2">{$product.reference|escape:'htmlall':'UTF-8'}</span>
-            </div>
-            <div style="float: right;" class="h2 pdp_scientificname">
-              {foreach from=$product.features item=feature name=features}
-                {if $feature.id_feature == 3}
-                  <span>{$feature.value|escape:'htmlall':'UTF-8'}</span>
-                {/if}
-              {foreachelse}
-              {/foreach}
-            </div>
-            <div style="clear: both;"></div>
-          </div>
-
-
           {foreach from=$product.features item=feature name=features}
+            {if $feature.id_feature == 3}
+              <h2 class="h2 pdp_scientificname">{$feature.value|escape:'htmlall':'UTF-8'}</h2>
+            {/if}
             {if $feature.id_feature == 4}
               <h4 class="h4 pdp_productsize product-title">{$feature.value|escape:'htmlall':'UTF-8'}</h4>
             {/if}
@@ -99,10 +85,6 @@
             {/if}
           {foreachelse}
           {/foreach}
-
-
-
-
           <div>{$product->available_now}</div>
 
           {if $customer.is_logged}

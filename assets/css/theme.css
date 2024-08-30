@@ -9158,7 +9158,13 @@ button.swiper-pagination-bullet {
   cursor: pointer !important;
 }
 .font-reset {
-  font-size: inherit !important;
+  /* font-size: inherit !important; */
+  font-size: 1.5rem !important;
+  padding: 3px;
+  background-clip: border-box;
+  background-color: #fff;
+  border: 0.0625rem solid rgba(0, 0, 0, 0.125);
+  border-radius: 0.4rem;
 }
 .line-height-reset {
   line-height: inherit !important;
@@ -14789,11 +14795,21 @@ img.lazyload:not(.loaded) {
 
 
 .pdp_productname {
-  font-family: roboto;
-  display: block;
-  font-size: 30px;
+  font-family: "Roboto";
   font-weight: 500;
-  color: #004f7d;
+  font-size: 2.2rem !important;
+  color: #3a6095 !important;
+  text-transform: none !important;
+  border-bottom: solid 1px #bddbce;
+  padding-bottom: 10px;
+  margin-bottom: 10px;
+  display: block;
+  width: 100%;
+
+
+  /*display: block;
+  font-size: 30px;
+  color: #004f7d;*/
 }
 
 .pdp_scientificname {
@@ -14935,4 +14951,98 @@ img.lazyload:not(.loaded) {
 .footer-pay-buttons {
   margin-top: 10px;
   padding: 5px;
+}
+
+
+
+
+
+.page_title {
+  font-size: 2.2rem !important;
+  color: #3a6095 !important;
+
+  text-transform: none !important;;
+  border-bottom: solid 1px #bddbce;
+  padding-bottom: 10px;
+  margin-bottom: 10px;
+  display: block;
+  width: 100%;
+}
+
+.pdp_scientificname {
+  font-style: italic;
+  font-weight: normal;
+  font-size: 1.2rem;
+  color: #7387a4;
+  text-align: right;
+}
+
+.this-pack-contains {
+  font-size: 1rem;
+  font-weight: 400;
+}
+
+.product-miniature__sku-number {
+  margin-bottom: 2px !important;
+}
+
+
+.current-price-value {
+  color: #365053;
+  font-size: 1.5rem;
+  background-color: white;
+  padding: 10px;
+  border: solid 1px #d7d7d7;
+  border-radius: 8px;
+}
+
+.quick-view-slide-div {
+  background-color: #000;
+  opacity: .8;
+  color: #fff;
+  border-radius: 0 0 10px 10px;
+}
+
+.product-accessories {
+  margin-top: 60px;
+}
+
+.wishlist-button-add {
+  display: none !important;
+}
+
+.contentbox {
+  border: solid 1px #bddbce;
+  border-radius: 10px;
+}
+
+.contentbox1 {
+  border-radius: 10px;
+  background-color: #e5ecee;
+  border: none;
+}
+
+.product-description-details {
+  /*display: none;*/
+}
+
+
+.product-detail-quantity-display {
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  width: 33px;
+  height: 33px;
+  margin-right: 0.65rem;
+  font-size: 1.1rem;
+  color: #fff;
+  vertical-align: middle;
+  background-color: #4eb779;
+  border: 0;
+  border-radius: 50%;
+  text-align: center;
+  padding-top: 8px;
 }
