@@ -26,7 +26,7 @@
 <div class="col-md-3 col-12 mb-lg-4">
 
   <div class="d-flex align-items-center mb-3 justify-content-between position-relative">
-    <span class="h4 mb-0">{l s='Store information' d='Shop.Theme.Global'}</span>
+    <span class="h4 mb-0 footer_sub_menu_header">{l s='Store information' d='Shop.Theme.Global'}</span>
     <a href="#footer_contact_list" class="icon-collapse stretched-link text-reset d-block d-md-none" data-toggle="collapse">
       <i class="material-icons d-block"></i>
     </a>
@@ -64,5 +64,71 @@
         {mailto address=$contact_infos.email encode="javascript"}
     {/if}
   </div>
+
+  <div>
+    <div id="ps_checkout-payment-method-logo-block-container">
+      <div id="ps_checkout-payment-method-logo-block-title">
+        <img id="ps_checkout-payment-method-logo-block-img" alt="100% secure payments" src="/modules/ps_checkout/views/img/lock_checkout.svg">100% secure payments
+      </div>
+      <div id="ps_checkout-payment-method-logos-container">
+        <div class="paypal-mark">
+          <img class="cards-logo" alt="MASTERCARD" src="/modules/ps_checkout/views/img/mastercard.svg"><span class="paypal-button-space"> </span>
+          <img class="cards-logo" alt="VISA" src="/modules/ps_checkout/views/img/visa.svg"><span class="paypal-button-space"> </span>
+          <img class="cards-logo" alt="AMEX" src="/modules/ps_checkout/views/img/amex.svg"><span class="paypal-button-space"> </span>
+          <img class="cards-logo" alt="DISCOVER" src="/modules/ps_checkout/views/img/discover.svg"><span class="paypal-button-space"> </span>
+        </div>
+        <div>
+          <div class="paypal-marks">
+            <style>
+              .paypal-button-text {
+                  font-family: PayPalOpen-Regular, Helvetica, Arial, "Liberation Sans", sans-serif;
+                  font-size: 12px;
+                  vertical-align: middle;
+              }
+
+              .paypal-mark {
+                  display: inline-block;
+                  line-height: 0;
+                  padding: 5px 6.666666666666667px;
+                  background: #fff;
+                  border-radius: 3px;
+                  margin: 4px;
+                  white-space: nowrap;
+                  position: relative;
+                  background: #fff;
+                  border: 1px solid #dcdcdc;
+              }
+
+              .paypal-mark:last-child {
+                  margin-right: none;
+              }
+
+              .paypal-mark img {
+                  height: 20px;
+                  display: inline-block;
+                  vertical-align: middle;
+              }
+
+              .paypal-button-card {
+                  display: inline-block;
+                  margin-right: 5px;
+              }
+
+              .paypal-button-card:last-child {
+                  margin-right: 0px;
+              }
+            </style>
+            <div class="paypal-mark">
+              <img src="https://www.paypalobjects.com/js-sdk-logos/2.2.7/paypal-default.svg" data-v-fbef4ed1="" alt="" role="presentation" class="paypal-logo paypal-logo-paypal paypal-logo-color-default">
+            </div>
+          </div>
+        </div>
+        <div class="paypal-mark"><img class="cards-logo" alt="google_pay" src="/modules/ps_checkout/views/img/google_pay.svg"></div>
+      </div>
+    </div>
+  </div>
+
+
+
 
 </div>
