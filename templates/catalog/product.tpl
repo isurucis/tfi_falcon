@@ -68,7 +68,7 @@
             {/block}
           {/block}
           
-          <h4>{$product.delivery_in_stock|escape:'htmlall':'UTF-8'}</h4>
+          <!-- h4>{$product.delivery_in_stock|escape:'htmlall':'UTF-8'}</h4 -->
 
 
           <div style="display: block">

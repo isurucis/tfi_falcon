@@ -29,7 +29,8 @@
                         '-current'        => $step_is_current,
                         '-reachable'      => $step_is_reachable,
                         '-complete'       => $step_is_complete,
-                        'js-current-step' => $step_is_current
+                        'js-current-step' => $step_is_current,
+                        'contentbox'      => true
                     ]|classnames}"
   >
     <div class="card-header checkout-step__header" id="heading-{$identifier}" data-identifier="{$identifier}">
