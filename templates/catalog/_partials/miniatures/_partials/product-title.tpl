@@ -8,7 +8,7 @@
     
         {if $product.quantity > 0}
           {if $customer.is_logged}
-            <p class="product-miniature__instock mb-2">Available stock: <span class="product-miniature__instock-count mb-2">{$product.quantity}</span></p>
+            <p class="product-miniature__instock mb-2">In stock: <span class="product-miniature__instock-count mb-2">{$product.quantity}</span></p>
           {else}
             <p class="product-miniature__instock mb-2">Stocks Available</p>
           {/if}

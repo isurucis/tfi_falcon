@@ -14654,10 +14654,10 @@ img.lazyload:not(.loaded) {
 }
 
 .product-miniature__instock {
-  padding: 5px 5px 5px 10px;
+  padding: 3px 3px 3px 10px;
   background-color: #54b57c;
   color: #FFFFFF;
-  width: 175px;
+  width: 130px;
   border-radius: 0px 0px 50px 0px;
   font-style: italic;
   font-size: .8rem;

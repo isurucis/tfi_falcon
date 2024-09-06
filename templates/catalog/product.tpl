@@ -110,7 +110,7 @@
               {include file='catalog/_partials/product-prices.tpl'}
             {/block}
             {if $product.quantity > 0}
-              <p>Available stock: {$product.quantity}</p>
+              <p>In stock: {$product.quantity}</p>
             {else}
               <p>Out of stock</p>
             {/if}
