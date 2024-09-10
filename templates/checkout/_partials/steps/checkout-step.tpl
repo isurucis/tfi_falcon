@@ -36,7 +36,7 @@
                         'js-current-step' => $step_is_current                        
                     ]|classnames}"
   >
-    <div class="contentbox">
+
       <div class="card-header checkout-step__header" id="heading-{$identifier}" data-identifier="{$identifier}">
         <p class="checkout-cart-title mb-0 h4">
           <span class="step-number">{$position}.</span>
@@ -54,6 +54,7 @@
       <div class="content checkout-step__content card-body">
         {block name='step_content'}DUMMY STEP CONTENT{/block}
       </div>
-    </div>
-  </section>
+
+
+ </section>
 {/block}
