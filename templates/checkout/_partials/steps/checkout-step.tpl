@@ -26,7 +26,6 @@
 
 {block name='step'}
   <section  id    = "{$identifier}"
-            class = " contentbox "
             class = "{[
                         'checkout-step'   => true,
                         '-current'        => $step_is_current,
@@ -35,22 +34,24 @@
                         'js-current-step' => $step_is_current                        
                     ]|classnames}"
   >
-    <div class="card-header checkout-step__header" id="heading-{$identifier}" data-identifier="{$identifier}">
-      <p class="step-title js-step-title h5 mb-0">
-        <span class="step-number">{$position}.</span>
-        {$title}
-        <i class="material-icons font-reset rtl-no-flip text-success mx-2">&#xE876;</i>
+    <div class="contentbox">
+      <div class="card-header checkout-step__header" id="heading-{$identifier}" data-identifier="{$identifier}">
+        <p class="step-title js-step-title h5 mb-0">
+          <span class="step-number">{$position}.</span>
+          {$title}
+          <i class="material-icons font-reset rtl-no-flip text-success mx-2">&#xE876;</i>
 
-        {if $step_is_reachable}
-          <button class="step-edit text-muted btn btn-sm btn-link float-right py-0" data-toggle="collapse" data-target="#content-{$identifier}" aria-expanded="{if $step_is_current}true{else}false{/if}" aria-controls="content-{$identifier}">
-            <i class="material-icons edit small">mode_edit</i> {l s='Edit' d='Shop.Theme.Actions'}
-          </button>
-        {/if}
-      </p>
-    </div>
+          {if $step_is_reachable}
+            <button class="step-edit text-muted btn btn-sm btn-link float-right py-0" data-toggle="collapse" data-target="#content-{$identifier}" aria-expanded="{if $step_is_current}true{else}false{/if}" aria-controls="content-{$identifier}">
+              <i class="material-icons edit small">mode_edit</i> {l s='Edit' d='Shop.Theme.Actions'}
+            </button>
+          {/if}
+        </p>
+      </div>
 
-    <div class="content checkout-step__content card-body">
-      {block name='step_content'}DUMMY STEP CONTENT{/block}
+      <div class="content checkout-step__content card-body">
+        {block name='step_content'}DUMMY STEP CONTENT{/block}
+      </div>
     </div>
   </section>
 {/block}
