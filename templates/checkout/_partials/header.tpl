@@ -24,32 +24,89 @@
  *}
 
 {block name='header_nav'}
-  <nav class="header-nav py-2">
+  <nav class="header-nav py-1 d-none d-md-block">
     <div class="container">
-      <div class="row">
-        <div class="col text-md-left text-center">
-          <a href="{$urls.base_url}">
-            {images_block webpEnabled=$webpEnabled}
-              <img
-                {if !empty($shop.logo_details)}
-                  src="{$shop.logo_details.src}"
-                  width="{$shop.logo_details.width}"
-                  height="{$shop.logo_details.height}"
-                {else}
-                  src="{$shop.logo}"
-                {/if}
-                class="logo img-fluid"
-                alt="{$shop.name} {l s='logo' d='Shop.Theme.Global'}">
-            {/images_block}
-          </a>
+      <div class="row align-items-center">
+
+        <div id="_desktop_contact_link" class="col">
+          <div id="contact-link">
+            {if $contact_infos.phone}
+              {* [1][/1] is for a HTML tag. *}
+              {l
+                s='Call us: [1]%phone%[/1]'
+                sprintf=[
+                  '[1]' => "<a href='tel:{$contact_infos['phone']|replace:' ':''}'>",
+                  '[/1]' => '</a>',
+                  '%phone%' => $contact_infos.phone
+                ]
+                d='Shop.Theme.Global'
+              }
+            {else}
+              <a href="{$urls.pages.contact}">{l s='Contact us' d='Shop.Theme.Global'}</a>
+            {/if}
+          </div>
         </div>
-        <div class="col d-none d-md-block text-right">
-          {hook h='displayNav1'}
-        </div>
+
       </div>
+
     </div>
   </nav>
+
+
+  <div class="js-header-top-wrapper">
+      <div class="header-top js-header-top">
+          <div class="header-top__content pt-md-3 pb-md-0 py-2">
+
+              <div class="container">
+
+                  <div class="row header-top__row">
+                      <div class="col flex-grow-0 header-top__block header-top__block--menu-toggle d-block d-md-none">
+                          <a
+                                  class="header-top__link"
+                                  rel="nofollow"
+                                  href="#"
+                                  data-toggle="modal"
+                                  data-target="#mobile_top_menu_wrapper"
+                          >
+                              <div class="header-top__icon-container">
+                                  <span class="header-top__icon material-icons">menu</span>
+                              </div>
+                          </a>
+                      </div>
+
+                      <div class="col-md-4 col header-top__block header-top__block--logo">
+                          <a href="{$urls.pages.index}">
+                              {images_block webpEnabled=$webpEnabled}
+                                  <img
+                                          {if !empty($shop.logo_details)}
+                                              src="{$shop.logo_details.src}"
+                                              width="{$shop.logo_details.width}"
+                                              height="{$shop.logo_details.height}"
+                                          {else}
+                                              src="{$shop.logo}"
+                                          {/if}
+                                          class="logo img-fluid"
+                                          alt="{$shop.name} {l s='logo' d='Shop.Theme.Global'}">
+                              {/images_block}
+                          </a>
+                      </div>
+
+                      {hook h='displayTop'}
+                  </div>
+
+              </div>
+          </div>
+      </div>
+  </div>
+
+
+
+
+
+
 {/block}
+
+
 
 {block name='header_top'}
 {/block}
