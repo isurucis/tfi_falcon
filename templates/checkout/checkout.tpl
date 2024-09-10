@@ -33,7 +33,7 @@
   <section id="content">
     <div class="row">
       <div class="cart-grid-body col-12 col-lg-8 mb-4">
-        <div class="card">
+        <div class="card11">
           {block name='checkout_process'}
             {render file='checkout/checkout-process.tpl' ui=$checkout_process}
           {/block}

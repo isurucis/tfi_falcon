@@ -15014,6 +15014,9 @@ img.lazyload:not(.loaded) {
 .contentbox {
   border: solid 1px #bddbce;
   border-radius: 10px;
+  margin-bottom: 8px;
+  padding: 12px;
+  font-family: 'Roboto';
 }
 
 .contentbox1 {
