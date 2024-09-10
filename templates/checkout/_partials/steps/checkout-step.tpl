@@ -21,16 +21,18 @@
  * @author    PrestaShop SA and Contributors <contact@prestashop.com>
  * @copyright Since 2007 PrestaShop SA and Contributors
  * @license   https://opensource.org/licenses/AFL-3.0 Academic Free License 3.0 (AFL-3.0)
+ * 'contentbox'      => true  // Ajanthan
  *}
+
 {block name='step'}
   <section  id    = "{$identifier}"
+            class = " contentbox "
             class = "{[
                         'checkout-step'   => true,
                         '-current'        => $step_is_current,
                         '-reachable'      => $step_is_reachable,
                         '-complete'       => $step_is_complete,
-                        'js-current-step' => $step_is_current,
-                        'contentbox'      => true
+                        'js-current-step' => $step_is_current                        
                     ]|classnames}"
   >
     <div class="card-header checkout-step__header" id="heading-{$identifier}" data-identifier="{$identifier}">
