@@ -14942,6 +14942,21 @@ img.lazyload:not(.loaded) {
   font-size: 1.8rem;
 }
 
+.checkout-cart-title {
+  padding-left: 22px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  font-weight: 300;
+  font-family: 'Open Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  font-size: 1.2rem;
+  line-height: 30px;
+  text-overflow: ellipsis;
+  /* border-bottom: solid 2px #154a93; */
+  color: #154a93;
+  font-size: 1.8rem;
+}
+
+
 
 .pages-para-text {
   font-family: 'Roboto';

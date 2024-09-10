@@ -22,12 +22,14 @@
  * @copyright Since 2007 PrestaShop SA and Contributors
  * @license   https://opensource.org/licenses/AFL-3.0 Academic Free License 3.0 (AFL-3.0)
  * 'contentbox'      => true  // Ajanthan
+ * step-title js-step-title h5 mb-0
  *}
 
 {block name='step'}
   <section  id    = "{$identifier}"
             class = "{[
                         'checkout-step'   => true,
+                        'contentbox'      => true,
                         '-current'        => $step_is_current,
                         '-reachable'      => $step_is_reachable,
                         '-complete'       => $step_is_complete,
@@ -36,7 +38,7 @@
   >
     <div class="contentbox">
       <div class="card-header checkout-step__header" id="heading-{$identifier}" data-identifier="{$identifier}">
-        <p class="step-title js-step-title h5 mb-0">
+        <p class="checkout-cart-title mb-0 h4">
           <span class="step-number">{$position}.</span>
           {$title}
           <i class="material-icons font-reset rtl-no-flip text-success mx-2">&#xE876;</i>
