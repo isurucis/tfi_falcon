@@ -30,20 +30,7 @@
 
         <div id="_desktop_contact_link" class="col">
           <div id="contact-link">
-            {if $contact_infos.phone}
-              {* [1][/1] is for a HTML tag. *}
-              {l
-                s='Call us: [1]%phone%[/1]'
-                sprintf=[
-                  '[1]' => "<a href='tel:{$contact_infos['phone']|replace:' ':''}'>",
-                  '[/1]' => '</a>',
-                  '%phone%' => $contact_infos.phone
-                ]
-                d='Shop.Theme.Global'
-              }
-            {else}
-              <a href="{$urls.pages.contact}">{l s='Contact us' d='Shop.Theme.Global'}</a>
-            {/if}
+            {hook h='displayNav1'}
           </div>
         </div>
 
