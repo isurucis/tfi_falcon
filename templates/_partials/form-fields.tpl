@@ -164,6 +164,7 @@
             id="f-{$field.name}_{$uniqId}"
             type="password"
             value=""
+            onchange="try{setCustomValidity('')}catch(e){}"
             {if isset($configuration.password_policy.minimum_length)}data-minlength="{$configuration.password_policy.minimum_length}"{/if}
             {if isset($configuration.password_policy.maximum_length)}data-maxlength="{$configuration.password_policy.maximum_length}"{/if}
             {if isset($configuration.password_policy.minimum_score)}data-minscore="{$configuration.password_policy.minimum_score}"{/if}
