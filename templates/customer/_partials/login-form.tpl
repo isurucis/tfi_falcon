@@ -39,7 +39,7 @@
         {/foreach}
       {/block}
       <div class="forgot-password text-center mb-3">
-        <a href="{$urls.pages.password}" rel="nofollow">
+        <a href="{$urls.pages.password}" rel="nofollow" class="create-account-link-class">
           {l s='Forgot your password?' d='Shop.Theme.Customeraccount'}
         </a>
       </div>
@@ -57,7 +57,7 @@
           </button>
         {/block}
         <br /><br /><br />
-        <a href="/b2b-customer-create" class="">
+        <a href="/b2b-customer-create" class="create-account-link-class">
           {l s='I do want to create an account' d='Shop.Istheme'}
         </a>
       </footer>

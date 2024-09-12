@@ -15064,3 +15064,15 @@ img.lazyload:not(.loaded) {
   text-align: center;
   padding-top: 8px;
 }
+
+.create-account-link-class a:link,
+.create-account-link-class a::visited
+{
+  font-family: 'Roboto'; font-size: 0.9rem; color: #55b57d;
+  padding: 3px; text-decoration: underline;
+}
+.create-account-link-class a::hover
+{
+  font-family: 'Roboto'; font-size: 0.9rem; color: #55b57d;
+  padding: 3px; text-decoration: underline;
+}
