@@ -65,10 +65,10 @@ document.addEventListener('DOMContentLoaded', function () {
             if (button.classList.contains('quantity-decrement')) {
                 if (currentValue > minValue) {
                     
-                    input.value = currentValue - i;
+                    input.value = currentValue - 5;
                 }
             } else if (button.classList.contains('quantity-increment')) {
-                input.value = currentValue + i;
+                input.value = currentValue + 5;
             }
         }
     });
