@@ -136,8 +136,10 @@
                 <button type="button" class="btn btn-outline-secondary quantity-button quantity-decrement" style="margin-right: 5px;">-</button>
                 <input
                   type="number"
+                  inputmode="numeric"
+                  pattern="[0-9]*"
                   name="qty"
-                  value="{if isset($product.product_attribute_minimal_quantity) && $product.product_attribute_minimal_quantity != ''}{$product.product_attribute_minimal_quantity}{else}{$product.minimal_quantity}{/if}"
+                  value="{$product.quantity}"
                   min="{if isset($product.product_attribute_minimal_quantity) && $product.product_attribute_minimal_quantity != ''}{$product.product_attribute_minimal_quantity}{else}{$product.minimal_quantity}{/if}"
                   class="form-control input-qty"
                   style="width: 60px; text-align: center;"
