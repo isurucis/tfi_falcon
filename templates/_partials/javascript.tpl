@@ -66,7 +66,7 @@ document.addEventListener('DOMContentLoaded', function () {
             if (button.classList.contains('quantity-decrement')) {
                 if (currentValue > minValue) {
                     
-                    input.value = currentValue - 5;
+                    input.value = currentValue - i;
                 }
             } else if (button.classList.contains('quantity-increment')) {
                 console.log(i);
