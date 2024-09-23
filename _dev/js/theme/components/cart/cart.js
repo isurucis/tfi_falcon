@@ -70,15 +70,7 @@ const CheckUpdateQuantityOperations = {
  */
 function createSpin() {
   $.each($(spinnerSelector), (index, spinner) => {
-    $(spinner).TouchSpin({
-      verticalupclass: 'material-icons touchspin-up',
-      verticaldownclass: 'material-icons touchspin-down',
-      buttondown_class: 'btn btn-touchspin js-touchspin js-increase-product-quantity',
-      buttonup_class: 'btn btn-touchspin js-touchspin js-decrease-product-quantity',
-      step: parseInt($(spinner).attr('min'), 10),
-      min: parseInt($(spinner).attr('min'), 10),
-      max: 1000000,
-    });
+    
   });
 
   CheckUpdateQuantityOperations.switchErrorStat();
