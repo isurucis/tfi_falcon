@@ -136,6 +136,7 @@
                 <button type="button" class="btn btn-outline-secondary quantity-button quantity-decrement" style="margin-right: 5px;">-</button>
                 <input
                 class="form-control input-qty"
+                style="width: 60px; text-align: center;"
                 data-down-url="{$product.down_quantity_url}"
                 data-up-url="{$product.up_quantity_url}"
                 data-update-url="{$product.update_quantity_url}"
