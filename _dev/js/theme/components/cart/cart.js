@@ -77,7 +77,7 @@ function createSpin() {
       buttonup_class: 'btn btn-touchspin js-touchspin js-decrease-product-quantity',
       min: parseInt($(spinner).attr('min'), 10),
       max: 1000000,
-      step: 5
+      step: 5,
     });
   });
 
