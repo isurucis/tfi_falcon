@@ -135,10 +135,14 @@
             <div class="product-miniature__quantity input-group quantity-input-group" style="width: auto; display: inline-flex; align-items: center;">
                 <button type="button" class="btn btn-outline-secondary quantity-button quantity-decrement" style="margin-right: 5px;">-</button>
                 <input
+                  data-down-url="{$product.down_quantity_url}"
+                  data-up-url="{$product.up_quantity_url}"
+                  data-update-url="{$product.update_quantity_url}"
+                  data-product-id="{$product.id_product}"
                   type="number"
                   inputmode="numeric"
                   pattern="[0-9]*"
-                  name="qty"
+                  name="product-quantity-spin"
                   value="{$product.quantity}"
                   min="{if isset($product.product_attribute_minimal_quantity) && $product.product_attribute_minimal_quantity != ''}{$product.product_attribute_minimal_quantity}{else}{$product.minimal_quantity}{/if}"
                   class="form-control input-qty"
