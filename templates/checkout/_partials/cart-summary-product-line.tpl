@@ -56,6 +56,18 @@
         {/foreach}
       </ul>
 
+      <div class="current-price">
+        {if $product.has_discount}
+            <div class="ml-2 price price--regular2" style="float: left;">WAS&nbsp;<span class="price--regular" id="price_old_{$product.id_product|escape:'htmlall':'UTF-8'}">{$product.regular_price}</span></div>
+            <div class="ml-2 price price--discounted" style="" id="price_{$product.id_product|escape:'htmlall':'UTF-8'}">{$product.price}</div>
+            <div style="clear: both;"></div>
+        {else}
+            <span class="current-price-display price" id="price_{$product.id_product|escape:'htmlall':'UTF-8'}">{$product.regular_price}</span>
+        {/if}
+      </div>
+
+
+
       <span class="price price--sm">
         {$product.price}
       </span>
