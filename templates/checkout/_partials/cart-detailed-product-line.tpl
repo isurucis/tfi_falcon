@@ -133,8 +133,8 @@
             aria-label="{l s='%productName% product quantity field' sprintf=['%productName%' => $product.name] d='Shop.Theme.Checkout'}"
             />-->
             <div class="product-miniature__quantity input-group quantity-input-group" style="width: auto; display: inline-flex; align-items: center;">
-                <button type="button" class="btn btn-outline-secondary quantity-button quantity-decrement" style="margin-right: 5px;">-</button>
-                <input
+                
+              <input
                 class="form-control input-qty"
                 style="width: 60px; text-align: center;"
                 data-down-url="{$product.down_quantity_url}"
@@ -149,7 +149,6 @@
                 min="{$product.minimal_quantity}"
                 aria-label="{l s='%productName% product quantity field' sprintf=['%productName%' => $product.name] d='Shop.Theme.Checkout'}"
                 />
-                <button type="button" class="btn btn-outline-secondary quantity-button quantity-increment" style="margin-left: 5px;">+</button>
             </div>
         </div>
       {/if}
