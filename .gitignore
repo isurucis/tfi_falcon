@@ -11,6 +11,8 @@ tests/Selenium/errorShots/. tests/Selenium/errorDumps/.
 /app/cache/* !/app/cache/.gitkeep  # Symfony specific (if applicable)
 /app/logs/* !/app/logs/.gitkeep  # Symfony specific (if applicable)
 /web/bundles/. /web/css/. /web/js/. /var/.  # Symfony specific (if applicable)
+_dev/node_modules/
+_dev/webpack/.env
 
 # Themes, modules and overrides (specific files to ignore within these directories)
 !themes/*/cache/*
