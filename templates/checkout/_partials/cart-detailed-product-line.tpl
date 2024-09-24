@@ -54,14 +54,15 @@
 
       <div class="product-line-info product-price{if $product.has_discount} has-discount{/if}">
         <div class="current-price">
+          
           {if $product.has_discount}
-            <span class="price price--regular mr-1">{$product.regular_price}</span>
+              <div class="ml-2 price price--regular2" style="">WAS&nbsp;<span class="price--regular">{$product.default_currency_sign|escape:'htmlall':'UTF-8'}<span id="price_old_{$product.id_product|escape:'htmlall':'UTF-8'}">{$product.regular_price|number_format:2}</span></span></div>
+              <div class="ml-2 price price--discounted" style="">{$product.default_currency_sign|escape:'htmlall':'UTF-8'}<span id="price_{$product.id_product|escape:'htmlall':'UTF-8'}">{$product.price|number_format:2}</span></div>
+          {else}
+              {$product.default_currency_sign|escape:'htmlall':'UTF-8'}<span id="price_{$product.id_product|escape:'htmlall':'UTF-8'}">{$product.regular_price|number_format:2}</span>
           {/if}
-          <span
-            class="current-price-display price{if $product.has_discount} current-price-discount{/if}">{$product.price}</span>
-          {if $product.unit_price_full}
-            <div class="unit-price-cart">{$product.unit_price_full}</div>
-          {/if}
+          
+
         </div>
 
         {hook h='displayProductPriceBlock' product=$product type="unit_price"}
