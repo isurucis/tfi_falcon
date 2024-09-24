@@ -118,7 +118,7 @@
         <span class="gift-quantity">{$product.quantity}</span>
       {else}
         <div>
-          <!--<input
+          <input
             class="js-cart-line-product-quantity input-touchspin"
             data-down-url="{$product.down_quantity_url}"
             data-up-url="{$product.up_quantity_url}"
@@ -131,25 +131,8 @@
             name="product-quantity-spin"
             min="{$product.minimal_quantity}"
             aria-label="{l s='%productName% product quantity field' sprintf=['%productName%' => $product.name] d='Shop.Theme.Checkout'}"
-            />-->
-            <div class="product-miniature__quantity input-group quantity-input-group" style="width: auto; display: inline-flex; align-items: center;">
-                
-              <input
-                class="form-control input-qty"
-                style="width: 60px; text-align: center;"
-                data-down-url="{$product.down_quantity_url}"
-                data-up-url="{$product.up_quantity_url}"
-                data-update-url="{$product.update_quantity_url}"
-                data-product-id="{$product.id_product}"
-                type="number"
-                inputmode="numeric"
-                pattern="[0-9]*"
-                value="{$product.quantity}"
-                name="product-quantity-spin"
-                min="{$product.minimal_quantity}"
-                aria-label="{l s='%productName% product quantity field' sprintf=['%productName%' => $product.name] d='Shop.Theme.Checkout'}"
-                />
-            </div>
+            />
+            
         </div>
       {/if}
     </div>
