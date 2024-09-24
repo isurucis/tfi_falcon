@@ -13440,7 +13440,7 @@ label {
   border-radius: 0.4rem !important;
   background-color: #fff !important;
   height: 40px !important;
-  margin: 0px 5px !important;
+  margin: 0px 2px !important;
 }
 .bootstrap-touchspin > input::-webkit-inner-spin-button,
 .bootstrap-touchspin > input::-webkit-outer-spin-button {
