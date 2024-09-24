@@ -66,11 +66,6 @@
         {/if}
       </div>
 
-
-
-      <span class="price price--sm">
-        {$product.price}
-      </span>
     </div>
   </div>
 {/block}
