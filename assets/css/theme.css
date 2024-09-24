@@ -13406,14 +13406,14 @@ label {
   display: none !important;
 }
 .bootstrap-touchspin {
-  border: 1px solid #ced4da;
+  /*border: 1px solid #ced4da;
   border-radius: 0.4rem;
   margin: 0 auto;
   max-width: 100px;
-  overflow: hidden;
+  overflow: hidden;*/
 }
 .bootstrap-touchspin > input {
-  -webkit-appearance: textfield;
+  /*-webkit-appearance: textfield;
   -moz-appearance: textfield;
   appearance: textfield;
   border: 1px solid #ced4da;
@@ -13425,7 +13425,22 @@ label {
   margin-top: -1px;
   max-width: 60px;
   padding: 0;
-  text-align: center;
+  text-align: center;*/
+
+  width: 38px !important;
+  text-align: center !important;
+  font-size: 1rem !important;
+  font-weight: 600 !important;
+  border: solid 1px #67c28d !important;
+  border-radius: 4px !important;
+  display: inline-block !important;
+  vertical-align: middle !important;
+  padding: .5rem .1rem !important;
+  color: #39935f !important;
+  border-radius: 0.4rem !important;
+  background-color: #fff !important;
+  height: 40px !important;
+  margin: 0px 5px !important;
 }
 .bootstrap-touchspin > input::-webkit-inner-spin-button,
 .bootstrap-touchspin > input::-webkit-outer-spin-button {
@@ -13434,7 +13449,7 @@ label {
   margin: 0;
 }
 .bootstrap-touchspin .btn {
-  background-color: #fff;
+  /*background-color: #fff;
   border: 0;
   color: #495057;
   display: block;
@@ -13443,7 +13458,16 @@ label {
   position: relative;
   text-align: center;
   width: 1.8em;
-  z-index: 2;
+  z-index: 2;*/
+
+  color: #020202 !important;
+  border: solid 1px #b0c8ba !important;
+  background-color: #dbf0e4 !important;
+  font-weight: bold !important;
+  font-size: 1.3rem !important;
+  padding: 3px 10px !important;
+  font-family: 'Roboto' !important;
+  border-radius: 0.4rem !important;
 }
 .bootstrap-touchspin .btn:focus,
 .bootstrap-touchspin .btn:hover {
