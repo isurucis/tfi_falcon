@@ -23,13 +23,19 @@
  * @license   https://opensource.org/licenses/AFL-3.0 Academic Free License 3.0 (AFL-3.0)
  *}
 {if $errors|count}
-  <div class="help-block mt-2">
-    {block name='form_errors'}
-      <ul>
-        {foreach $errors as $error}
-          <li class="alert alert-danger">111{$error|nl2br nofilter}</li>
-        {/foreach}
-      </ul>
-    {/block}
-  </div>
+  <table cellspacing="0" cellpadding="0" style="width: 100%; display: block;">
+    <tr>
+      <td>
+        <div class="help-block mt-2" style="width: 290px;">
+          {block name='form_errors'}
+            <ul>
+              {foreach $errors as $error}
+                <li class="alert alert-danger">{$error|nl2br nofilter}</li>
+              {/foreach}
+            </ul>
+          {/block}
+        </div>
+      </td>
+    </tr>
+  </table>
 {/if}
