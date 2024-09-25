@@ -164,7 +164,7 @@
                   {/block}
 
                   {block name='product_discounts'}
-                    {include file='catalog/_partials/product-discounts.tpl'}
+                    {include file='catalog/_partials/product-discounts.tpl'}test
                   {/block}
 
                   {**
