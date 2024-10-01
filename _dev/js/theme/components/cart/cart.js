@@ -78,7 +78,32 @@ function createSpin() {
       step: parseInt($(spinner).attr('min'), 10),
       min: parseInt($(spinner).attr('min'), 10),
       max: 1000000,
+      // Custom callback for incrementing
+      onBeforeUpSpin: function () {
+        let currentValue = parseInt($(spinner).val(), 10);
+        let minValue = parseInt($(spinner).attr('min'), 10);
+        let boxqty = Math.floor((minValue * 20) / 4);
+    
+        if (currentValue > boxqty) {
+          $(spinner).trigger("touchspin.updatesettings", { step: boxqty });
+        } else {
+          $(spinner).trigger("touchspin.updatesettings", { step: minValue });
+        }
+      },
+      // Custom callback for decrementing
+      onBeforeDownSpin: function () {
+        let currentValue = parseInt($(spinner).val(), 10);
+        let minValue = parseInt($(spinner).attr('min'), 10);
+        let boxqty = Math.floor((minValue * 20) / 4);
+    
+        if (currentValue > boxqty) {
+          $(spinner).trigger("touchspin.updatesettings", { step: boxqty });
+        } else {
+          $(spinner).trigger("touchspin.updatesettings", { step: minValue });
+        }
+      }
     });
+    
   });
 
   CheckUpdateQuantityOperations.switchErrorStat();
