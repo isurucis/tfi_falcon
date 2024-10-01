@@ -68,46 +68,36 @@ const CheckUpdateQuantityOperations = {
 /**
  * Attach Bootstrap TouchSpin event handlers
  */
-function createSpin() {
+ function createSpin() {
   $.each($(spinnerSelector), (index, spinner) => {
+    let minValue = parseInt($(spinner).attr('min'), 10);
+    let boxqty = Math.floor((minValue * 20) / 4);
+
     $(spinner).TouchSpin({
       verticalupclass: 'material-icons touchspin-up',
       verticaldownclass: 'material-icons touchspin-down',
       buttondown_class: 'btn btn-touchspin js-touchspin js-increase-product-quantity',
       buttonup_class: 'btn btn-touchspin js-touchspin js-decrease-product-quantity',
-      step: parseInt($(spinner).attr('min'), 10),
-      min: parseInt($(spinner).attr('min'), 10),
+      step: minValue,
+      min: minValue,
       max: 1000000,
-      // Custom callback for incrementing
-      onBeforeUpSpin: function () {
-        let currentValue = parseInt($(spinner).val(), 10);
-        let minValue = parseInt($(spinner).attr('min'), 10);
-        let boxqty = Math.floor((minValue * 20) / 4);
-    
-        if (currentValue > boxqty) {
-          $(spinner).trigger("touchspin.updatesettings", { step: boxqty });
-        } else {
-          $(spinner).trigger("touchspin.updatesettings", { step: minValue });
-        }
-      },
-      // Custom callback for decrementing
-      onBeforeDownSpin: function () {
-        let currentValue = parseInt($(spinner).val(), 10);
-        let minValue = parseInt($(spinner).attr('min'), 10);
-        let boxqty = Math.floor((minValue * 20) / 4);
-    
-        if (currentValue > boxqty) {
-          $(spinner).trigger("touchspin.updatesettings", { step: boxqty });
-        } else {
-          $(spinner).trigger("touchspin.updatesettings", { step: minValue });
-        }
+    });
+
+    // Event listener for starting the spin
+    $(spinner).on('touchspin.on.startspin', function (e) {
+      let currentValue = parseInt($(spinner).val(), 10);
+      
+      if (currentValue > boxqty) {
+        $(spinner).trigger("touchspin.updatesettings", { step: boxqty });
+      } else {
+        $(spinner).trigger("touchspin.updatesettings", { step: minValue });
       }
     });
-    
   });
 
   CheckUpdateQuantityOperations.switchErrorStat();
 }
+
 
 const preventCustomModalOpen = (event) => {
   if (window.shouldPreventModal) {
