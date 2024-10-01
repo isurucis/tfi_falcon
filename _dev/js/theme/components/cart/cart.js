@@ -92,12 +92,23 @@ const CheckUpdateQuantityOperations = {
       } else {
         $(spinner).trigger("touchspin.updatesettings", { step: minValue });
       }
+      updateCase($(spinner));
     });
   });
 
   CheckUpdateQuantityOperations.switchErrorStat();
 }
+// Update the case value based on quantity input
+function updateCase(qtyInput) {
+  let minValue = parseInt(qtyInput.attr('min'));
+  let quantityValue = parseInt(qtyInput.val());
+  alert(quantityValue);
+  //let numberOfCases = Math.floor(quantityValue / ((minValue*20)/4)); // Calculate number of cases
+  //let priceBoxCalc = $('#price_box_calc_' + qtyInput.attr('id').split('_')[1]);
 
+  // Update the case value in the UI
+  //priceBoxCalc.text(numberOfCases + ' Case' + (numberOfCases > 1 ? 's' : ''));
+}
 
 const preventCustomModalOpen = (event) => {
   if (window.shouldPreventModal) {
