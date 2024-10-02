@@ -15118,3 +15118,14 @@ img.lazyload:not(.loaded) {
   padding: 3px;
   font-weight: 500;
 }
+
+.pages-subheading {
+  font-family: 'Roboto';
+  font-size: 1.1rem;
+  color: #5ba87a;
+}
+.pages-smallheading {
+  font-family: 'Roboto';
+  font-size: .9rem;
+  color: #5ba87a;
+}
