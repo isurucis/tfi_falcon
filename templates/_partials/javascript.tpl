@@ -97,6 +97,7 @@ function updateCaseValue(qtyInput) {
 document.querySelectorAll('.input-qty').forEach(function(inputElement) {
         inputElement.addEventListener('input', function() {
             var qtyInput = this;
+            alert('test');
             // You can call your custom function here when the value changes
             updateCaseValue(qtyInput);
         });
