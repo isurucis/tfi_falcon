@@ -14932,7 +14932,7 @@ img.lazyload:not(.loaded) {
   font-family: Roboto;
   font-size: 1.0rem;
   font-style: italic;
-  margin-bottom: 5px;
+  margin-bottom: 0px;
 }
 
 .footer_sub_menu_header {
@@ -15158,6 +15158,7 @@ img.lazyload:not(.loaded) {
   margin-top: 20px;
   margin-bottom: 20px;
   padding-bottom: 5px;
+  background-color: #e0f4e9;
 }
 
 .unsubscribe-text {
@@ -15166,4 +15167,8 @@ img.lazyload:not(.loaded) {
   font-size: .7rem;
   text-align: center;
   font-style: italic;
+}
+
+.img-weekly_newsletter {
+  border-radius: 6px;
 }
