@@ -74,6 +74,7 @@ document.addEventListener('DOMContentLoaded', function () {
           var input = button.parentElement.querySelector('.input-qty');
           var currentValue = parseInt(input.value);
           var minValue = parseInt(input.getAttribute('min'));
+          var stock = parseInt(input.getAttribute('stk'));
           
           if (minValue < 1) {
               minValue = 1;
@@ -91,10 +92,15 @@ document.addEventListener('DOMContentLoaded', function () {
                 }
               }
           } else if (button.classList.contains('quantity-increment')) {
+            
               if (currentValue >= boxqty) {
-              input.value = currentValue + boxqty;
+                if(stock>=(currentValue+boxqty)){
+                  input.value = currentValue + boxqty;
+                }
               }else{
+                if(stock>=(currentValue+minValue)){
                 input.value = currentValue + minValue;
+                }
               }
           }
           updateCaseValue(input);
