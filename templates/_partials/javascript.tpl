@@ -50,30 +50,37 @@
 <script>
 //Qty Pluse
 document.addEventListener('DOMContentLoaded', function () {
-    document.body.addEventListener('click', function(event) {
-        if (event.target.classList.contains('quantity-button')) {
-            var button = event.target;
-            var input = button.parentElement.querySelector('.input-qty');
-            var currentValue = parseInt(input.value);
-            var minValue = parseInt(input.getAttribute('min'));
-            console.log(minValue);
-            if(minValue<1){
-              i=1
-            }else{
-              i=minValue
-            }
-
-            if (button.classList.contains('quantity-decrement')) {
-                if (currentValue > minValue) {
-                    
-                    input.value = currentValue - i;
-                }
-            } else if (button.classList.contains('quantity-increment')) {
-                console.log(i);
-                input.value = currentValue + i;
-            }
-        }
-    });
+  document.body.addEventListener('click', function(event) {
+      if (event.target.classList.contains('quantity-button')) {
+          var button = event.target;
+          var input = button.parentElement.querySelector('.input-qty');
+          var currentValue = parseInt(input.value);
+          var minValue = parseInt(input.getAttribute('min'));
+          
+          if (minValue < 1) {
+              minValue = 1;
+          }
+          
+          var boxqty = Math.floor((minValue * 20) / 4);
+          
+          // Set increment/decrement value based on currentValue comparison with boxqty
+          var incrementValue;
+          if (currentValue > boxqty) {
+              incrementValue = boxqty;
+          } else {
+              incrementValue = minValue;
+          }
+          
+          if (button.classList.contains('quantity-decrement')) {
+              if (currentValue > minValue) {
+                  input.value = currentValue - incrementValue;
+              }
+          } else if (button.classList.contains('quantity-increment')) {
+              input.value = currentValue + incrementValue;
+          }
+      }
+  });
 });
+
 </script>
 {/if}
