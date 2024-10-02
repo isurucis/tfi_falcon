@@ -15121,8 +15121,9 @@ img.lazyload:not(.loaded) {
 
 .pages-subheading {
   font-family: 'Roboto';
-  font-size: 1.1rem;
+  font-size: 1.4rem;
   color: #5ba87a;
+  font-weight: 400;
 }
 .pages-smallheading {
   font-family: 'Roboto';
