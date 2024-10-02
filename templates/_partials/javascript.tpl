@@ -63,20 +63,21 @@ document.addEventListener('DOMContentLoaded', function () {
           
           var boxqty = Math.floor((minValue * 20) / 4);
           
-          // Set increment/decrement value based on currentValue comparison with boxqty
-          var incrementValue;
-          if (currentValue >= boxqty) {
-              incrementValue = boxqty;
-          } else {
-              incrementValue = minValue;
-          }
           
           if (button.classList.contains('quantity-decrement')) {
               if (currentValue > minValue) {
-                  input.value = currentValue - incrementValue;
+                if (currentValue <= boxqty) {
+                  input.value = currentValue - minValue;
+                }else{
+                  input.value = currentValue - boxqty;
+                }
               }
           } else if (button.classList.contains('quantity-increment')) {
-              input.value = currentValue + incrementValue;
+              if (currentValue >= boxqty) {
+              input.value = currentValue + boxqty;
+              }else{
+                input.value = currentValue + minValue;
+              }
           }
       }
   });
