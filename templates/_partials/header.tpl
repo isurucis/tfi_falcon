@@ -81,14 +81,14 @@
                         
                         {hook h='displayTop'}
 
-                        <div class="col-md-3 col header-top__block header-top__block--logo">
-                            {images_block webpEnabled=$webpEnabled}
+                        <!-- div class="col-md-3 col header-top__block header-top__block--logo">
+                            {*images_block webpEnabled=$webpEnabled*}
                                 <img src="https://mediumturquoise-cheetah-573749.hostingersite.com/modules/ps_imageslider/images/f01f038628e18d349d2093a4a727ca41bac585fb_farm_to_store_green.png"
                                             width="150px"
                                         class="img-farmtostore img-fluid"
                                         alt="Farm to Store">
-                            {/images_block}
-                        </div>
+                            {*/images_block*}
+                        </div -->
                     </div>
 
                 </div>
