@@ -79,10 +79,8 @@ document.addEventListener('DOMContentLoaded', function () {
                 input.value = currentValue + minValue;
               }
           }
+          updateCaseValue(input);
       }
-  });
-  document.getElementById('pdp_qty').addEventListener('change', function() {
-    alert("test");
   });
 });
 
