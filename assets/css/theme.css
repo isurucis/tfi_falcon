@@ -15130,3 +15130,8 @@ img.lazyload:not(.loaded) {
   font-size: .9rem;
   color: #5ba87a;
 }
+
+.nomargin-leftright {
+  margin-left: 0px !important;
+  margin-right: 0px !important;
+}
