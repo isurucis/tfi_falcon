@@ -25,12 +25,12 @@
 
 <div class="contact-rich mb-4">
   <h4>{l s='Store information' d='Shop.Theme.Global'}</h4>
-  <div class="block Store information" style="padding: 5px;">
+  <div class="block card" style="padding: 5px;">
     <div class="data">{$contact_infos.address.formatted nofilter}</div>
   </div>
   {if $contact_infos.phone}
     <hr/>
-    <div class="block Store information" style="padding: 5px;">
+    <div class="block card" style="padding: 5px;">
       <div class="data">
         {l s='Call us:' d='Shop.Theme.Global'}<br/>
         <a href="tel:{$contact_infos.phone}">{$contact_infos.phone}</a>
@@ -39,7 +39,7 @@
   {/if}
   {if $contact_infos.fax}
     <hr/>
-    <div class="block Store information" style="padding: 5px;">
+    <div class="block card" style="padding: 5px;">
       <div class="data">
         {l s='Fax:' d='Shop.Theme.Global'}<br/>
         {$contact_infos.fax}
@@ -48,7 +48,7 @@
   {/if}
   {if $contact_infos.email && $display_email}
     <hr/>
-    <div class="block Store information" style="padding: 5px;">
+    <div class="block card" style="padding: 5px;">
       <div class="data email">
         {l s='Email us:' d='Shop.Theme.Global'}<br/>
       </div>
