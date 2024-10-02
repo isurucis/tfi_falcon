@@ -17,7 +17,7 @@
                   stk="{$product.quantity}"
                   class="form-control input-qty"
                   style="width: 60px; text-align: center;"
-                >
+                  readonly="readonly">
                 <button type="button" class="btn btn-outline-secondary quantity-button quantity-increment" style="margin-left: 5px;">+</button>
             </div>
             {include file='catalog/_partials/miniatures/_partials/product-prices.tpl'} 
