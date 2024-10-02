@@ -84,6 +84,7 @@ document.addEventListener('DOMContentLoaded', function () {
 });
 
 function updateCaseValue(qtyInput) {
+  alert('test');
   let minValue = parseInt(qtyInput.attr('min'));
   let quantityValue = parseInt(qtyInput.val());
   let numberOfCases = Math.floor(quantityValue / ((minValue*20)/4)); // Calculate number of cases
@@ -94,13 +95,16 @@ function updateCaseValue(qtyInput) {
 }
 
 // Trigger the update when the quantity input changes manually
-document.querySelectorAll('.input-qty').forEach(function(inputElement) {
+/*document.querySelectorAll('.input-qty').forEach(function(inputElement) {
         inputElement.addEventListener('input', function() {
             var qtyInput = this;
             alert('test');
             // You can call your custom function here when the value changes
             updateCaseValue(qtyInput);
         });
-    });
+    });*//
+$('.product-miniature__form').on('change', 'input[name="qty"]', function() {
+  updateCaseValue($(this)); // Call updateCaseValue on change
+});
 </script>
 {/if}
