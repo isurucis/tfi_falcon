@@ -82,6 +82,9 @@ document.addEventListener('DOMContentLoaded', function () {
       }
   });
 });
+document.getElementById('pdp_qty').addEventListener('change', function() {
+  updateCaseValue(this); // Call updateCaseValue on change
+});
 
 function updateCaseValue(qtyInput) {
   alert('test');
@@ -94,18 +97,6 @@ function updateCaseValue(qtyInput) {
   priceBoxCalc.text(numberOfCases + ' Case' + (numberOfCases > 1 ? 's' : ''));
 }
 
-// Trigger the update when the quantity input changes manually
-/*document.querySelectorAll('.input-qty').forEach(function(inputElement) {
-        inputElement.addEventListener('input', function() {
-            var qtyInput = this;
-            alert('test');
-            // You can call your custom function here when the value changes
-            updateCaseValue(qtyInput);
-        });
-    });*/
-$('#pdp_qty').on('change', function() {
-  updateCaseValue($(this)); // Call updateCaseValue on change
-  alert('test');
-});
+
 </script>
 {/if}
