@@ -81,10 +81,11 @@ document.addEventListener('DOMContentLoaded', function () {
           }
       }
   });
+  document.getElementById('pdp_qty').addEventListener('change', function() {
+    alert("test");
+  });
 });
-document.getElementById('pdp_qty').addEventListener('change', function() {
-  updateCaseValue(this); // Call updateCaseValue on change
-});
+
 
 function updateCaseValue(qtyInput) {
   alert('test');
