@@ -104,7 +104,8 @@ function updateCaseValue(qtyInput) {
         });
     });*//
 $('.product-miniature__form').on('change', 'input[name="qty"]', function() {
-  updateCaseValue($(this)); // Call updateCaseValue on change
+  //updateCaseValue($(this)); // Call updateCaseValue on change
+  alert('test');
 });
 </script>
 {/if}
