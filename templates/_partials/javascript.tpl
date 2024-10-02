@@ -102,7 +102,7 @@ function updateCaseValue(qtyInput) {
             // You can call your custom function here when the value changes
             updateCaseValue(qtyInput);
         });
-    });*//
+    });*/
 $('.product-miniature__form').on('change', 'input[name="qty"]', function() {
   //updateCaseValue($(this)); // Call updateCaseValue on change
   alert('test');
