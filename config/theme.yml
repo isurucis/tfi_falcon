@@ -68,8 +68,6 @@ global_settings:
       displayNav1:
         - ps_contactinfo
       displayNav2:
-        - ps_customersignin
-      displayNav3:
         - ps_languageselector
         - ps_currencyselector
       displayTop:
