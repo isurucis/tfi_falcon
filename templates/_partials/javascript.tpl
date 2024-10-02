@@ -49,6 +49,25 @@
 {if isset($vars) && $vars|@count}
 <script>
 //Qty Pluse
+function updateCaseValue(qtyInput) {
+  alert('test');
+
+  // Get the min attribute from the input element
+  let minValue = parseInt(qtyInput.getAttribute('min'));
+
+  // Get the value of the input element
+  let quantityValue = parseInt(qtyInput.value);
+
+  // Calculate number of cases
+  let numberOfCases = Math.floor(quantityValue / ((minValue * 20) / 4));
+
+  // Get the element with ID pdp_case
+  let priceBoxCalc = document.getElementById('pdp_case');
+
+  // Update the case value in the UI
+  priceBoxCalc.textContent = numberOfCases + ' Case' + (numberOfCases > 1 ? 's' : '');
+}
+
 document.addEventListener('DOMContentLoaded', function () {
   document.body.addEventListener('click', function(event) {
       if (event.target.classList.contains('quantity-button')) {
@@ -83,19 +102,6 @@ document.addEventListener('DOMContentLoaded', function () {
       }
   });
 });
-
-
-function updateCaseValue(qtyInput) {
-  alert('test');
-  let minValue = parseInt(qtyInput.attr('min'));
-  let quantityValue = parseInt(qtyInput.val());
-  let numberOfCases = Math.floor(quantityValue / ((minValue*20)/4)); // Calculate number of cases
-  let priceBoxCalc = $('#pdp_case');
-
-  // Update the case value in the UI
-  priceBoxCalc.text(numberOfCases + ' Case' + (numberOfCases > 1 ? 's' : ''));
-}
-
 
 </script>
 {/if}
