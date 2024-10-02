@@ -26,7 +26,15 @@
 <div class="block_newsletter col-lg-12 col-md-12 col-sm-12" id="blockEmailSubscription_{$hookName}">
   <div class="row">
     <!-- p id="block-newsletter-label" class="col-md-5 col-12">{l s='Get our latest news and special sales' d='Shop.Theme.Global'}</p -->
-    <div class="col-md-3 col-3">&nbsp;</div>
+    <div class="col-md-6 col-6">
+      {images_block webpEnabled=$webpEnabled}
+        <a href="https://mediumturquoise-cheetah-573749.hostingersite.com/fmmquick" target="_blank">
+        <img src="https://mediumturquoise-cheetah-573749.hostingersite.com/modules/ps_imageslider/images/53e1737989d527e44174a30a358da61af8c706ce_banner_weekly_newsletter.jpg"
+        class="img-weekly_newsletter img-fluid"
+        alt="Weekly Newsletter">
+        </a>
+      {/images_block}
+    </div>
     <div class="col-md-6 col-6">
       <p id="block-newsletter-label" class="emailsubscribe-title">{l s='Get our latest news and special sales' d='Shop.Theme.Global'}</p>
       <form action="{$urls.current_url}#blockEmailSubscription_{$hookName}" method="post">
@@ -72,6 +80,6 @@
         </div>
       </form>
     </div>
-    <div class="col-md-3 col-3">&nbsp;</div>
+    <!-- div class="col-md-3 col-3">&nbsp;</div -->
   </div>
 </div>
