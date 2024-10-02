@@ -83,5 +83,23 @@ document.addEventListener('DOMContentLoaded', function () {
   });
 });
 
+function updateCaseValue(qtyInput) {
+  let minValue = parseInt(qtyInput.attr('min'));
+  let quantityValue = parseInt(qtyInput.val());
+  let numberOfCases = Math.floor(quantityValue / ((minValue*20)/4)); // Calculate number of cases
+  let priceBoxCalc = $('#pdp_case');
+
+  // Update the case value in the UI
+  priceBoxCalc.text(numberOfCases + ' Case' + (numberOfCases > 1 ? 's' : ''));
+}
+
+// Trigger the update when the quantity input changes manually
+document.querySelectorAll('.input-qty').forEach(function(inputElement) {
+        inputElement.addEventListener('input', function() {
+            var qtyInput = this;
+            // You can call your custom function here when the value changes
+            updateCaseValue(qtyInput);
+        });
+    });
 </script>
 {/if}

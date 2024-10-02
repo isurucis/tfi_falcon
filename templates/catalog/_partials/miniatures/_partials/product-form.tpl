@@ -20,6 +20,7 @@
             </div>
             {include file='catalog/_partials/miniatures/_partials/product-prices.tpl'} 
           </div>
+          <div class="price_box_calc" id="pdp_case">0 Case</div>
 
 
           <!-- Add to Cart Button -->
