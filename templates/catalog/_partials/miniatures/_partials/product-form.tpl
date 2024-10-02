@@ -46,6 +46,7 @@
         </a>
     {/if}
 </div>
+<div style="clear: both;"></div>
 {/if}
 
 

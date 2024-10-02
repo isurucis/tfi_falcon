@@ -4280,8 +4280,8 @@ input[type="submit"].btn-block {
 }
 .card-header-pills,
 .card-header-tabs {
-  margin-left: -0.625rem;
-  margin-right: -0.625rem;
+  /*margin-left: -0.625rem;
+  margin-right: -0.625rem;*/
 }
 .card-img-overlay {
   border-radius: 0.3375rem;
@@ -15134,4 +15134,16 @@ img.lazyload:not(.loaded) {
 .nomargin-leftright {
   margin-left: 0px !important;
   margin-right: 0px !important;
+}
+
+.product-miniature__actions {
+  width: 345px;
+  float: left;
+  padding-bottom: 20px;
+}
+.price_box_calc {
+  background-color: #ecfbf5;
+  padding: 5px;
+  border: solid 1px #bddbce;
+  border-radius: 8px;
 }
