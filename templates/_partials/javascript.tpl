@@ -50,7 +50,6 @@
 <script>
 //Qty Pluse
 function updateCaseValue(qtyInput) {
-  alert('test');
 
   // Get the min attribute from the input element
   let minValue = parseInt(qtyInput.getAttribute('min'));

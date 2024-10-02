@@ -14,6 +14,7 @@
                   id="pdp_qty"
                   value="{if isset($product.product_attribute_minimal_quantity) && $product.product_attribute_minimal_quantity != ''}{$product.product_attribute_minimal_quantity}{else}{$product.minimal_quantity}{/if}"
                   min="{if isset($product.product_attribute_minimal_quantity) && $product.product_attribute_minimal_quantity != ''}{$product.product_attribute_minimal_quantity}{else}{$product.minimal_quantity}{/if}"
+                  stk="{$product.quantity}"
                   class="form-control input-qty"
                   style="width: 60px; text-align: center;"
                 >
