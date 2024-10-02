@@ -65,7 +65,7 @@ document.addEventListener('DOMContentLoaded', function () {
           
           // Set increment/decrement value based on currentValue comparison with boxqty
           var incrementValue;
-          if (currentValue > boxqty) {
+          if (currentValue >= boxqty) {
               incrementValue = boxqty;
           } else {
               incrementValue = minValue;
