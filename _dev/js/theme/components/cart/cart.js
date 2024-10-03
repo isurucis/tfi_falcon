@@ -72,7 +72,7 @@ const CheckUpdateQuantityOperations = {
   $.each($(spinnerSelector), (index, spinner) => {
     let minValue = parseInt($(spinner).attr('min'), 10);
     let boxqty = Math.floor((minValue * 20) / 4);
-    var stock = parseInt($(spinner).attr('stk'));
+    let stock = parseInt($(spinner).attr('stk'));
 
     $(spinner).TouchSpin({
       verticalupclass: 'material-icons touchspin-up',
@@ -87,7 +87,7 @@ const CheckUpdateQuantityOperations = {
     // Event listener for starting the spin
     $(spinner).on('touchspin.on.startspin', function (e) {
       let currentValue = parseInt($(spinner).val(), 10);
-      
+      alert(stock);
       if (currentValue > boxqty) {
         if(stock>=(currentValue+boxqty)){
         $(spinner).trigger("touchspin.updatesettings", { step: boxqty });
