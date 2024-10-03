@@ -89,9 +89,13 @@ const CheckUpdateQuantityOperations = {
       let currentValue = parseInt($(spinner).val(), 10);
       
       if (currentValue > boxqty) {
+        if(stock<=(currentValue+boxqty)){
         $(spinner).trigger("touchspin.updatesettings", { step: boxqty });
+        }
       } else {
+        if(stock<=(currentValue+minValue)){
         $(spinner).trigger("touchspin.updatesettings", { step: minValue });
+        }
       }
       updateCase($(spinner));
     });
