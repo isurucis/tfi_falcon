@@ -24,7 +24,7 @@
  *}
 
 <div>
-  [banner-any-where id="1"]
+  
 </div>
 
 
