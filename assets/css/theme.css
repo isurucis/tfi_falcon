@@ -15172,3 +15172,7 @@ img.lazyload:not(.loaded) {
 .img-weekly_newsletter {
   border-radius: 6px;
 }
+
+.block_homepage_banners_img {
+  padding: 10px 0px;
+}
