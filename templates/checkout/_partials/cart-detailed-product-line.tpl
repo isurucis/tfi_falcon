@@ -40,7 +40,14 @@
           {$product.name}
         </a>
       </p>
-
+      <p class="product-stock">
+        {if $product.quantity_available > 0}
+            <span>Available stock: {$product.quantity_available}</span>
+        {else}
+            <span class="out-of-stock">Out of stock</span>
+        {/if}
+    </p>
+    
       {if $product.attributes}
         <ul class="mb-2">
           {foreach from=$product.attributes key="attribute" item="value"}
@@ -132,6 +139,7 @@
             value="{$product.quantity}"
             name="product-quantity-spin"
             min="{$product.minimal_quantity}"
+            stk="{$product.quantity_available}"
             aria-label="{l s='%productName% product quantity field' sprintf=['%productName%' => $product.name] d='Shop.Theme.Checkout'}"
             />
             

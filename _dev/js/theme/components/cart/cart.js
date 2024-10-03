@@ -72,6 +72,7 @@ const CheckUpdateQuantityOperations = {
   $.each($(spinnerSelector), (index, spinner) => {
     let minValue = parseInt($(spinner).attr('min'), 10);
     let boxqty = Math.floor((minValue * 20) / 4);
+    var stock = parseInt($(spinner).attr('stk'));
 
     $(spinner).TouchSpin({
       verticalupclass: 'material-icons touchspin-up',
