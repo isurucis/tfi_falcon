@@ -167,7 +167,6 @@
             {if isset($configuration.password_policy.minimum_length)}data-minlength="{$configuration.password_policy.minimum_length}"{/if}
             {if isset($configuration.password_policy.maximum_length)}data-maxlength="{$configuration.password_policy.maximum_length}"{/if}
             {if isset($configuration.password_policy.minimum_score)}data-minscore="{$configuration.password_policy.minimum_score}"{/if}
-            <!-- pattern=".{literal}{{/literal}{$configuration.password_policy.minimum_length},{literal}}{/literal}" -->
             pattern="{literal}/^(?=.*?[A-Z])(?=.*?[a-z])(?=.*?[0-9])(?=.*?[#?!@$%^&*-]).{8,}$/{/literal}"
             {if isset($autocomplete[$field.name])}autocomplete="{$autocomplete[$field.name]}" {/if}
             {if $field.required}required{/if}>
