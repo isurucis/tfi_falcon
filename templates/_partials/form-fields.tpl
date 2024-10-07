@@ -169,9 +169,9 @@
             pattern="{literal}/^(?=.*?[A-Z])(?=.*?[a-z])(?=.*?[0-9])(?=.*?[#?!@$%^&*-]).{8,}$/{/literal}"
             {if isset($autocomplete[$field.name])}autocomplete="{$autocomplete[$field.name]}" {/if}
             {if $field.required}required{/if}
-      oninvalid="this.setCustomValidity('Not Valid')"
-      onchange="try{setCustomValidity('')}catch(e){}"
-      oninput="setCustomValidity(' ')"
+      oninvalid="{literal}this.setCustomValidity('Not Valid'){/literal}"
+      onchange="{literal}try{setCustomValidity('')}catch(e){}{/literal}"
+      oninput="{literal}setCustomValidity(' '){/literal}"
             >
           <span class="input-group-append">
             <button class="btn btn-primary" type="button" data-action="show-password"
