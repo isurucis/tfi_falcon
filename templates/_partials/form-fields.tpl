@@ -169,9 +169,7 @@
             pattern="{literal}/^(?=.*?[A-Z])(?=.*?[a-z])(?=.*?[0-9])(?=.*?[#?!@$%^&*-]).{8,}$/{/literal}"
             {if isset($autocomplete[$field.name])}autocomplete="{$autocomplete[$field.name]}" {/if}
             {if $field.required}required{/if}
-      oninvalid="{literal}this.setCustomValidity('Not Valid'){/literal}"
-      onchange="{literal}try{setCustomValidity('')}catch(e){}{/literal}"
-      oninput="{literal}setCustomValidity(' '){/literal}"
+            title="Password shouldd be 8-56 character in length, can contain atleast 1 UPPER Case, Numbers and Special Symbols"
             >
           <span class="input-group-append">
             <button class="btn btn-primary" type="button" data-action="show-password"
