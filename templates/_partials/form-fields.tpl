@@ -168,7 +168,11 @@
             {if isset($configuration.password_policy.minimum_score)}data-minscore="{$configuration.password_policy.minimum_score}"{/if}
             pattern="{literal}/^(?=.*?[A-Z])(?=.*?[a-z])(?=.*?[0-9])(?=.*?[#?!@$%^&*-]).{8,}$/{/literal}"
             {if isset($autocomplete[$field.name])}autocomplete="{$autocomplete[$field.name]}" {/if}
-            {if $field.required}required{/if}>
+            {if $field.required}required{/if}
+      oninvalid="this.setCustomValidity('Not Valid')"
+      onchange="try{setCustomValidity('')}catch(e){}"
+      oninput="setCustomValidity(' ')"
+            >
           <span class="input-group-append">
             <button class="btn btn-primary" type="button" data-action="show-password"
               data-text-show="<span class='material-icons d-block'>visibility</span>" data-text-hide="<span class='material-icons d-block'>visibility_off</span>">
