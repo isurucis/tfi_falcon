@@ -155,7 +155,6 @@
       {/block}
 
     {elseif $field.type === 'password'}
-/^(?=.*?[A-Z])(?=.*?[a-z])(?=.*?[0-9])(?=.*?[#?!@$%^&*-]).{8,}$/
       {block name='form_field_item_password'}
         <div class="input-group js-parent-focus">
           <input
