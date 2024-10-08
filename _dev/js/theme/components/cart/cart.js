@@ -81,7 +81,7 @@ const CheckUpdateQuantityOperations = {
       buttonup_class: 'btn btn-touchspin js-touchspin js-decrease-product-quantity',
       step: minValue,
       min: minValue,
-      max: 1000000,
+      max: stock,
     });
 
     // Event listener for starting the spin
