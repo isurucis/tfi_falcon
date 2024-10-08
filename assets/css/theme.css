@@ -15182,3 +15182,7 @@ img.lazyload:not(.loaded) {
 .block_homepage_banners_img {
   padding: 10px 0px;
 }
+
+.delivery-information {
+  display: none;
+}
