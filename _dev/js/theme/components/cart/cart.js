@@ -88,6 +88,8 @@ const CheckUpdateQuantityOperations = {
     $(spinner).on('touchspin.on.startspin', function (e) {
       let currentValue = parseInt($(spinner).val(), 10);
       alert(stock);
+      alert(boxqty);
+      alert(currentValue);
       if (currentValue > boxqty) {
         if(stock>=(currentValue+boxqty)){
         $(spinner).trigger("touchspin.updatesettings", { step: boxqty });
