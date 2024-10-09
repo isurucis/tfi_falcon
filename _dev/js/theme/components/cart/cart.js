@@ -118,7 +118,7 @@ function updateCase(qtyInput) {
   //alert(quantityValue);
   //alert(quantityValue);
   let numberOfCases = Math.floor(quantityValue / ((minValue*20)/4)); // Calculate number of cases
-  console.log('price_box_calc ID:', 'price_box_calc_' + qtyInput.attr('id').split('_')[1]);
+  console.log(qtyInput.attr('id'));
 
   let priceBoxCalc = $('#price_box_calc_' + qtyInput.attr('id').split('_')[1]);
   
