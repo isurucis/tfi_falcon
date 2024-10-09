@@ -74,7 +74,7 @@ const CheckUpdateQuantityOperations = {
     let boxqty = Math.floor((minValue * 20) / 4);
     let stock = parseInt($(spinner).attr('stk'));
     let id = $(spinner).attr('data-product-id');
-    updateCase(id,$(spinner).val(),minValue );
+    updateCase(id, $(spinner).val(), minValue);
 
     // Initialize the TouchSpin plugin with default settings
     $(spinner).TouchSpin({
@@ -90,21 +90,28 @@ const CheckUpdateQuantityOperations = {
     // Event listener for starting the spin
     $(spinner).on('touchspin.on.startspin', function (e) {
       let currentValue = parseInt($(spinner).val(), 10);
-      //alert(boxqty);
 
       // If current value is greater than or equal to boxqty, set step to boxqty for increasing
       if (currentValue >= boxqty) {
-        //if (stock >= (currentValue + boxqty)) {
-          $(spinner).trigger("touchspin.updatesettings", { step: boxqty });
-        //}
+        $(spinner).trigger("touchspin.updatesettings", { step: boxqty });
       } else if (currentValue < boxqty) {
-        //if (stock >= (currentValue + minValue)) {
-          $(spinner).trigger("touchspin.updatesettings", { step: minValue });
-        //}
+        $(spinner).trigger("touchspin.updatesettings", { step: minValue });
       }
 
       // Custom function to handle case updates (assuming you have it defined elsewhere)
-      updateCase(id,$(spinner).val(),minValue );
+      updateCase(id, $(spinner).val(), minValue);
+    });
+
+    // Event listener for stopping the spin
+    $(spinner).on('touchspin.on.stopspin', function (e) {
+      let currentValue = parseInt($(spinner).val(), 10);
+      let newStep = currentValue >= boxqty ? boxqty : minValue;
+
+      // Update the step value to the calculated newStep
+      $(spinner).trigger("touchspin.updatesettings", { step: newStep });
+
+      // Custom function to handle case updates (assuming you have it defined elsewhere)
+      updateCase(id, $(spinner).val(), minValue);
     });
   });
 
