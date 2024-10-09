@@ -73,6 +73,7 @@ const CheckUpdateQuantityOperations = {
     let minValue = parseInt($(spinner).attr('min'), 10);
     let boxqty = Math.floor((minValue * 20) / 4);
     let stock = parseInt($(spinner).attr('stk'));
+    let id = qtyInput.attr('id').split('_')[1];
 
     // Initialize the TouchSpin plugin with default settings
     $(spinner).TouchSpin({
@@ -103,7 +104,7 @@ const CheckUpdateQuantityOperations = {
       }
 
       // Custom function to handle case updates (assuming you have it defined elsewhere)
-      updateCase($(spinner));
+      updateCase(id,$(spinner).val(),minValue );
     });
   });
 
@@ -112,15 +113,15 @@ const CheckUpdateQuantityOperations = {
 }
 
 // Update the case value based on quantity input
-function updateCase(qtyInput) {
-  let minValue = parseInt(qtyInput.attr('min'));
-  let quantityValue = parseInt(qtyInput.val());
+function updateCase(id, val, minval) {
+  let minValue = parseInt(minval);
+  let quantityValue = parseInt(val);
   //alert(quantityValue);
   //alert(quantityValue);
   let numberOfCases = Math.floor(quantityValue / ((minValue*20)/4)); // Calculate number of cases
-  console.log(qtyInput.attr('id'));
+  console.log(id);
 
-  let priceBoxCalc = $('#price_box_calc_' + qtyInput.attr('id').split('_')[1]);
+  let priceBoxCalc = $('#price_box_calc_' + id);
   
 
   // Update the case value in the UI
