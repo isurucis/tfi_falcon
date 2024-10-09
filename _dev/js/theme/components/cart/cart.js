@@ -86,30 +86,46 @@ const CheckUpdateQuantityOperations = {
     });
 
     // Event listener for starting the spin
-    $(spinner).on('touchspin.on.startspin', function (e) {
+    $(spinner).on('touchspin.on.startspin', function (e, direction) {
       let currentValue = parseInt($(spinner).val(), 10);
+      let newValue;
 
-      // If current value is greater than or equal to boxqty, set step to boxqty for increasing
-      if (currentValue >= boxqty) {
-        if (stock >= (currentValue + boxqty)) {
-          $(spinner).trigger("touchspin.updatesettings", { step: boxqty });
-        }
-      } 
-      // If current value is less than boxqty, set step to minValue for decreasing
-      else if (currentValue < boxqty) {
-        if (stock >= (currentValue + minValue)) {
-          $(spinner).trigger("touchspin.updatesettings", { step: minValue });
+      // For incrementing
+      if (direction === 'up') {
+        if (currentValue >= boxqty) {
+          newValue = currentValue + boxqty;  // Increase by boxqty
+        } else {
+          newValue = currentValue + minValue;  // Increase by minValue
         }
       }
 
-      // Custom function to handle case updates (assuming you have it defined elsewhere)
+      // For decrementing
+      if (direction === 'down') {
+        if (currentValue > boxqty) {
+          newValue = currentValue - boxqty;  // Decrease by boxqty
+        } else {
+          newValue = currentValue - minValue;  // Decrease by minValue
+        }
+      }
+
+      // Make sure newValue doesn't exceed stock or go below minValue
+      if (newValue > stock) {
+        newValue = stock;
+      } else if (newValue < minValue) {
+        newValue = minValue;
+      }
+
+      // Update spinner value
+      $(spinner).val(newValue);
+
+      // Custom function to handle case updates (if needed)
       updateCase($(spinner));
     });
   });
 
-  // Call any additional functions after spin setup
   CheckUpdateQuantityOperations.switchErrorStat();
 }
+
 
 // Update the case value based on quantity input
 function updateCase(qtyInput) {
