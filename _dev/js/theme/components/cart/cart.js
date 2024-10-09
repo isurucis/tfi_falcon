@@ -115,10 +115,13 @@ const CheckUpdateQuantityOperations = {
 function updateCase(qtyInput) {
   let minValue = parseInt(qtyInput.attr('min'));
   let quantityValue = parseInt(qtyInput.val());
-  alert(quantityValue);
+  //alert(quantityValue);
   //alert(quantityValue);
   let numberOfCases = Math.floor(quantityValue / ((minValue*20)/4)); // Calculate number of cases
+  console.log('price_box_calc ID:', 'price_box_calc_' + qtyInput.attr('id').split('_')[1]);
+
   let priceBoxCalc = $('#price_box_calc_' + qtyInput.attr('id').split('_')[1]);
+  
 
   // Update the case value in the UI
   priceBoxCalc.text(numberOfCases + ' Case' + (numberOfCases > 1 ? 's' : ''));
