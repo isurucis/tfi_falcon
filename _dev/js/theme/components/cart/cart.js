@@ -64,46 +64,47 @@ const CheckUpdateQuantityOperations = {
     isUpdateOperation = true;
   },
 };
+
 /**
  * Attach Bootstrap TouchSpin event handlers
  */
  function createSpin() {
   $.each($(spinnerSelector), (index, spinner) => {
-    let minValue = parseInt($(spinner).attr('min'), 10);
+    let minValue = parseInt($(spinner).attr('min'), 10);  // Minimum value for spinner
     let boxqty = Math.floor((minValue * 20) / 4);  // Calculate box quantity
-    let stock = parseInt($(spinner).attr('stk'));
+    let stock = parseInt($(spinner).attr('stk'));  // Stock available
 
-    // Initialize the TouchSpin plugin with default settings
+    // Initialize TouchSpin with initial settings
     $(spinner).TouchSpin({
       verticalupclass: 'material-icons touchspin-up',
       verticaldownclass: 'material-icons touchspin-down',
-      buttondown_class: 'btn btn-touchspin js-touchspin js-increase-product-quantity',
-      buttonup_class: 'btn btn-touchspin js-touchspin js-decrease-product-quantity',
-      step: minValue,  // Start with minValue as the step
+      buttondown_class: 'btn btn-touchspin js-touchspin js-decrease-product-quantity',
+      buttonup_class: 'btn btn-touchspin js-touchspin js-increase-product-quantity',
+      step: minValue,  // Set default step
       min: minValue,
       max: stock
     });
 
-    // Event listener for when the spinner value changes (manually adjust)
+    // Handle increase (up) and decrease (down) manually
     $(spinner).on('touchspin.on.startspin', function (e, direction) {
       let currentValue = parseInt($(spinner).val(), 10);
       let newValue;
 
-      // Increase the value
       if (direction === 'up') {
+        // If current value is greater or equal to boxqty, increase by boxqty, otherwise increase by minValue
         if (currentValue >= boxqty) {
-          newValue = currentValue + boxqty;  // Increase by boxqty
+          newValue = currentValue + boxqty;
         } else {
-          newValue = currentValue + minValue;  // Increase by minValue
+          newValue = currentValue + minValue;
         }
       }
 
-      // Decrease the value
       if (direction === 'down') {
+        // If current value is greater than boxqty, decrease by boxqty, otherwise decrease by minValue
         if (currentValue > boxqty) {
-          newValue = currentValue - boxqty;  // Decrease by boxqty
+          newValue = currentValue - boxqty;
         } else {
-          newValue = currentValue - minValue;  // Decrease by minValue
+          newValue = currentValue - minValue;
         }
       }
 
@@ -114,15 +115,15 @@ const CheckUpdateQuantityOperations = {
         newValue = minValue;
       }
 
-      // Set the new value in the spinner
-      $(spinner).val(newValue);
-      $(spinner).trigger('change');  // Trigger change event to update the UI
+      // Set the new value manually in the spinner
+      $(spinner).val(newValue).trigger('change');  // Update value and trigger change event
 
-      // Custom function to handle case updates (if needed)
+      // Call updateCase to update the UI as needed (optional, if you have such logic)
       updateCase($(spinner));
     });
   });
 
+  // Handle any other error operations if necessary
   CheckUpdateQuantityOperations.switchErrorStat();
 }
 
