@@ -73,7 +73,7 @@ const CheckUpdateQuantityOperations = {
     let minValue = parseInt($(spinner).attr('min'), 10);
     let boxqty = Math.floor((minValue * 20) / 4);
     let stock = parseInt($(spinner).attr('stk'));
-    let id = $(spinner).attr('id').split('_')[1];
+    let id = $(spinner).attr('id');
 
     // Initialize the TouchSpin plugin with default settings
     $(spinner).TouchSpin({
