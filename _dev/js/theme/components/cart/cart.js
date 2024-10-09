@@ -64,14 +64,13 @@ const CheckUpdateQuantityOperations = {
     isUpdateOperation = true;
   },
 };
-
 /**
  * Attach Bootstrap TouchSpin event handlers
  */
  function createSpin() {
   $.each($(spinnerSelector), (index, spinner) => {
     let minValue = parseInt($(spinner).attr('min'), 10);
-    let boxqty = Math.floor((minValue * 20) / 4);
+    let boxqty = Math.floor((minValue * 20) / 4);  // Calculate box quantity
     let stock = parseInt($(spinner).attr('stk'));
 
     // Initialize the TouchSpin plugin with default settings
@@ -80,17 +79,17 @@ const CheckUpdateQuantityOperations = {
       verticaldownclass: 'material-icons touchspin-down',
       buttondown_class: 'btn btn-touchspin js-touchspin js-increase-product-quantity',
       buttonup_class: 'btn btn-touchspin js-touchspin js-decrease-product-quantity',
-      step: minValue,
+      step: minValue,  // Start with minValue as the step
       min: minValue,
-      max: stock,
+      max: stock
     });
 
-    // Event listener for starting the spin
+    // Event listener for when the spinner value changes (manually adjust)
     $(spinner).on('touchspin.on.startspin', function (e, direction) {
       let currentValue = parseInt($(spinner).val(), 10);
       let newValue;
 
-      // For incrementing
+      // Increase the value
       if (direction === 'up') {
         if (currentValue >= boxqty) {
           newValue = currentValue + boxqty;  // Increase by boxqty
@@ -99,7 +98,7 @@ const CheckUpdateQuantityOperations = {
         }
       }
 
-      // For decrementing
+      // Decrease the value
       if (direction === 'down') {
         if (currentValue > boxqty) {
           newValue = currentValue - boxqty;  // Decrease by boxqty
@@ -108,15 +107,16 @@ const CheckUpdateQuantityOperations = {
         }
       }
 
-      // Make sure newValue doesn't exceed stock or go below minValue
+      // Ensure newValue doesn't exceed stock or go below minValue
       if (newValue > stock) {
         newValue = stock;
       } else if (newValue < minValue) {
         newValue = minValue;
       }
 
-      // Update spinner value
+      // Set the new value in the spinner
       $(spinner).val(newValue);
+      $(spinner).trigger('change');  // Trigger change event to update the UI
 
       // Custom function to handle case updates (if needed)
       updateCase($(spinner));
@@ -125,6 +125,7 @@ const CheckUpdateQuantityOperations = {
 
   CheckUpdateQuantityOperations.switchErrorStat();
 }
+
 
 
 // Update the case value based on quantity input
