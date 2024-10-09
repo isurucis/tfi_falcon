@@ -87,14 +87,16 @@ const CheckUpdateQuantityOperations = {
     // Event listener for starting the spin
     $(spinner).on('touchspin.on.startspin', function (e) {
       let currentValue = parseInt($(spinner).val(), 10);
-      alert(stock);
-      alert(boxqty);
-      alert(currentValue);
+      //alert(stock);
+      //alert(boxqty);
+      //alert(currentValue);
       if (currentValue > boxqty) {
+        alert('boxqty');
         if(stock>=(currentValue+boxqty)){
         $(spinner).trigger("touchspin.updatesettings", { step: boxqty });
         }
       } else {
+        alert('minValue');
         if(stock>=(currentValue+minValue)){
         $(spinner).trigger("touchspin.updatesettings", { step: minValue });
         }
