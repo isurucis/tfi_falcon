@@ -73,8 +73,7 @@ const CheckUpdateQuantityOperations = {
     let minValue = parseInt($(spinner).attr('min'), 10);
     let boxqty = Math.floor((minValue * 20) / 4);
     let stock = parseInt($(spinner).attr('stk'));
-    let id = $(spinner).attr('id');
-    alert(id);
+    
 
     // Initialize the TouchSpin plugin with default settings
     $(spinner).TouchSpin({
@@ -90,6 +89,8 @@ const CheckUpdateQuantityOperations = {
     // Event listener for starting the spin
     $(spinner).on('touchspin.on.startspin', function (e) {
       let currentValue = parseInt($(spinner).val(), 10);
+      let id = $(spinner).attr('id');
+      alert(id);
 
       // If current value is greater than or equal to boxqty, set step to boxqty for increasing
       if (currentValue >= boxqty) {
