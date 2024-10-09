@@ -90,7 +90,7 @@ const CheckUpdateQuantityOperations = {
     // Event listener for starting the spin
     $(spinner).on('touchspin.on.startspin', function (e) {
       let currentValue = parseInt($(spinner).val(), 10);
-      alert(id);
+      //alert(id);
 
       // If current value is greater than or equal to boxqty, set step to boxqty for increasing
       if (currentValue >= boxqty) {
