@@ -71,3 +71,14 @@ $(() => {
     window.location.href = $(target).val();
   });
 });
+
+$(document).ready(function() {
+  $('#clear-float-cart-btn').on('click', function() {
+    if (confirm('Are you sure you want to clear the cart?')) {
+      $('a.remove-from-cart').each(function() {
+        // Trigger the click event on each one
+        $(this)[0].click(); // Native click event to simulate a user click
+      });
+    }
+  });
+});
