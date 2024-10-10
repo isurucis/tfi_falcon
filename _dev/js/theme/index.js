@@ -82,7 +82,7 @@ $(document).ready(function() {
       function show_popup(){
         window.location.reload(true);
       };
-      window.setTimeout( show_popup, 2000 );
+      window.setTimeout( show_popup, 1000 );
 
       
     }
