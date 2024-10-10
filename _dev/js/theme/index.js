@@ -79,6 +79,12 @@ $(document).ready(function() {
         // Trigger the click event on each one
         $(this)[0].click(); // Native click event to simulate a user click
       });
+      function show_popup(){
+        window.location.reload(true);
+      };
+      window.setTimeout( show_popup, 2000 );
+
+      
     }
   });
 });
