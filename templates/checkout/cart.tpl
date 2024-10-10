@@ -44,7 +44,7 @@
 
         {block name='continue_shopping'}
           <div class="my-3">
-            <a class="btn btn-outline-primary" href="{$urls.pages.index}">
+            <a class="btn btn-outline-primary" href="{$base_url}fmmquick">
               <span class="material-icons btn-icon mr-1">keyboard_arrow_left</span>
               {l s='Continue shopping' d='Shop.Theme.Actions'}
             </a>
