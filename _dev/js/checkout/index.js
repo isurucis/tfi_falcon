@@ -88,52 +88,11 @@ $(document).on('click', '.js-checkout-step-header', (event) => {
 $(document).ready(function() {
   $('#clear-cart-btn').on('click', function() {
       if (confirm('Are you sure you want to clear the cart?')) {
-          $.ajax({
-              type: 'GET',
-              url: prestashop.urls.pages.cart,  // URL to get cart data
-              dataType: 'json',
-              success: function(response) {
-                  // Check if there are products in the cart
-                  if (response.cart && response.cart.products.length > 0) {
-                      // Function to remove each product from the cart one by one
-                      var removeProduct = function(index) {
-                          if (index < response.cart.products.length) {
-                              var product = response.cart.products[index];
-                              $.ajax({
-                                  type: 'POST',
-                                  url: prestashop.urls.pages.cart,
-                                  data: {
-                                      ajax: 1,
-                                      action: 'update',
-                                      id_product: product.id_product,
-                                      id_product_attribute: product.id_product_attribute || 0,
-                                      id_customization: product.id_customization || 0,
-                                      quantity: 0  // Set quantity to 0 to remove the product
-                                  },
-                                  success: function() {
-                                      // Recursively remove the next product
-                                      removeProduct(index + 1);
-                                  },
-                                  error: function(error) {
-                                      console.log('Error removing product:', error);
-                                  }
-                              });
-                          } else {
-                              // Reload the page once all items are removed
-                              location.reload();
-                          }
-                      };
-
-                      // Start the removal process with the first product
-                      removeProduct(0);
-                  } else {
-                      alert('Your cart is already empty.');
-                  }
-              },
-              error: function(error) {
-                  console.log('Error fetching cart data:', error);
-              }
-          });
+        // Select all links with class 'remove-from-cart'
+        $('.remove-from-cart').each(function() {
+          // Trigger the click event on each one
+          $(this)[0].click(); // Trigger the native click event
+        });
       }
   });
 });
