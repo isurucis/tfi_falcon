@@ -89,23 +89,37 @@ $(document).ready(function() {
   $('#clear-cart-btn').on('click', function() {
       if (confirm('Are you sure you want to clear the cart?')) {
           $.ajax({
-              type: 'POST',
-              url: prestashop.urls.pages.cart,  // PrestaShop's cart URL
-              data: {
-                  action: 'update',
-                  ajax: '1',
-                  id_product: 0,
-                  id_customization: 0,
-                  id_product_attribute: 0,
-                  quantity: 0,
-                  op: 'delete'
-              },
+              type: 'GET',
+              url: prestashop.urls.pages.cart,  // Cart URL
+              dataType: 'json',
               success: function(response) {
-                  // Reload the page or update the cart view
-                  location.reload();
+                  // Loop through all cart items and remove them
+                  $.each(response.cart.products, function(index, product) {
+                      $.ajax({
+                          type: 'POST',
+                          url: prestashop.urls.pages.cart,
+                          data: {
+                              ajax: 1,
+                              action: 'update',
+                              id_product: product.id_product,
+                              id_product_attribute: product.id_product_attribute,
+                              id_customization: product.id_customization || 0,
+                              quantity: 0,  // Setting quantity to 0 to remove the product
+                          },
+                          success: function() {
+                              // Reload the page after the last item is removed
+                              if (index === response.cart.products.length - 1) {
+                                  location.reload();
+                              }
+                          },
+                          error: function(error) {
+                              console.log('Error removing product:', error);
+                          }
+                      });
+                  });
               },
               error: function(error) {
-                  console.log('Error clearing cart:', error);
+                  console.log('Error retrieving cart data:', error);
               }
           });
       }
