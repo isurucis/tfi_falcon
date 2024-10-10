@@ -101,28 +101,3 @@
     {hook h='displayCrossSellingShoppingCart'}
   </section>
 {/block}
-<script>
-  document.getElementById('clear-cart-btn').addEventListener('click', function() {
-      if (confirm('Are you sure you want to clear the cart?')) {
-          $.ajax({
-              type: 'POST',
-              url: prestashop.urls.pages.cart,
-              data: {
-                  action: 'update',
-                  ajax: '1',
-                  id_product: 0,
-                  id_customization: 0,
-                  id_product_attribute: 0,
-                  quantity: 0,
-                  op: 'delete'
-              },
-              success: function(response) {
-                  location.reload();
-              },
-              error: function(error) {
-                  console.log('Error clearing cart:', error);
-              }
-          });
-      }
-  });
-</script>

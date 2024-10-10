@@ -85,3 +85,29 @@ $(document).on('click', '.js-checkout-step-header', (event) => {
   $(`#${stepIdentifier}`).addClass('-current');
   $(`#content-${stepIdentifier}`).collapse('show').scrollTop();
 });
+$(document).ready(function() {
+  $('#clear-cart-btn').on('click', function() {
+      if (confirm('Are you sure you want to clear the cart?')) {
+          $.ajax({
+              type: 'POST',
+              url: prestashop.urls.pages.cart,  // PrestaShop's cart URL
+              data: {
+                  action: 'update',
+                  ajax: '1',
+                  id_product: 0,
+                  id_customization: 0,
+                  id_product_attribute: 0,
+                  quantity: 0,
+                  op: 'delete'
+              },
+              success: function(response) {
+                  // Reload the page or update the cart view
+                  location.reload();
+              },
+              error: function(error) {
+                  console.log('Error clearing cart:', error);
+              }
+          });
+      }
+  });
+});
