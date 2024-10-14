@@ -22,12 +22,17 @@
         <div
             id="{$option.id}-container"
             class="mb-3 checkout-option-block checkout-option {if $selected_payment_option == $option.id || $is_free}selected{/if}">
-            <input class="ps-shown-by-js custom-control-input{if $option.binary} binary{/if}" id="{$option.id}"
-                data-module-name="{$option.module_name}" name="payment-option" type="radio" required
-                {if $selected_payment_option == $option.id || $is_free} checked {/if}>
+            <input 
+              class="ps-shown-by-js custom-control-input{if $option.binary} binary{/if}" 
+              id="{$option.id}"
+              data-module-name="{$option.module_name}" 
+              name="payment-option" 
+              type="radio" 
+              required
+              {if $selected_payment_option == $option.id || $is_free} checked {/if}>
 
             <label class="card mb-0 cursor-pointer h-100"  for="{$option.id}">
-                <div class="card-body checkout-option__body py-sm-3 px-sm-4 p-2">
+                <div class="card card-body checkout-option__body py-sm-3 px-sm-4 p-2">
                     <div class="checkout-option__row row align-items-center">
                         <div class="col-auto checkout-option__col checkout-option__col--thumb">
                             <div class="checkout-option__thumb">
@@ -87,6 +92,7 @@
             *}
       {l s='By confirming the order, you certify that you have read and agree with all of the conditions below:' d='Shop.Theme.Checkout'}
     </p>
+
     <form id="conditions-to-approve" method="GET" class="mt-3">
       {foreach from=$conditions_to_approve item="condition" key="condition_name"}
         <div class="custom-control custom-checkbox">
