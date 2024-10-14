@@ -54,8 +54,8 @@
         </div>
         <div
           id="pay-with-{$option.id}-form"
-          style="display:none"
-          class="js-payment-option-form {if $option.id != $selected_payment_option} ps-hidden {/if}"
+          style="display:none; padding: 10px;"
+          class="card js-payment-option-form {if $option.id != $selected_payment_option} ps-hidden {/if}"
         >
           {if $option.form}
             {$option.form nofilter}
