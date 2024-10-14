@@ -93,7 +93,7 @@ document.addEventListener('DOMContentLoaded', function () {
                 }
               }
           } else if (button.classList.contains('quantity-increment')) {
-            
+              alert(currentValue);
               if (currentValue >= boxqty) {
                 if(stock>=(currentValue+boxqty)){
                   input.value = currentValue + boxqty;
