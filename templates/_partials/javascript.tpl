@@ -58,7 +58,8 @@ function updateCaseValue(qtyInput) {
   let quantityValue = parseInt(qtyInput.value);
 
   // Calculate number of cases
-  let numberOfCases = Math.floor(quantityValue / ((minValue * 20) / 4));
+  let boxqty = parseInt(input.getAttribute('case_qty'));
+  let numberOfCases = Math.floor(quantityValue / (boxqty));
 
   // Get the element with ID pdp_case
   let priceBoxCalc = document.getElementById('pdp_case');
