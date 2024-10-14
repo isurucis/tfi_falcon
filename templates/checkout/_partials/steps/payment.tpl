@@ -25,16 +25,15 @@
             
 
             <label class="card mb-0 cursor-pointer h-100"  for="{$option.id}">
-              <input 
-              class="ps-shown-by-js custom-control-input{if $option.binary} binary{/if}" 
-              id="{$option.id}"
-              data-module-name="{$option.module_name}" 
-              name="payment-option" 
-              type="radio" 
-              required
-              {if $selected_payment_option == $option.id || $is_free} checked {/if}>
-              
                 <div class="card card-body checkout-option__body py-sm-3 px-sm-4 p-2">
+                <input 
+                class="ps-shown-by-js custom-control-input{if $option.binary} binary{/if}" 
+                id="{$option.id}"
+                data-module-name="{$option.module_name}" 
+                name="payment-option" 
+                type="radio" 
+                required
+                {if $selected_payment_option == $option.id || $is_free} checked {/if}>
                     <div class="checkout-option__row row align-items-center">
                         <div class="col-auto checkout-option__col checkout-option__col--thumb">
                             <div class="checkout-option__thumb">
