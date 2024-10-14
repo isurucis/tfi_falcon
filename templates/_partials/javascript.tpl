@@ -80,7 +80,8 @@ document.addEventListener('DOMContentLoaded', function () {
               minValue = 1;
           }
           
-          var boxqty = Math.floor((minValue * 20) / 4);
+
+          let boxqty = parseInt(input.getAttribute('case_qty'));
           
           
           if (button.classList.contains('quantity-decrement')) {
