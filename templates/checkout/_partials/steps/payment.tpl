@@ -52,7 +52,7 @@
                 </div>
             </label>
         </div>
-        <div
+        <!-- div
           id="pay-with-{$option.id}-form"
           style="display:none"
           class="js-payment-option-form {if $option.id != $selected_payment_option} ps-hidden {/if}"
@@ -67,7 +67,7 @@
               <button style="display:none" id="pay-with-{$option.id}" type="submit"></button>
             </form>
           {/if}
-        </div>
+        </div -->
 
         {if $option.additionalInformation}
            <div id="{$option.id}-additional-information"
