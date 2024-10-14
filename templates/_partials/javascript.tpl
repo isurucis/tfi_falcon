@@ -58,8 +58,8 @@ function updateCaseValue(qtyInput) {
   let quantityValue = parseInt(qtyInput.value);
 
   // Calculate number of cases
-  let boxqty = parseInt(input.getAttribute('case_qty'));
-  let numberOfCases = Math.floor(quantityValue / (boxqty));
+  let boxqty = parseInt(qtyInput.getAttribute('case_qty'));
+  let numberOfCases = Math.floor(quantityValue / boxqty);
 
   // Get the element with ID pdp_case
   let priceBoxCalc = document.getElementById('pdp_case');
@@ -94,7 +94,7 @@ document.addEventListener('DOMContentLoaded', function () {
                 }
               }
           } else if (button.classList.contains('quantity-increment')) {
-              alert(boxqty);
+              
               if (currentValue >= boxqty) {
                 if(stock>=(currentValue+boxqty)){
                   input.value = currentValue + boxqty;
