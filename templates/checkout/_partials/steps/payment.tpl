@@ -37,9 +37,9 @@
                         <div class="col-auto checkout-option__col checkout-option__col--thumb">
                             <div class="checkout-option__thumb">
                                 {if $option.logo}
-                                    <img src="{$option.logo}" class="checkout-option__img img-fluid" />
+                                    <img src="{$option.logo}" class="checkout-option__img img-fluid 1" />
                                 {else}
-                                    <img src="{$urls.img_url}checkout/payment_default.svg" class="checkout-option__img img-fluid" />
+                                    <img src="{$urls.img_url}checkout/payment_default.svg" class="checkout-option__img img-fluid 2" />
                                 {/if}
                             </div>
                         </div>
@@ -52,7 +52,7 @@
                 </div>
             </label>
         </div>
-        <!-- div
+        <div
           id="pay-with-{$option.id}-form"
           style="display:none"
           class="js-payment-option-form {if $option.id != $selected_payment_option} ps-hidden {/if}"
@@ -67,7 +67,7 @@
               <button style="display:none" id="pay-with-{$option.id}" type="submit"></button>
             </form>
           {/if}
-        </div -->
+        </div>
 
         {if $option.additionalInformation}
            <div id="{$option.id}-additional-information"
