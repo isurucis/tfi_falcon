@@ -22,7 +22,10 @@
         <div
             id="{$option.id}-container"
             class="mb-3 checkout-option-block checkout-option {if $selected_payment_option == $option.id || $is_free}selected{/if}">
-            <input 
+            
+
+            <label class="card mb-0 cursor-pointer h-100"  for="{$option.id}">
+              <input 
               class="ps-shown-by-js custom-control-input{if $option.binary} binary{/if}" 
               id="{$option.id}"
               data-module-name="{$option.module_name}" 
@@ -30,8 +33,7 @@
               type="radio" 
               required
               {if $selected_payment_option == $option.id || $is_free} checked {/if}>
-
-            <label class="card mb-0 cursor-pointer h-100"  for="{$option.id}">
+              
                 <div class="card card-body checkout-option__body py-sm-3 px-sm-4 p-2">
                     <div class="checkout-option__row row align-items-center">
                         <div class="col-auto checkout-option__col checkout-option__col--thumb">
@@ -54,13 +56,13 @@
         </div>
         <div
           id="pay-with-{$option.id}-form"
-          style="display:none; padding: 10px;"
+          style="display:none; "
           class="card js-payment-option-form {if $option.id != $selected_payment_option} ps-hidden {/if}"
         >
           {if $option.form}
             {$option.form nofilter}
           {else}
-            <form id="payment-form" method="POST" action="{$option.action nofilter}">
+            <form id="payment-form" method="POST" action="{$option.action nofilter}" style="padding: 10px;">
               {foreach from=$option.inputs item=input}
                 <input type="{$input.type}" name="{$input.name}" value="{$input.value}">
               {/foreach}
