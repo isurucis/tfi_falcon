@@ -120,10 +120,10 @@ const CheckUpdateQuantityOperations = {
 }
 
 // Update the case value based on quantity input
-function updateCase(id, val, minval, case_qty) {
+function updateCase(id, val, minval, caseqty) {
   let minValue = parseInt(minval);
   let quantityValue = parseInt(val);
-  let case_qty = parseInt(case_qty);
+  let case_qty = parseInt(caseqty);
   //alert(quantityValue);
   //alert(quantityValue);
   let numberOfCases = Math.floor(quantityValue / case_qty); // Calculate number of cases
