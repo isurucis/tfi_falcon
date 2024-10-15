@@ -123,7 +123,7 @@
     </div>
 
     <div class="product-line-grid__block product-line-grid__block--qty">
-      <pre>{$product|@var_dump}</pre>
+      
       {if !empty($product.is_gift)}
         <span class="gift-quantity">{$product.quantity}</span>
       {else}
@@ -141,12 +141,13 @@
             name="product-quantity-spin"
             min="{$product.minimal_quantity}"
             stk="{$product.quantity_available}"
-            {foreach from=$product.features item=feature name=features}
-                      {if $feature.id_feature == 10}
-                      case_qty="{$feature.value}"
-                      {/if}
-                  {foreachelse}
-                  {/foreach}
+            {assign var=features value=Product::getFrontFeaturesStatic($language.id,$product.id)}
+            {foreach from=$features item=feat}
+              {if $feat.id_feature == 10 }
+              case_qty="{$feat.value}"
+              {/if}
+            {/foreach}
+
             aria-label="{l s='%productName% product quantity field' sprintf=['%productName%' => $product.name] d='Shop.Theme.Checkout'}"
             />
             
