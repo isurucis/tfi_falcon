@@ -140,6 +140,12 @@
             name="product-quantity-spin"
             min="{$product.minimal_quantity}"
             stk="{$product.quantity_available}"
+            {foreach from=$product.features item=feature name=features}
+                {if $feature.id_feature == 10}
+                case_qty="{$feature.value}"
+                {/if}
+            {foreachelse}
+            {/foreach}
             aria-label="{l s='%productName% product quantity field' sprintf=['%productName%' => $product.name] d='Shop.Theme.Checkout'}"
             />
             
