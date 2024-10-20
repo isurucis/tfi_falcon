@@ -144,18 +144,7 @@
     </div>
   </div>
 
-  <script type="text/javascript">
-    $( document ).ready(function() {
 
-    //function GFG_Fun() {
-    //  $('.child').clone().appendTo('#parent2');
-    //}
-    console.log("Hello I am from the Checkout Page");
-
-    });
-
-
-  </script>
 
   {hook h='displayPaymentByBinaries'}
 {/block}

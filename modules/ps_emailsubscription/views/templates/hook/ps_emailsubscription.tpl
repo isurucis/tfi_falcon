@@ -25,16 +25,16 @@
 <div class="block_newsletter block_newsletter_full card col-lg-12 col-md-12 col-sm-12" id="blockEmailSubscription_{$hookName}">
   <div class="row">
     <!-- p id="block-newsletter-label" class="col-md-5 col-12">{l s='Get our latest news and special sales' d='Shop.Theme.Global'}</p -->
-    <div class="col-md-6 col-6">
+    <div class="col-md-6 col-12">
       {images_block webpEnabled=$webpEnabled}
-        <a href="https://tfi.activehosted.com/index.php?action=social&c=202&m=218" target="_blank">
-        <img src="https://mediumturquoise-cheetah-573749.hostingersite.com/modules/ps_imageslider/images/53e1737989d527e44174a30a358da61af8c706ce_banner_weekly_newsletter.jpg"
+        <a href="https://superzoo.pythonanywhere.com/latestnewsletter" target="_blank">
+        <img src="/modules/ps_imageslider/images/53e1737989d527e44174a30a358da61af8c706ce_banner_weekly_newsletter.jpg"
         class="img-weekly_newsletter img-fluid"
         alt="Weekly Newsletter">
         </a>
       {/images_block}
     </div>
-    <div class="col-md-6 col-6">
+    <div class="col-md-6 col-12">
       <p id="block-newsletter-label" class="emailsubscribe-title">{l s='Get our latest news and special sales' d='Shop.Theme.Global'}</p>
       <form action="{$urls.current_url}#blockEmailSubscription_{$hookName}" method="post">
         <div class="row">
