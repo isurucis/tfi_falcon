@@ -27,8 +27,10 @@
     <!-- p id="block-newsletter-label" class="col-md-5 col-12">{l s='Get our latest news and special sales' d='Shop.Theme.Global'}</p -->
     <div class="col-md-6 col-12">
       {images_block webpEnabled=$webpEnabled}
+
         <a href="https://superzoo.pythonanywhere.com/latestnewsletter" target="_blank">
         <img src="/modules/ps_imageslider/images/53e1737989d527e44174a30a358da61af8c706ce_banner_weekly_newsletter.jpg"
+
         class="img-weekly_newsletter img-fluid"
         alt="Weekly Newsletter">
         </a>
