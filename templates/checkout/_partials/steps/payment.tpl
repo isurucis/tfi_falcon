@@ -118,9 +118,9 @@
         <button type="submit" class="btn btn-primary btn-lg d-md-inline-block {if !$selected_payment_option} disabled {/if}">
           {l s='Place order' d='Shop.Theme.Checkout'}
         </button>
-        <button type="submit" class="btn btn-primary btn-lg btn-block d-block d-md-none {if !$selected_payment_option} disabled {/if}">
+        <!--<button type="submit" class="btn btn-primary btn-lg btn-block d-block d-md-none {if !$selected_payment_option} disabled {/if}">
           {l s='Place order' d='Shop.Theme.Checkout'}
-        </button>
+        </button>-->
       </div>
       {if $show_final_summary}
         <article class="alert alert-danger mt-2 js-alert-payment-conditions" role="alert" data-alert="danger">
