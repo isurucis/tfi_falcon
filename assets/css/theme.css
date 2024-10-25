@@ -13731,6 +13731,24 @@ label {
   -moz-box-shadow: 10px 10px 12px -10px rgba(0,0,0,0.6) !important;
   box-shadow: 10px 10px 12px -10px rgba(0,0,0,0.6) !important;
 }
+
+.product-flags__flag--on-sale-cut:before, .product-flags__flag--on-sale-cut:before {
+  display: inline-block;
+  content: "";
+  position: absolute;
+  left: -14px;
+  top: 0;
+  border: 9px solid transparent;
+  border-width: 14px 8px;
+  border-right-color: #1eb5ff;
+}
+.product-flags__flag--on-sale-cut:before {
+  border-color: #1eb5ff;
+  border-left-color: transparent!important;
+  left: -9px;
+}
+
+
 .customization-modal .modal-content {
   border: 1px solid #e9ecef;
   border-radius: 0;

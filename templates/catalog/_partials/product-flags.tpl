@@ -26,7 +26,7 @@
     <ul class="product-flags d-flex flex-column position-absolute w-100 pe-none">
         {foreach from=$product.flags item=flag}
             {if $flag.type == "on-sale" }
-                <li class="rounded product-flags__flag--{$flag.type}">On<br />Sale</li>
+                <li class="rounded product-flags__flag--{$flag.type} product-flags__flag--on-sale-cut">On<br />Sale</li>
             {else}
                 <li class="product-flags__flag rounded product-flags__flag--{$flag.type}">{$flag.label}</li>
             {/if}
