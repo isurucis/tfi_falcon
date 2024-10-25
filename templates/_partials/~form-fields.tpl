@@ -163,14 +163,6 @@
             id="f-{$field.name}_{$uniqId}"
             type="password"
             value=""
-            title="Password shouldd be 8-56 character in length, can contain atleast 1 UPPER Case, Numbers and Special Symbols"
-            >
-            {*<!-- input
-            class="form-control js-child-focus js-visible-password{if !empty($field.errors)} is-invalid{/if}"
-            name="{$field.name}"
-            id="f-{$field.name}_{$uniqId}"
-            type="password"
-            value=""
             {if isset($configuration.password_policy.minimum_length)}data-minlength="{$configuration.password_policy.minimum_length}"{/if}
             {if isset($configuration.password_policy.maximum_length)}data-maxlength="{$configuration.password_policy.maximum_length}"{/if}
             {if isset($configuration.password_policy.minimum_score)}data-minscore="{$configuration.password_policy.minimum_score}"{/if}
@@ -178,7 +170,7 @@
             {if isset($autocomplete[$field.name])}autocomplete="{$autocomplete[$field.name]}" {/if}
             {if $field.required}required{/if}
             title="Password shouldd be 8-56 character in length, can contain atleast 1 UPPER Case, Numbers and Special Symbols"
-            -->*}
+            >
           <span class="input-group-append">
             <button class="btn btn-primary" type="button" data-action="show-password"
               data-text-show="<span class='material-icons d-block'>visibility</span>" data-text-hide="<span class='material-icons d-block'>visibility_off</span>">
