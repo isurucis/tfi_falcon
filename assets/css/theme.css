@@ -13705,10 +13705,31 @@ label {
   background-color: #6c757d;
 }
 .product-flags__flag--on-sale {
-  background: #6c757d;
-  order: -1;
-  text-align: center;
-  width: 100%;
+  /*background: #6c757d;
+  order: -1;*/
+  text-align: center !important;
+  /*width: 100%;*/
+
+  background: #f00 !important;
+  color: #fff !important;
+  font-size: 0.9rem !important;
+  font-weight: 500 !important;
+  line-height: 1.15 !important;
+  margin-bottom: 10px !important;
+  padding: 14px 12px !important;
+  pointer-events: auto !important;
+  width: -moz-fit-content !important;
+  width: fit-content !important;
+  margin-left: -11px !important;
+  margin-top: -20px !important;
+  border-radius: .1rem !important;
+  position: absolute !important;
+  right: -20px !important;
+  float: right !important;
+  text-transform: uppercase !important;
+  -webkit-box-shadow: 10px 10px 12px -10px rgba(0,0,0,0.6) !important;
+  -moz-box-shadow: 10px 10px 12px -10px rgba(0,0,0,0.6) !important;
+  box-shadow: 10px 10px 12px -10px rgba(0,0,0,0.6) !important;
 }
 .customization-modal .modal-content {
   border: 1px solid #e9ecef;
