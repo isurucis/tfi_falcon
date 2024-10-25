@@ -13699,17 +13699,15 @@ label {
   right: 0;
   z-index: 1;
 }
-.product-flags__flag--discount,
+
 .product-flags__flag--discount-amount,
 .product-flags__flag--discount-percentage {
   background-color: #6c757d;
 }
-.product-flags__flag--on-sale {
-  /*background: #6c757d;
-  order: -1;*/
-  text-align: center !important;
-  /*width: 100%;*/
 
+
+.product-flags__flag--on-sale {
+  text-align: center !important;
   background: #f00 !important;
   color: #fff !important;
   font-size: 0.9rem !important;
@@ -13733,15 +13731,6 @@ label {
 }
 
 .product-flags__flag--on-sale-cut:before, .product-flags__flag--on-sale-cut:before {
-  /*display: inline-block;
-  content: "";
-  position: absolute;
-  left: -14px;
-  top: 0;
-  border: 9px solid transparent;
-  border-width: 14px 8px;
-  border-right-color: #1eb5ff;*/
-
   display: inline-block;
   content: "";
   position: absolute;
@@ -13751,14 +13740,52 @@ label {
   border-width: 6px 23px;
 }
 .product-flags__flag--on-sale-cut:before {
-  /*border-color: #1eb5ff;
-  border-left-color: transparent!important;
-  left: -9px;*/
-
   border-color: #f00;
   border-bottom-color: rgb(255, 0, 0);
   border-bottom-color: transparent !important;
 }
+
+
+
+.product-flags__flag--discount {
+  text-align: center !important;
+  background: #2cb53b !important;
+  color: #fff !important;
+  font-size: 0.9rem !important;
+  font-weight: 500 !important;
+  line-height: 1.15 !important;
+  margin-bottom: 10px !important;
+  padding: 10px 6px !important;
+  pointer-events: auto !important;
+  width: -moz-fit-content !important;
+  width: fit-content !important;
+  margin-left: -11px !important;
+  margin-top: -15px !important;
+  border-radius: .1rem !important;
+  position: absolute !important;
+  right: -15px !important;
+  float: right !important;
+  text-transform: uppercase !important;
+  -webkit-box-shadow: 10px 10px 12px -10px rgba(0,0,0,0.6) !important;
+  -moz-box-shadow: 10px 10px 12px -10px rgba(0,0,0,0.6) !important;
+  box-shadow: 10px 10px 12px -10px rgba(0,0,0,0.6) !important;
+}
+
+.product-flags__flag--discount-cut:before, .product-flags__flag--discount-cut:before {
+  display: inline-block;
+  content: "";
+  position: absolute;
+  left: 0px;
+  top: 36px;
+  border: 10px solid transparent;
+  border-width: 6px 22px;
+}
+.product-flags__flag--discount-cut:before {
+  border-color: #2cb53b;
+  border-bottom-color: rgb(255, 0, 0);
+  border-bottom-color: transparent !important;
+}
+
 
 
 .customization-modal .modal-content {

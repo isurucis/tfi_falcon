@@ -27,6 +27,8 @@
         {foreach from=$product.flags item=flag}
             {if $flag.type == "on-sale" }
                 <li class="rounded product-flags__flag--{$flag.type} product-flags__flag--on-sale-cut">On<br />Sale</li>
+            {elseif $flag.type == "discount" }
+                <li class="rounded product-flags__flag--{$flag.type} product-flags__flag--discount-cut">{$flag.type}</li>
             {else}
                 <li class="product-flags__flag rounded product-flags__flag--{$flag.type}">{$flag.label}</li>
             {/if}
