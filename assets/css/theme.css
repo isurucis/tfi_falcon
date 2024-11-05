@@ -15264,3 +15264,76 @@ img.lazyload:not(.loaded) {
 .delivery-information {
   display: none;
 }
+
+
+/** HOME PAGE Small Slider **/
+.hmpg_small_slider{
+  width: 1300px;
+  max-width: 100vw;
+  height: 700px;
+  margin: auto;
+  position: relative;
+  overflow: hidden;
+}
+.hmpg_small_list {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  display: flex;
+  width: max-content;
+  transition: 1s;
+}
+.hmpg_small_list img{
+  width: 1300px;
+  max-width: 100vw;
+  height: 100%;
+  object-fit: cover;
+}
+.hmpg_small_buttons{
+  position: absolute;
+  top: 45%;
+  left: 5%;
+  width: 90%;
+  display: flex;
+  justify-content: space-between;
+}
+.hmpg_small_buttons button {
+  width: 50px;
+  height: 50px;
+  border-radius: 505;
+  background-color: #fff5;
+  color: #fff;
+  border: none;
+  font-family: monospace;
+  font-weight: bold;
+}
+.hmpg_small_dots{
+  position: absolute;
+  bottom: 10px;
+  color: #fff;
+  left: 0;
+  width: 100%;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  transition: 1s;
+}
+.hmpg_small_dots li {
+  list-style: none;
+  width: 10px;
+  height: 10px;
+  background-color: #fff;
+  margin: 20px;
+  border-radius: 20px;
+}
+.hmpg_small_dots li.hmpg_small_active {
+  width: 30px;
+}
+@media screen and ( max-width: 768px) { 
+  .hmpg_small_slider {
+      height: 400px;
+  }
+  
+}

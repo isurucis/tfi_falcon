@@ -113,6 +113,55 @@ document.addEventListener('DOMContentLoaded', function () {
 </script>
 {/if}
 
+
+<script type="text/javascript">
+  let list = document.querySelector('.hmpg_small_slider .hmpg_small_list');
+  let items = document.querySelectorAll('.hmpg_small_slider .hmpg_small_list .hmpg_small_item');
+  let dots = document.querySelectorAll('.hmpg_small_slider .hmpg_small_dots li');
+  let prev = document.getElementById('hmpg_small_prev');
+  let next = document.getElementById('hmpg_small_next');
+
+  let active = 0;
+  let lengthitems = items.length - 1;
+
+  next.onclick = function() {
+        if (active + 1 > lengthitems) {
+            active = 0;
+        } else {
+            active = active + 1;
+        }
+        reloadslider();
+  }
+
+  prev.onclick = function() {
+        if (active - 1 < 0) {
+            active = lengthitems;
+        } else {
+            active = active - 1;
+        }
+        reloadslider();
+  }
+
+  let autoslide = setInterval(() => { next.click(); }, 3000);
+
+  function reloadslider() {
+        let checkleft = items[active].offsetLeft;
+        list.style.left = -checkleft + 'px';
+
+        let lastactiveDot = document.querySelector('.hmpg_small_slider .hmpg_small_dots li.hmpg_small_active');
+        if (lastactiveDot) lastactiveDot.classList.remove('hmpg_small_active');
+        dots[active].classList.add('hmpg_small_active');
+  }
+
+  dots.forEach((li, key) => {
+        li.addEventListener('click', function() {
+            active = key;
+            reloadslider();
+        })
+  })
+  </script>
+
+
 <!--Start of Tawk.to Script-->
 <script type="text/javascript">
 var Tawk_API=Tawk_API||{}, Tawk_LoadStart=new Date();
