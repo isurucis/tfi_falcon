@@ -32,6 +32,7 @@
       {block name='page_title' hide}
         <header class="page-header mb-4 text-center {block name='page_header_container_class'}{/block}">
           <h1>{$smarty.block.child}</h1>
+          
         </header>
       {/block}
     {/block}

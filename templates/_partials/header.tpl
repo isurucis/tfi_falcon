@@ -23,6 +23,11 @@
  * @license   https://opensource.org/licenses/AFL-3.0 Academic Free License 3.0 (AFL-3.0)
  *}
 {block name='header_banner'}
+<!-- Google Tag Manager (noscript) -->
+<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-5Z828264"
+height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+<!-- End Google Tag Manager (noscript) -->
+
     <div class="header-banner">
         {hook h='displayBanner'}
     </div>
@@ -40,6 +45,7 @@
 {/block}
 
 {block name='header_top'}
+
     <div class="js-header-top-wrapper">
 
         <div class="header-top js-header-top">
