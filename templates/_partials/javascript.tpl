@@ -114,7 +114,6 @@ document.addEventListener('DOMContentLoaded', function () {
 {/if}
 
 
-<<<<<<< HEAD
 <script type="text/javascript">
   let list = document.querySelector('.hmpg_small_slider .hmpg_small_list');
   let items = document.querySelectorAll('.hmpg_small_slider .hmpg_small_list .hmpg_small_item');
