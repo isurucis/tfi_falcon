@@ -31,7 +31,7 @@
 </div>
 <div class="footer-container">
   <div class="container">
-    <div class="row"><p>This is for testing</p>
+    <div class="row">
       {block name='hook_footer'}
         {hook h='displayFooter'}
       {/block}
