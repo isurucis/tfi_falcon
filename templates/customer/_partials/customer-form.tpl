@@ -27,7 +27,9 @@
   {block name='customer_form_errors'}
     {include file='_partials/form-errors.tpl' errors=$errors['']}
   {/block}
-
+    <div>
+      <h1>Create a New User Account</h1>
+    </div>
   <form action="{block name='customer_form_actionurl'}{$action}{/block}" id="customer-form" class="js-customer-form needs-validation user-form user-form--sm"
     method="post">
     <div>
