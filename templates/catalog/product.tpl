@@ -68,7 +68,8 @@
             {/block}
           {/block}
           
-          <!-- h4>{$product.delivery_in_stock|escape:'htmlall':'UTF-8'}</h4 -->
+          <h4>Delivered within 1-2 Weeks</h4>
+          
 
 
           <div style="display: block">
