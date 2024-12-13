@@ -42,5 +42,8 @@
       <p class="mb-0">{l s='Already have an account?' d='Shop.Theme.Customeraccount'} <a
         href="{$urls.pages.authentication}">{l s='Log in instead!' d='Shop.Theme.Customeraccount'}</a></p>
     </div>
+    <div>
+      <h1>Create a New User Account</h1>
+    </div>
   </div>
 {/block}
