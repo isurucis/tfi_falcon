@@ -36,6 +36,14 @@
         d='Shop.Theme.Global'
       }
     {else}
+    <div class="col header-top__block header-top__block--logo" style="margin-bottom: 10px;">
+        {images_block webpEnabled=$webpEnabled}
+            <img src="/modules/ps_imageslider/images/f01f038628e18d349d2093a4a727ca41bac585fb_farm_to_store_green.png"
+              width="150px"
+              class="img-farmtostore img-fluid"
+              alt="Farm to Store">
+        {/images_block}
+    </div>
     <ul class="mobile-menu">
       <li><a href="{$urls.pages.authentication}">{l s='Register' d='Shop.Theme.Global'}</a></li>
       <li><a href="{$urls.pages.contact}">{l s='Contact us' d='Shop.Theme.Global'}</a></li>
