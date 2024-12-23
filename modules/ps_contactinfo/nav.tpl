@@ -35,12 +35,14 @@
         ]
         d='Shop.Theme.Global'
       }
+
+      <ul class="mobile-menu">
+        <a href="{$urls.pages.authentication}"><li>{l s='Register' d='Shop.Theme.Global'}</li></a>
+        <a href="{$urls.pages.contact}"><li>{l s='Contact us' d='Shop.Theme.Global'}</li></a>
+      </ul>
     {else}
     
-    <ul class="mobile-menu">
-      <a href="{$urls.pages.authentication}"><li>{l s='Register' d='Shop.Theme.Global'}</li></a>
-      <a href="{$urls.pages.contact}"><li>{l s='Contact us' d='Shop.Theme.Global'}</li></a>
-    </ul>
+    
 
     <div class="col header-top__block header-top__block--logo" style="margin-top: 20px; margin-bottom: 10px;">
         {images_block webpEnabled=$webpEnabled}
