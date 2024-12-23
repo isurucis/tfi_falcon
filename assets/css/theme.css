@@ -15343,22 +15343,35 @@ img.lazyload:not(.loaded) {
 
 
 .mobile-menu {
-  position: absolute;
   bottom: 10px;
   color: #fff;
   left: 0;
   width: 100%;
   margin: 0;
   padding: 0;
-  display: flex;
   justify-content: center;
   transition: 1s;
 }
 .mobile-menu li {
   list-style: none;
-  width: 10px;
-  height: 10px;
   background-color: #fff;
-  margin: 20px;
-  border-radius: 20px;
+  border-radius: 10px;
+  border: solid 1px #bddbce;
+  padding: 10px 10px;
+  margin-bottom: 5px;
+}
+
+.mobile-menu li a:link, .mobile-menu li a:visited {
+  font-family: 'Roboto';
+  font-size: 1rem;
+  background-color: transparent;
+  color: #1a4b95;
+  text-decoration: none;
+}
+
+.mobile-menu li a:hover {
+  font-family: 'Roboto';
+  background-color: #bddbce;
+  color: #296642;
+  text-decoration: none;
 }
