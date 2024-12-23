@@ -15378,11 +15378,26 @@ img.lazyload:not(.loaded) {
 
 
 .register-now {
-  background-color: #fff;
-  padding: 5px 20px;
   text-align: right;
-  border-right: solid 2px #bddbce;
+}
+
+.register-now a:link {
+  background-color: #bfe1cd;
+  padding: 12px 20px;
+  text-align: right;
   font-size: 1rem;
+  border-radius: 6px;
+  font-weight: 500;
+  color: #375658;
+}
+.register-now a:hover {
+  background-color: #8bc4a2;
+  padding: 12px 20px;
+  text-align: right;
+  font-size: 1rem;
+  border-radius: 6px;
+  font-weight: 500;
+  color: #375658;
 }
 
 @media screen and ( max-width: 768px) { 
