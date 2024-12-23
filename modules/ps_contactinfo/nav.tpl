@@ -36,16 +36,19 @@
         d='Shop.Theme.Global'
       }
 
-      <ul class="mobile-menu">
-        <a href="{$urls.pages.authentication}"><li>{l s='Register' d='Shop.Theme.Global'}</li></a>
-        <a href="{$urls.pages.contact}"><li>{l s='Contact us' d='Shop.Theme.Global'}</li></a>
-      </ul>
+      
     {else}
-    
 
-        <a href="{$urls.pages.authentication}">{l s='Register' d='Shop.Theme.Global'}</a><br />
+      <div class="maintop-menu-desktop">
         <a href="{$urls.pages.contact}">{l s='Contact us' d='Shop.Theme.Global'}</a>
+      </div>
 
+      <div class="maintop-menu-mobile">
+        <ul class="mobile-menu">
+          <a href="{$urls.pages.authentication}"><li>{l s='Register' d='Shop.Theme.Global'}</li></a>
+          <a href="{$urls.pages.contact}"><li>{l s='Contact us' d='Shop.Theme.Global'}</li></a>
+        </ul>
+      </div>
 
 
     {/if}
