@@ -22,15 +22,22 @@
  * @copyright Since 2007 PrestaShop SA and Contributors
  * @license   https://opensource.org/licenses/AFL-3.0 Academic Free License 3.0 (AFL-3.0)
  *}
-
-<div class="d-none d-md-block col-md-2 col header-top__block header-top__block--logo">
-    {images_block webpEnabled=$webpEnabled}
-        <img src="/modules/ps_imageslider/images/f01f038628e18d349d2093a4a727ca41bac585fb_farm_to_store_green.png"
-                    width="150px"
-                class="img-farmtostore img-fluid"
-                alt="Farm to Store">
-    {/images_block}
-</div>
+{if $logged}
+  <div class="d-none d-md-block col-md-2 col header-top__block header-top__block--logo">
+      {images_block webpEnabled=$webpEnabled}
+          <img src="/modules/ps_imageslider/images/f01f038628e18d349d2093a4a727ca41bac585fb_farm_to_store_green.png"
+                      width="150px"
+                  class="img-farmtostore img-fluid"
+                  alt="Farm to Store">
+      {/images_block}
+  </div>
+{else}
+  <div class="d-none d-md-block col-md-2 col header-top__block header-top__block--logo">
+    <ul class="mobile-menu">
+      <a href="https://shop.etropicalfish.com/b2b-customer-create"><li>{l s='Register' d='Shop.Theme.Global'}</li></a>
+    </ul>
+  </div>
+{/if}
 <div class="col flex-grow-0 header-top__block header-top__block--user">
   <a
     class="header-top__link"
