@@ -15337,3 +15337,28 @@ img.lazyload:not(.loaded) {
   }
   
 }
+
+
+
+
+
+.mobile-menu {
+  position: absolute;
+  bottom: 10px;
+  color: #fff;
+  left: 0;
+  width: 100%;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  transition: 1s;
+}
+.mobile-menu li {
+  list-style: none;
+  width: 10px;
+  height: 10px;
+  background-color: #fff;
+  margin: 20px;
+  border-radius: 20px;
+}

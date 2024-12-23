@@ -36,8 +36,10 @@
         d='Shop.Theme.Global'
       }
     {else}
-      <a href="{$urls.pages.authentication}">{l s='Register' d='Shop.Theme.Global'}</a>
-      <a href="{$urls.pages.contact}">{l s='Contact us' d='Shop.Theme.Global'}</a>
+    <ul class="mobile-menu">
+      <li><a href="{$urls.pages.authentication}">{l s='Register' d='Shop.Theme.Global'}</a></li>
+      <li><a href="{$urls.pages.contact}">{l s='Contact us' d='Shop.Theme.Global'}</a></li>
+    </ul>
     {/if}
   </div>
 </div>
