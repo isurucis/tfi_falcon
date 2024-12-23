@@ -23,7 +23,7 @@
  * @license   https://opensource.org/licenses/AFL-3.0 Academic Free License 3.0 (AFL-3.0)
  *}
 
-<div class="col-md-2 col header-top__block header-top__block--logo">
+<div class="d-none d-md-block col-md-2 col header-top__block header-top__block--logo">
     {images_block webpEnabled=$webpEnabled}
         <img src="/modules/ps_imageslider/images/f01f038628e18d349d2093a4a727ca41bac585fb_farm_to_store_green.png"
                     width="150px"
