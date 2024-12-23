@@ -42,16 +42,12 @@
       </ul>
     {else}
     
-    
 
-    <div class="col header-top__block header-top__block--logo" style="margin-top: 20px; margin-bottom: 10px;">
-        {images_block webpEnabled=$webpEnabled}
-            <img src="/modules/ps_imageslider/images/f01f038628e18d349d2093a4a727ca41bac585fb_farm_to_store_green.png"
-              width="80%"
-              class="img-farmtostore img-fluid"
-              alt="Farm to Store">
-        {/images_block}
-    </div>
+        <a href="{$urls.pages.authentication}">{l s='Register' d='Shop.Theme.Global'}</a><br />
+        <a href="{$urls.pages.contact}">{l s='Contact us' d='Shop.Theme.Global'}</a>
+
+
+
     {/if}
   </div>
 </div>
