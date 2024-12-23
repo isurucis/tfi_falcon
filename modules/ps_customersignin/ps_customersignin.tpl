@@ -32,10 +32,8 @@
       {/images_block}
   </div>
 {else}
-  <div class="d-none d-md-block col-md-2 col header-top__block header-top__block--logo">
-    <ul class="mobile-menu">
-      <a href="https://shop.etropicalfish.com/b2b-customer-create"><li>{l s='Register' d='Shop.Theme.Global'}</li></a>
-    </ul>
+  <div class="d-none d-md-block col-md-2 col header-top__block header-top__block--logo register-now">
+    <a href="https://shop.etropicalfish.com/b2b-customer-create">{l s='Register Now' d='Shop.Theme.Global'}</a>
   </div>
 {/if}
 <div class="col flex-grow-0 header-top__block header-top__block--user">

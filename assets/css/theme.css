@@ -15376,6 +15376,15 @@ img.lazyload:not(.loaded) {
   text-decoration: none;
 }
 
+
+.register-now {
+  background-color: #fff;
+  padding: 5px 20px;
+  text-align: right;
+  border-right: solid 2px #bddbce;
+  font-size: 1rem;
+}
+
 @media screen and ( max-width: 768px) { 
   .maintop-menu-desktop {
     display: none;
