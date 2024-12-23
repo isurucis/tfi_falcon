@@ -36,6 +36,11 @@
 
 {block name='page_content_container'}
   <div class="row">
+    <div class="col-lg-12 col-12 col-xs-12 col-sm-12 col-md-12">
+      <h1 id="js-product-list-header" class="h2 product-list-header-title">Create New User Account</h1>
+    </div>
+  </div>
+  <div class="row">
     <div class="col-lg-3 col-12">
      {include file='customer/customer-links.tpl'}
     </div>
